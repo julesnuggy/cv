@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    top: 0;
+    background-color: #0a0941;
+}
+
+.profile_photo {
+    padding: 50px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.header_details {
+    width: 100%;
+    align-self: center;
+    text-align: left;
+    line-height: 1.8;
+}
