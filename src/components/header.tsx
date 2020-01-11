@@ -1,6 +1,7 @@
 import React from 'react';
 import profile_photo from '../assets/profile_photo.jpg';
 import '../styles/header.css';
+import HeaderDetail from './headerDetail';
 
 const Header: React.FC = () => {
   return (
@@ -9,10 +10,10 @@ const Header: React.FC = () => {
         <img className="profile_photo" src={profile_photo}/>
       </div>
       <div className="header_details">
-        <div>Julian Ng</div>
-        <div>Full Stack Developer</div>
-        <div>London, UK</div>
-        <div>Contact Me</div>
+        <HeaderDetail icon={{icon: "user"}} itemText="Julian Ng"/>
+        <HeaderDetail icon={{icon: "laptop-code"}} itemText="Full Stack Developer" />
+        <HeaderDetail icon={{icon: "map-marked-alt"}} itemText="London, UK" />
+        <HeaderDetail icon={{icon: "address-card"}} itemText="Contact Me" />
       </div>
     </div>
   )

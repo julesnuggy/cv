@@ -20,5 +20,17 @@
     width: 100%;
     align-self: center;
     text-align: left;
+}
+
+.header-detail {
+    display: flex;
+    flex-direction: row;
     line-height: 1.8;
+}
+
+.icon-container {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-right: 20px;
 }
