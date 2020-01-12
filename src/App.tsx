@@ -5,20 +5,20 @@ import { faUser, faMapMarkedAlt, faLaptopCode, faAddressCard } from '@fortawesom
 
 import Header from './components/header';
 import Experience from './components/experience';
+import data from './data/experienceData.json';
 
 library.add(faUser, faMapMarkedAlt, faLaptopCode, faAddressCard);
 
 const App: React.FC = () => {
   return (
-    <>
-      <body className="app-body">
-        <Header />
-        <div className="experience-container">
-          <Experience employer="Softwire" from={2018} to="current" location="London, UK" />
-          <Experience employer="Makers Academy" from={2017} to={2018} location="London, UK" />
-        </div>
-      </body>
-    </>
+    <div className="app-body">
+      <Header />
+      <div className="experience-container">
+        {
+          data.map((d, idx) => <Experience data={d} key={idx} />)
+        }
+      </div>
+    </div>
   );
 };
 

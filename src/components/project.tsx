@@ -1,19 +1,17 @@
 import React from 'react';
 import '../styles/project.css'
+import { ProjectData } from '../data/experienceData';
 
 type ProjectProps = {
-  name: string;
-  role: string;
-  from: number;
-  to: number | string;
+  data: ProjectData;
 }
 
-const Project = ({name, role, from, to}: ProjectProps) => (
+const Project = ({data}: ProjectProps) => (
   <div className="project">
     <div className="project-details">
-      <div>{name}</div>
-      <div>{role}</div>
-      <div>{from} - {to}</div>
+      <div>{data.name}</div>
+      <div>{data.role}</div>
+      <div>{data.from} - {data.to}</div>
     </div>
   </div>
 );

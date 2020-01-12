@@ -1,27 +1,23 @@
 import React from 'react';
 import '../styles/experience.css';
 import Project from './project';
+import { ExperienceData } from '../data/experienceData';
 
 type EmployerCardProps = {
-  employer: string;
-  from: number;
-  to: number | string;
-  location: string;
+  data: ExperienceData;
 }
 
-const Experience = ({employer, from, to, location}: EmployerCardProps) => (
+const Experience = ({data}: EmployerCardProps) => (
   <div className="experience">
     <div className="experience-title">
-      {employer} || {from} - {to} || {location}
+      {data.employer} || {data.from} - {data.to} || {data.location}
     </div>
     <hr className="experience-break-line"/>
-    <div className="experience-summary">Blah blah blah</div>
+    <div className="experience-summary">{data.summary}</div>
     <div className="project-container">
-      <Project name="Project One" role="Developer" from={2019} to="present" />
-      <Project name="Project Two" role="Developer" from={2019} to={2019} />
-      <Project name="Project Three" role="Developer" from={2018} to={2018} />
-      <Project name="Project Four" role="Developer" from={2018} to={2018} />
-      <Project name="Project Five" role="Developer" from={2018} to={2018} />
+      {
+        data.projects.map((p, idx) => <Project data={p} key={idx} />)
+      }
     </div>
   </div>
 );

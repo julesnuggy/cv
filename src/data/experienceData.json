@@ -1,0 +1,65 @@
+[
+  {
+    "employer": "Softwire",
+    "from": "Jun 2018",
+    "to": "present",
+    "location": "London, UK",
+    "summary": "Mid-level full-stack software developer in a medium-sized agency & consultancy. Worked across a broad range of projects for customers in various industries, including fintech, health & fitness, public sector, telecommunications, aviation, and utilities. Each project implemented a unique tech stack, requiring a strong understanding of core coding principles and a flexible mindset to quickly ramp up, ensuring team effectiveness and customer satisfaction.",
+    "projects": [
+      {
+        "name": "Starling Bank",
+        "role": "Full-Stack Developer",
+        "from": 2019,
+        "to": "present",
+        "techStack": [
+          "React (JavaScript)",
+          "Redux",
+          "Java",
+          "Springboot",
+          "Docker",
+          "PostgreSQL"
+        ],
+        "description": "Working in a team responsible for developing new features for Starling as part of its recent CIF Funding award. Currently developing features for Starling's 'Internet Bank' to provide users (initially small business owners) with a web based interface to expand it beyond its app."
+      },
+      {
+        "name": "David Lloyd",
+        "role": "Full-Stack Developer",
+        "from": 2018,
+        "to": 2018,
+        "techStack": [
+          "React (Typescript)",
+          "Java",
+          "Springboot",
+          "Maven",
+          "PHP",
+          "Docker",
+          "PostgreSQL",
+          "MySql"
+        ],
+        "description": "Worked in a large team to accelerate David Lloyd's digital transformation roadmap. My role included work to:\n* upgrade their public facing website to increase membership sign-ups by providing a modern design and customisable content via a custom-made Content Management System;\n* upgrade their internal booking system to automate manual processes and improving the code base by extracting an old PHP monolith into Java microservices;\n* create a new membership registration app for in-club sales teams to improve the registration process and experience for both staff and prospective members."
+      }
+    ]
+  },
+  {
+    "employer": "Makers Academy",
+    "from": "Feb 2018",
+    "to": "May 2018",
+    "location": "London, UK",
+    "summary": "Intensive 4-month coding bootcamp, learning-through-doing the foundations of software development and its best practices. Whilst the course was taught primarily in Ruby and JavaScript (implementing various popular libraries and frameworks, such as Sinatra, Express.js, npm, JQuery, etc.) students developed skills and knowledge in a language-agnostic way.",
+    "projects": [
+      {
+        "name": "Codecraft",
+        "role": "Full-Stack Developer",
+        "from": 2018,
+        "to": 2018,
+        "techStack": [
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "JQuery"
+        ],
+        "description": "Codecraft is a strategic survival role playing game developed in pure vanilla JavaScript - with no game engines or frameworks. Codecraft is the Makers Academy final project developed by a team of 5 people: Tom Duffy, Julian Ng, Chris Ly, Charlene Bastians and Alfie Darko.\nThe focus of the project was to learn how to create a well-designed game, as opposed to focusing on learning new technology or coming out with a polished marketable product. In the end, we created a fully working game which has been deployed online via Heroku: https://codecraft-game.herokuapp.com/"
+      }
+    ]
+  }
+]
