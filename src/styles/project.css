@@ -2,7 +2,14 @@
     flex-grow: 1;
     min-width: 200px;
     margin: 30px;
-    border: solid 1px lightsteelblue;
+    border: solid 1px cornflowerblue;
+}
+
+.project:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: cornsilk;
+    transition: 0.5s;
 }
 
 .project-details {
