@@ -1,16 +1,13 @@
 .header {
     display: flex;
-    position: fixed;
     flex-direction: row;
     justify-content: center;
-    height: auto;
     width: 100%;
-    top: 0;
     background-color: #0a0941;
 }
 
-.profile_photo {
-    padding: 50px;
+.profile-photo {
+    padding: 30px 50px;
     width: 180px;
     height: 180px;
     border-radius: 50%;

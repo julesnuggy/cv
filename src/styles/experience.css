@@ -1,0 +1,23 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px 50px 0;
+    border: solid 2px darkgoldenrod;
+}
+
+.experience-break-line {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    border-color: darkgoldenrod;
+}
+
+.experience-title, .experience-details {
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+}
+
+.experience-title {
+    font-weight: 500;
+}

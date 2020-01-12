@@ -7,7 +7,7 @@ const Header: React.FC = () => {
   return (
     <div className="header">
       <div>
-        <img className="profile_photo" src={profile_photo}/>
+        <img className="profile-photo" src={profile_photo} alt="Julian Ng"/>
       </div>
       <div className="header_details">
         <HeaderDetail icon={{icon: "user"}} itemText="Julian Ng"/>
