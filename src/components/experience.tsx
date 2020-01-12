@@ -15,6 +15,7 @@ const Experience = ({employer, from, to, location}: EmployerCardProps) => (
       {employer} || {from} - {to} || {location}
     </div>
     <hr className="experience-break-line"/>
+    <div className="experience-summary">Blah blah blah</div>
     <div className="project-container">
       <Project name="Project One" role="Developer" from={2019} to="present" />
       <Project name="Project Two" role="Developer" from={2019} to={2019} />
