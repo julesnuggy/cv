@@ -1,15 +1,15 @@
 .app-body {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: 24px;
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    color: white;
 }
 
 .experience-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 50px;
+    margin: 0 50px 50px;
 }

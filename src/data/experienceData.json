@@ -37,6 +37,30 @@
           "MySql"
         ],
         "description": "Worked in a large team to accelerate David Lloyd's digital transformation roadmap. My role included work to:\n* upgrade their public facing website to increase membership sign-ups by providing a modern design and customisable content via a custom-made Content Management System;\n* upgrade their internal booking system to automate manual processes and improving the code base by extracting an old PHP monolith into Java microservices;\n* create a new membership registration app for in-club sales teams to improve the registration process and experience for both staff and prospective members."
+      },
+      {
+        "name": "Air Charter Service",
+        "role": "Full-Stack Developer",
+        "from": 2018,
+        "to": 2018,
+        "techStack": [
+          "React (JavaScript)",
+          "C#",
+          "ASP.NET",
+          "MySQL"
+        ],
+        "description": "Worked in a team to upgrade ACS' suite of outdated apps, including sales reporting, quote-generation and booking system for chartering private jets."
+      },
+      {
+        "name": "Air Charter Service",
+        "role": "Data Engineer / Consultant",
+        "from": 2018,
+        "to": 2018,
+        "techStack": [
+          "Tableau",
+          "SQL"
+        ],
+        "description": "GRAPHS"
       }
     ]
   },
