@@ -21,7 +21,7 @@ const Project = ({data}: ProjectProps) => {
         <>
           <div>Tech Stack:</div>
           <div className="tech-stack-list">
-            {data.techStack.map(t => <li className="tech-stack-item">{t}</li>)}
+            {data.techStack.map((t, idx) => <li className="tech-stack-item" key={idx}>{t}</li>)}
           </div>
           <div>{data.description}</div>
         </>
