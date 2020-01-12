@@ -25,3 +25,18 @@
     justify-content: space-between;
     margin: 10px;
 }
+
+.extra-information-enter {    
+    opacity: 0;
+}
+.extra-information-enter-active {
+    opacity: 1;
+    transition: 1s;
+}
+.extra-information-exit {
+    opacity: 1;
+}
+.extra-information-exit-active {
+    opacity: 0;
+    transition: 1s;
+}
