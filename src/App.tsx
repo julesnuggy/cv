@@ -14,9 +14,7 @@ const App: React.FC = () => {
     <div className="app-body">
       <Header />
       <div className="experience-container">
-        {
-          data.map((d, idx) => <Experience data={d} key={idx} />)
-        }
+        {data.map((d, idx) => <Experience data={d} key={idx} />)}
       </div>
     </div>
   );

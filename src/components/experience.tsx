@@ -15,9 +15,7 @@ const Experience = ({data}: EmployerCardProps) => (
     <hr className="experience-break-line"/>
     <div className="experience-summary">{data.summary}</div>
     <div className="project-container">
-      {
-        data.projects.map((p, idx) => <Project data={p} key={idx} />)
-      }
+      {data.projects.map((p, idx) => <Project data={p} key={idx} />)}
     </div>
   </div>
 );

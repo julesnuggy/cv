@@ -15,4 +15,14 @@
 .project-details {
     margin: 10px;
     font-size: 16px;
+    transition: 0.5s;
+}
+
+.core-information {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.tech-stack-list {
+    margin: 0 0 20px 20px;
 }
