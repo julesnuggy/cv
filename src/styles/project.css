@@ -1,0 +1,12 @@
+.project {
+    min-width: 25%;
+    margin: 30px;
+    border: solid 1px lightsteelblue;
+}
+
+.project-details {
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    font-size: 16px;
+}
