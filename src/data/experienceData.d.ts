@@ -5,7 +5,7 @@ export type ExperienceData = {
   location: string;
   summary: string;
   projects: ProjectData[];
-}
+};
 
 type ProjectData = {
   name: string;
@@ -14,4 +14,4 @@ type ProjectData = {
   to: number | string;
   techStack: string[];
   description: string;
-}
+};
