@@ -26,17 +26,20 @@
     margin: 10px;
 }
 
-.extra-information-enter {    
+.project-popup-enter {
     opacity: 0;
 }
-.extra-information-enter-active {
+
+.project-popup-enter-active {
     opacity: 1;
-    transition: 1s;
+    transition: opacity 400ms;
 }
-.extra-information-exit {
+
+.project-popup-exit {
     opacity: 1;
 }
-.extra-information-exit-active {
+
+.project-popup-exit-active {
     opacity: 0;
-    transition: 1s;
+    transition: opacity 400ms;
 }
