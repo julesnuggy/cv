@@ -1,6 +1,7 @@
 import React from 'react';
-import '../styles/project.css'
+
 import { ProjectData } from '../data/experienceData';
+import '../styles/project.css'
 
 type ProjectProps = {
   data: ProjectData;

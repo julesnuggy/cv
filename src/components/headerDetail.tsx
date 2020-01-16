@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
+
 import '../styles/header.css';
 
 type HeaderDetailProps = {

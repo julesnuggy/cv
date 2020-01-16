@@ -5,6 +5,19 @@
     flex-direction: column;
     font-size: 24px;
     color: black;
+    padding: 0 150px;
+}
+
+@media (max-width: 1280px) {
+    .app-body  {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 920px) {
+    .app-body  {
+        padding: 0;
+    }
 }
 
 .experience-container {

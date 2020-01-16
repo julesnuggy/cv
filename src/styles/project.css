@@ -1,8 +1,9 @@
 .project {
-    flex-grow: 1;
+    flex: 1 0 25%;
     min-width: 200px;
     margin: 30px;
     border: solid 1px cornflowerblue;
+    border-radius: 3px;
 }
 
 .project:hover {
@@ -25,16 +26,17 @@
 .tech-stack-list {
     margin: 0 0 20px 20px;
 }
-
 .project-popup {
     position: fixed;
     margin: 30px;
     padding: 15px;
-    background-color: cornflowerblue;
+    background-color: royalblue;
+    box-shadow: 10px 10px 10px lightslategrey;
+    border-radius: 3px;
     color: cornsilk;
-    top: 25%;
-    left: 25%;
+    top: 12.5vh;
+    left: calc(25% - 45px);
     width: 50%;
-    height: auto;
     z-index: 100;
 }
+

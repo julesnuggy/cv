@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/experience.css';
-import Project from './project';
-import { ExperienceData } from '../data/experienceData';
 import { CSSTransition } from 'react-transition-group';
+import ReactMarkdown from 'react-markdown';
+
+import Project from './project';
 import ProjectPopup from './projectPopup';
+import { ExperienceData } from '../data/experienceData';
+import '../styles/experience.css';
 
 type EmployerCardProps = {
   data: ExperienceData;
@@ -28,7 +30,7 @@ const Experience = ({data}: EmployerCardProps) => {
     <div className="experience-title">
       {data.employer} || {data.from} - {data.to} || {data.location}
     </div>
-    <div className="experience-summary">{data.summary}</div>
+    <ReactMarkdown className="experience-summary" source={data.summary} />
     <div className="project-container">
       {data.projects.map((p, idx) =>
         <>

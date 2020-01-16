@@ -1,6 +1,8 @@
 import React from 'react';
-import '../styles/project.css'
+import ReactMarkdown from 'react-markdown';
+
 import { ProjectData } from '../data/experienceData';
+import '../styles/project.css'
 
 type ProjectProps = {
   data: ProjectData;
@@ -20,7 +22,7 @@ const ProjectPopup = ({data, index, onClick}: ProjectProps) => (
     <div className="tech-stack-list">
       {data.techStack.map((t, idx) => <li className="tech-stack-item" key={idx}>{t}</li>)}
     </div>
-      <div>{data.description}</div>
+      <ReactMarkdown>{data.description}</ReactMarkdown>
     </div>
   </div>
 );
