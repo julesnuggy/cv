@@ -19,7 +19,7 @@
           "Docker",
           "PostgreSQL"
         ],
-        "description": "Working in a team responsible for developing new features for Starling as part of its recent CIF Funding award. Currently developing features for Starling's 'Internet Bank' to provide users (initially small business owners) with a web based interface to expand it beyond its app."
+        "description": "Working in a team responsible for developing new features for Starling as part of its recent CIF Funding award. Currently developing features for Starling's 'Internet Bank' to provide users (initially small business owners) with a web based interface to expand it beyond its app. As a quality assured business adhering to strict banking rules and regulations, code quality is of the utmost importance. Specific work that I have completed includes:\n* Previewing PDFs in place (without downloading)\n* Retrieving data from endpoints to feed into a PDF document generator, with appropriate data 'snapshotting' into a database\n* Updating styles to dynamically display pages and components correctly across various breakpoints"
       },
       {
         "name": "David Lloyd",
@@ -36,7 +36,7 @@
           "PostgreSQL",
           "MySql"
         ],
-        "description": "Worked in a large team to accelerate David Lloyd's digital transformation roadmap. My role included work to:\n* upgrade their public facing website to increase membership sign-ups by providing a modern design and customisable content via a custom-made Content Management System;\n* upgrade their internal booking system to automate manual processes and improving the code base by extracting an old PHP monolith into Java microservices;\n* create a new membership registration app for in-club sales teams to improve the registration process and experience for both staff and prospective members."
+        "description": "Worked in a large team to accelerate David Lloyd's digital transformation roadmap. My role included work to:\n* Upgrade their public facing website to increase membership sign-ups by providing a modern design and customisable content via a custom-made Content Management System;\n* Upgrade their internal booking system to automate manual processes and improving the code base by extracting an old PHP monolith into Java microservices;\n* Create a new membership registration app for in-club sales teams to improve the registration process and experience for both staff and prospective members."
       },
       {
         "name": "Air Charter Service",
@@ -49,7 +49,7 @@
           "ASP.NET",
           "MySQL"
         ],
-        "description": "Worked in a team to upgrade ACS' suite of outdated apps, including sales reporting, quote-generation and booking system for chartering private jets."
+        "description": "Worked in a team to upgrade ACS' suite of outdated apps, including sales reporting, quote-generation and booking system for chartering private jets. My work included:\n* Front-end and back-end development of their customer-facing website.\n * Front-end and back-end development of their staff booking and reporting system."
       },
       {
         "name": "Air Charter Service",
@@ -60,7 +60,19 @@
           "Tableau",
           "SQL"
         ],
-        "description": "GRAPHS"
+        "description": "Worked closely with the client in a small team to deliver a customised sales and financial reporting suite. This provided exec-level stakeholders with a detailed but quick to understand overview of the business at any defined moment. We used Tableau, an industry recognised off the shelf data mining and visualisation product.\n\nConnecting to the client's private secure SQL databases, I built from the ground up the multiple interactive reports, tailored to the customer's stringent specifications. This required generating complex SQL queries to accurately extract, filter and manipulate the customer's database. I also delivered the training to the end users at the end of the project."
+      },
+      {
+        "name": "NHS Improvement",
+        "role": "Front-end Developer",
+        "from": 2018,
+        "to": 2018,
+        "techStack": [
+          "React (JavaScript)",
+          "C#",
+          "MySQL"
+        ],
+        "description": "Worked closely with the NHS Improvement team to deliver their 'Model Hospital' internal website. This provided NHS administrators, managers and executives with tools and visualisations to assess and compare the quality of their services and facilities against other hospitals', regional and nationwide standards. My work included:\n* Adding accessibility features for the partially sighted and hard of hearing."
       }
     ]
   },
