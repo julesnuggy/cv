@@ -6,6 +6,7 @@ import Project from './project';
 import ProjectPopup from './projectPopup';
 import { ExperienceData } from '../data/experienceData';
 import '../styles/experience.css';
+import '../App.css';
 
 type EmployerCardProps = {
   data: ExperienceData;
@@ -30,7 +31,7 @@ const Experience = ({data}: EmployerCardProps) => {
     <div className="experience-title">
       {data.employer} || {data.from} - {data.to} || {data.location}
     </div>
-    <ReactMarkdown className="experience-summary" source={data.summary} />
+    <ReactMarkdown className="code-block" source={data.summary} />
     <div className="project-container">
       {data.projects.map((p, idx) =>
         <>

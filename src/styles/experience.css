@@ -14,16 +14,6 @@
     font-weight: 500;
 }
 
-.experience-summary {
-    background-color: #eff0f1;
-    margin: 30px 40px 0;
-    padding: 10px;
-    border-radius: 3px;
-    font-size: 16px;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-    line-height: 1.5;
-}
-
 .project-container {
     display: flex;
     flex-wrap: wrap;
