@@ -1,5 +1,5 @@
 .project {
-    flex-grow: 1;
+    flex: 1 0 25%;
     min-width: 200px;
     margin: 30px;
     border: solid 1px cornflowerblue;
@@ -30,7 +30,8 @@
     position: fixed;
     margin: 30px;
     padding: 15px;
-    background-color: cornflowerblue;
+    background-color: royalblue;
+    box-shadow: 10px 10px 10px lightslategrey;
     border-radius: 3px;
     color: cornsilk;
     top: 12.5vh;
