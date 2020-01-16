@@ -1,7 +1,8 @@
 import React from 'react';
+
 import profile_photo from '../assets/profile_photo.jpg';
-import '../styles/header.css';
 import HeaderDetail from './headerDetail';
+import '../styles/header.css';
 
 const Header: React.FC = () => {
   return (
