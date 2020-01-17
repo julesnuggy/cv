@@ -23,9 +23,14 @@
     margin-bottom: 20px;
 }
 
-.tech-stack-list {
-    margin: 0 0 20px 20px;
+.tech-stack-container {
+    margin-bottom: 20px ;
 }
+
+.tech-stack-list {
+    margin-left: 30px;
+}
+
 .project-popup {
     position: fixed;
     margin: 30px;
@@ -39,4 +44,6 @@
     width: 50%;
     z-index: 100;
 }
-
+.description > p, ul {
+    margin: 0;
+}
