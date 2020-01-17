@@ -35,13 +35,10 @@
     position: fixed;
     margin: 30px;
     padding: 15px;
-    background-color: royalblue;
-    box-shadow: 10px 10px 10px lightslategrey;
     border-radius: 3px;
-    color: cornsilk;
-    top: 12.5vh;
-    left: calc(25% - 45px);
-    width: 50%;
+    top: 10vh;
+    left: calc(17.5% - 45px);
+    width: 65%;
     z-index: 100;
 }
 .description > p, ul {

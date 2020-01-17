@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { ProjectData } from '../data/experienceData';
 import '../styles/project.css'
 import '../App.css'
+import Blocker from './blocker';
 
 type ProjectProps = {
   data: ProjectData;
@@ -48,13 +49,16 @@ const Description = ({data}: DataProps) => (
 );
 
 const ProjectPopup = ({data, index, onClick}: ProjectProps) => (
-  <div className="project-popup code-block dark-theme" onClick={() => onClick(index)}>
-    <div className="project-details">
-      <CoreInformation data={data} />
-      <TechStack data={data} />
-      <Description data={data} />
+  <>
+    <Blocker/>
+    <div className="project-popup code-block dark-theme" onClick={() => onClick(index)}>
+      <div className="project-details">
+        <CoreInformation data={data} />
+        <TechStack data={data} />
+        <Description data={data} />
+      </div>
     </div>
-  </div>
+  </>
 );
 
 export default ProjectPopup ;
