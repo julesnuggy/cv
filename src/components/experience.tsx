@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import ReactMarkdown from 'react-markdown';
 
@@ -24,7 +24,9 @@ const Experience = ({data}: EmployerCardProps) => {
     }
   };
 
-  useEffect(() => console.log('expandedProjects', expandedProjects));
+  const handleEscapePress = () => (
+    setExpandedProjects([-1])
+  );
 
   return (
   <div className="experience">
@@ -35,12 +37,18 @@ const Experience = ({data}: EmployerCardProps) => {
     <div className="project-container">
       {data.projects.map((p, idx) =>
         <>
-          <Project data={p} key={idx} index={idx} onClick={handleProjectClick} />
+          <Project data={p} key={`p-${idx}`} index={idx} onClick={handleProjectClick} />
           <CSSTransition timeout={200} in={expandedProjects.includes(idx)} classNames="project-popup" key={idx}>
             <>
               {
                 expandedProjects.includes(idx) &&
-                <ProjectPopup data={p} key={idx} index={idx} onClick={handleProjectClick} />
+                <ProjectPopup
+                  data={p}
+                  key={`pp-${idx}`}
+                  index={idx}
+                  onClick={handleProjectClick}
+                  onEscapePress={handleEscapePress}
+                />
               }
             </>
           </CSSTransition>

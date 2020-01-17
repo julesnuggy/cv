@@ -16,7 +16,7 @@ const App: React.FC = () => {
       <Header />
       <AboutMe />
       <div className="experience-container">
-        {data.map((d, idx) => <Experience data={d} key={idx} />)}
+        {data.map((d, idx) => <Experience data={d} key={`e-${idx}`} />)}
       </div>
     </div>
   );

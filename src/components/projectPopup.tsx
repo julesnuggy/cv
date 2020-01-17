@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import { ProjectData } from '../data/experienceData';
@@ -10,11 +10,18 @@ type ProjectProps = {
   data: ProjectData;
   index: number;
   onClick: (index: number) => void;
+  onEscapePress: () => void;
 }
 
 type DataProps = {
   data: ProjectData;
 }
+
+const handleEscapePress = (event: KeyboardEvent, onEscapePress: () => void) => {
+  if(event.keyCode === 27) {
+    onEscapePress();
+  }
+};
 
 const CoreInformation = ({data}: DataProps) => (
   <div className="core-information">
@@ -48,7 +55,14 @@ const Description = ({data}: DataProps) => (
   </>
 );
 
-const ProjectPopup = ({data, index, onClick}: ProjectProps) => (
+const ProjectPopup = ({data, index, onClick, onEscapePress}: ProjectProps) => {
+  useEffect(() => {
+    document.addEventListener('keydown', (event) => {
+      handleEscapePress(event, onEscapePress)
+    })
+  });
+
+  return (
   <>
     <Blocker/>
     <div className="project-popup code-block dark-theme" onClick={() => onClick(index)}>
@@ -59,6 +73,6 @@ const ProjectPopup = ({data, index, onClick}: ProjectProps) => (
       </div>
     </div>
   </>
-);
+)};
 
 export default ProjectPopup ;
