@@ -1,20 +1,21 @@
-import React from 'react';
-import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
-
+import React, { ReactNode } from 'react';
 import '../styles/header.css';
 
 type HeaderDetailProps = {
-  icon: FontAwesomeIconProps;
   itemText: string;
+  link?: string;
+  children?: ReactNode;
 }
 
-const HeaderDetail = ({icon, itemText}: HeaderDetailProps) => (
-  <div className="header-detail">
-    <div className="icon-container">
-      <FontAwesomeIcon icon={icon.icon} />
+const HeaderDetail = ({itemText, link, children}: HeaderDetailProps) => {
+  return (
+    <div className="header-detail">
+      <div className="icon-container">
+        {children}
+      </div>
+      {link ? <a href={link} target="_blank">{itemText}</a> : <div>{itemText}</div>}
     </div>
-    <div>{itemText}</div>
-  </div>
-);
+  )
+};
 
 export default HeaderDetail;
