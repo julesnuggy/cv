@@ -1,5 +1,6 @@
 {
   "name": "julesnuggy",
+  "homepage": "https://julesnuggy.github.io/cv/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,6 +25,8 @@
     "typescript": "^3.7.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "tslint 'src/**/*.ts{,x}",
@@ -47,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "tslint": "^5.20.1"
   }
 }
