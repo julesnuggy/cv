@@ -72,7 +72,7 @@
           "C#",
           "MySQL"
         ],
-        "description": "Worked closely with the NHS Improvement team to deliver their 'Model Hospital' internal website. This provided NHS administrators, managers and executives with tools and visualisations to assess and compare the quality of their services and facilities against other hospitals', regional and nationwide standards. My work included:\n* Adding accessibility features for the partially sighted and hard of hearing."
+        "description": "Worked closely with the NHS Improvement team to deliver their 'Model Hospital' internal website. This provided NHS administrators, managers and executives with tools and visualisations to assess and compare the quality of their services and facilities against other hospitals', regional and nationwide standards. My work included:\n* Adding accessibility features for the partially sighted and hard of hearing.\n* Adding Google Analytics to track user behaviour.\n* Implementing a pop-up user poll to gather feedback on the site"
       }
     ]
   },
