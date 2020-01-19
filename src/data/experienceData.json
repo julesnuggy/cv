@@ -19,7 +19,7 @@
           "Docker",
           "PostgreSQL"
         ],
-        "description": "Working in a team responsible for developing new features for Starling as part of its recent CIF Funding award. Currently developing features for Starling's 'Internet Bank' to provide users (initially small business owners) with a web based interface to expand it beyond its app. As a quality assured business adhering to strict banking rules and regulations, code quality is of the utmost importance. Specific work that I have completed includes:\n* Previewing PDFs in place (without downloading)\n* Retrieving data from endpoints to feed into a PDF document generator, with appropriate data 'snapshotting' into a database\n* Updating styles to dynamically display pages and components correctly across various breakpoints"
+        "description": "Working in a team responsible for developing new features for Starling as part of its recent CIF Funding award. Currently developing features for Starling's 'Internet Bank' to provide its business users with a web based 'Tool Kit'. As well as providing an interface to its standard app-based features, this Tool Kit provides additional features to support businesses, such as creating invoices, tracking bills and expenses, and calculating tax.\n\nSpecific work that I have completed includes:\n* Implementing the endpoint to attach receipts to expenses\n* Enabling previewing of PDFs in place (without downloading)\n* Retrieving data from endpoints to feed into a PDF document generator, with appropriate data 'snapshotting' into a database\n* Applying styles to dynamically display pages and components correctly across various breakpoints"
       },
       {
         "name": "David Lloyd",
@@ -36,7 +36,7 @@
           "PostgreSQL",
           "MySql"
         ],
-        "description": "Worked in a large team to accelerate David Lloyd's digital transformation roadmap. My role included work to:\n* Upgrade their public facing website to increase membership sign-ups by providing a modern design and customisable content via a custom-made Content Management System;\n* Upgrade their internal booking system to automate manual processes and improving the code base by extracting an old PHP monolith into Java microservices;\n* Create a new membership registration app for in-club sales teams to improve the registration process and experience for both staff and prospective members."
+        "description": "Worked across a range of products to accelerate David Lloyd's digital transformation roadmap. Their plan was split across workstreams to increase new memebership, improve retention, increase sales & subscriptions (e.g. to classes and courses) and streamline their internal processes to improve efficiency.\n\nMy role included work to:\n* Upgrade their public facing website to increase membership sign-ups by providing a modern design and customisable content via a custom-made Content Management System;\n* Upgrade their internal booking system to automate manual processes and improving the code base by extracting an old PHP monolith into Java microservices;\n* Create a new membership registration app for in-club sales teams to improve the registration process and experience for both staff and prospective members."
       },
       {
         "name": "Air Charter Service",
@@ -49,7 +49,7 @@
           "ASP.NET",
           "MySQL"
         ],
-        "description": "Worked in a team to upgrade ACS' suite of outdated apps, including sales reporting, quote-generation and booking system for chartering private jets. My work included:\n* Front-end and back-end development of their customer-facing website.\n * Front-end and back-end development of their staff booking and reporting system."
+        "description": "The Air Charter Service (ACS) provides first-class private jet chartering; however, some of their systems were in need to updating to improve useability and reliability. This included their internal apps for sales reporting, quote-generation and booking system, and also the creation of a customer-facing charter query website.\n\nMy work included:\n* Implementing flight date selection warning messages.\n* Updating email template languages based on backend settings.\n* Standardising commonly used features/elements\n* Resolving tech debt by removing/replacing old code, unused libraries, and poorly structured code.\n* Implementing a file upload validation feature."
       },
       {
         "name": "Air Charter Service",

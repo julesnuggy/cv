@@ -44,3 +44,7 @@
 .description > p, ul {
     margin: 0;
 }
+
+.description > p + p {
+    margin-top: 1rem;
+}
