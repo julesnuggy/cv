@@ -24,7 +24,7 @@ const Experience = ({data}: EmployerCardProps) => {
     }
   };
 
-  const handleEscapePress = () => (
+  const handleClosePopup = () => (
     setExpandedProjects([-1])
   );
 
@@ -45,9 +45,7 @@ const Experience = ({data}: EmployerCardProps) => {
                   <ProjectPopup
                     data={p}
                     key={`pp-${idx}`}
-                    index={idx}
-                    onClick={handleProjectClick}
-                    onEscapePress={handleEscapePress}
+                    closePopup={handleClosePopup}
                   />
                 }
               </>

@@ -48,3 +48,8 @@
 .description > p + p {
     margin-top: 1rem;
 }
+
+.project-popup-close {
+    float: right;
+    cursor: pointer;
+}

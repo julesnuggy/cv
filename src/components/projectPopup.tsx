@@ -5,12 +5,11 @@ import { ProjectData } from '../data/experienceData';
 import '../styles/project.css';
 import '../App.css';
 import Blocker from './blocker';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type ProjectProps = {
   data: ProjectData;
-  index: number;
-  onClick: (index: number) => void;
-  onEscapePress: () => void;
+  closePopup: () => void;
 };
 
 type DataProps = {
@@ -55,18 +54,21 @@ const Description = ({data}: DataProps) => (
   </>
 );
 
-const ProjectPopup = ({data, index, onClick, onEscapePress}: ProjectProps) => {
+const ProjectPopup = ({data, closePopup}: ProjectProps) => {
   useEffect(() => {
     document.addEventListener('keydown', (event) => {
-      handleEscapePress(event, onEscapePress);
+      handleEscapePress(event, closePopup);
     });
   });
 
   return (
   <>
     <Blocker/>
-    <div className="project-popup code-block dark-theme" onClick={() => onClick(index)}>
+    <div className="project-popup code-block dark-theme">
       <div className="project-details">
+        <div className="project-popup-close" onClick={closePopup}>
+          <FontAwesomeIcon icon={['far', 'times-circle']} size="lg" />
+        </div>
         <CoreInformation data={data} />
         <TechStack data={data} />
         <Description data={data} />
