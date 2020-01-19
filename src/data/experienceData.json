@@ -4,7 +4,7 @@
     "from": "Jun 2018",
     "to": "present",
     "location": "London, UK",
-    "summary": "Mid-level full-stack software developer in a medium-sized agency & consultancy. I have worked across a broad range of projects for customers in FinTech, health & fitness, public sector, telecommunications, aviation, and utilities. Each project implemented a unique tech stack, requiring a strong understanding of core coding principles and a flexible mindset to quickly ramp up, ensuring team effectiveness and customer satisfaction.",
+    "summary": "Mid-level full-stack software developer in a medium-sized agency & consultancy. I have worked across a broad range of projects for customers in FinTech, health & fitness, public sector, telecommunications, aviation, and utilities. Each project implemented a unique tech stack, requiring a strong understanding of core coding principles and a flexible mindset to quickly get started, ensuring team effectiveness and customer satisfaction.",
     "projects": [
       {
         "name": "Starling Bank",
@@ -49,7 +49,7 @@
           "ASP.NET",
           "MySQL"
         ],
-        "description": "The Air Charter Service (ACS) provides first-class private jet chartering; however, some of their systems were in need to updating to improve useability and reliability. This included their internal apps for sales reporting, quote-generation and booking system, and also the creation of a customer-facing charter query website.\n\nMy work included:\n* Implementing flight date selection warning messages.\n* Updating email template languages based on backend settings.\n* Standardising commonly used features/elements\n* Resolving tech debt by removing/replacing old code, unused libraries, and poorly structured code.\n* Implementing a file upload validation feature."
+        "description": "The Air Charter Service (ACS) provides first-class private jet chartering; however, some of their systems were in need of updating to improve usability and reliability. This included their internal apps for sales reporting, quote-generation and aircraft bookings, and also the creation of a customer-facing charter query website.\n\nMy work included:\n* Implementing flight date selection warning messages.\n* Updating email template languages based on backend settings.\n* Standardising commonly used features/elements\n* Resolving tech debt by removing/replacing old code, unused libraries, and poorly structured code.\n* Implementing a file upload validation feature."
       },
       {
         "name": "Air Charter Service",
@@ -72,7 +72,7 @@
           "C#",
           "MySQL"
         ],
-        "description": "Worked closely with the NHS Improvement team to deliver their 'Model Hospital' internal website. This provided NHS administrators, managers and executives with tools and visualisations to assess and compare the quality of their services and facilities against other hospitals', regional and nationwide standards. My work included:\n* Adding accessibility features for the partially sighted and hard of hearing.\n* Adding Google Analytics to track user behaviour.\n* Implementing a pop-up user poll to gather feedback on the site"
+        "description": "Worked closely with the NHS Improvement team to deliver their 'Model Hospital' internal website. This provided NHS administrators, managers and executives with tools and visualisations to assess and compare the quality of their services and facilities against other hospitals' regional and nationwide standards. My work included:\n* Adding accessibility features for the partially sighted and hard of hearing.\n* Adding Google Analytics to track user behaviour.\n* Implementing a pop-up user poll to gather feedback on the site"
       }
     ]
   },
@@ -94,7 +94,7 @@
           "CSS",
           "JQuery"
         ],
-        "description": "Codecraft is a strategic survival role playing game developed in pure vanilla JavaScript - with no game engines or frameworks. Codecraft was my Makers Academy final project developed by a team of 5 people in just 2 weeks.\nThe focus of the project was to learn how to create a well-designed game, as opposed to focusing on learning new technology or coming out with a polished marketable product. In the end, we created a fully working game which has been deployed online via Heroku: https://codecraft-game.herokuapp.com/.\n\nWe followed a TDD approach throughout to ensure code quality; built the game up from basic principles as we were all new to game logic (involving a lot of maths and physics); and implmented a combination of independent, pair and mob programming. I also held the role of Project Manager and was responsible for:\n* Organising and tracking daily stand-ups and retros to maintain team communication, coordination, and morale.\n* Tracked team progress to ensure the most appropriate/important features were being implemented and to schedule.\n* Monitored progress to ensure we could hit the deadline with a working and satisfactory product."
+        "description": "Codecraft is a strategic survival role playing game developed in pure vanilla JavaScript - with no game engines or frameworks. Codecraft was my Makers Academy final project developed by a team of 5 people in just 2 weeks.\nThe focus of the project was to learn how to create a well-designed game, as opposed to focusing on learning new technology or coming out with a polished marketable product. In the end, we created a fully working game which has been deployed online via Heroku: https://codecraft-game.herokuapp.com/.\n\nWe followed a TDD approach throughout to ensure code quality; built the game up from basic principles as we were all new to game logic (involving a lot of maths and physics); and implemented a combination of independent, pair and mob programming. I also held the role of Project Manager and was responsible for:\n* Organising and tracking daily stand-ups and retros to maintain team communication, coordination, and morale.\n* Tracked team progress to ensure the most appropriate/important features were being implemented and to schedule.\n* Monitored progress to ensure we could hit the deadline with a working and satisfactory product."
       }
     ]
   },
