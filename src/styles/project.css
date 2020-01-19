@@ -53,3 +53,7 @@
     float: right;
     cursor: pointer;
 }
+
+.project-popup-open {
+    float: right;
+}

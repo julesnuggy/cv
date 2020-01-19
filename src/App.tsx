@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUser, faMapMarkedAlt, faLaptopCode, faAddressCard } from '@fortawesome/free-solid-svg-icons';
-import { faTimesCircle } from '@fortawesome/free-regular-svg-icons';
+import { faTimesCircle, faPlusSquare } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import AboutMe from './components/aboutMe';
@@ -10,7 +10,7 @@ import Header from './components/header';
 import Experience from './components/experience';
 import data from './data/experienceData.json';
 
-library.add(faUser, faMapMarkedAlt, faLaptopCode, faAddressCard, faTimesCircle, fab);
+library.add(faUser, faMapMarkedAlt, faLaptopCode, faAddressCard, faTimesCircle, faPlusSquare, fab);
 
 const App: React.FC = () => {
   return (
