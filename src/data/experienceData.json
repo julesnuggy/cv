@@ -97,5 +97,23 @@
         "description": "Codecraft is a strategic survival role playing game developed in pure vanilla JavaScript - with no game engines or frameworks. Codecraft was my Makers Academy final project developed by a team of 5 people in just 2 weeks.\nThe focus of the project was to learn how to create a well-designed game, as opposed to focusing on learning new technology or coming out with a polished marketable product. In the end, we created a fully working game which has been deployed online via Heroku: https://codecraft-game.herokuapp.com/.\n\nWe followed a TDD approach throughout to ensure code quality; built the game up from basic principles as we were all new to game logic (involving a lot of maths and physics); and implmented a combination of independent, pair and mob programming. I also held the role of Project Manager and was responsible for:\n* Organising and tracking daily stand-ups and retros to maintain team communication, coordination, and morale.\n* Tracked team progress to ensure the most appropriate/important features were being implemented and to schedule.\n* Monitored progress to ensure we could hit the deadline with a working and satisfactory product."
       }
     ]
+  },
+  {
+    "employer": "Higher Education - Economics with Study Abroad (BSc Hons, 2:1)",
+    "from": "2005",
+    "to": "2009",
+    "location": "University of Bristol, UK",
+    "summary": "Core modules included microeconomics, macroeconomics, quantitative economics, and game theory. This was a 4 year sandwich course which included a year studying abroad in Spain at the Universitat de Valencia, where all modules were taken in the Spanish language.\n\nI also joined the university's Tae Kwon Do Club where I earned my Kukkikwon 1st Dan Black Belt.",
+    "projects": [
+    ]
+  },
+  {
+    "employer": "Sixth Form Education - A-Levels",
+    "from": "2003",
+    "to": "2005",
+    "location": "Hills Road Sixth Form College, Cambridge, UK",
+    "summary": "Mathematics (A), Chemistry (A), Spanish (A), English Literature (A)",
+    "projects": [
+    ]
   }
 ]
