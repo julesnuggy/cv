@@ -5,7 +5,7 @@ type HeaderDetailProps = {
   itemText: string;
   link?: string;
   children?: ReactNode;
-}
+};
 
 const HeaderDetail = ({itemText, link, children}: HeaderDetailProps) => {
   return (
@@ -15,7 +15,7 @@ const HeaderDetail = ({itemText, link, children}: HeaderDetailProps) => {
       </div>
       {link ? <a href={link} target="_blank">{itemText}</a> : <div>{itemText}</div>}
     </div>
-  )
+  );
 };
 
 export default HeaderDetail;

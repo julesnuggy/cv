@@ -25,8 +25,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "tslint -c tslint.json 'src/**/*.ts'",
-    "test-fix": "tslint -c tslint.json 'src/**/*.ts' --fix",
+    "lint": "tslint 'src/**/*.ts{,x}",
+    "lint-fix": "tslint 'src/**/*.ts{,x} --fix",
     "eject": "react-scripts eject",
     "create-tslint": "tslint --init"
   },

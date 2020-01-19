@@ -1,13 +1,13 @@
 import React from 'react';
 
 import { ProjectData } from '../data/experienceData';
-import '../styles/project.css'
+import '../styles/project.css';
 
 type ProjectProps = {
   data: ProjectData;
   index: number;
   onClick: (index: number) => void;
-}
+};
 
 const Project = ({data, index, onClick}: ProjectProps) => (
   <div className="project" onClick={() => onClick(index)}>
