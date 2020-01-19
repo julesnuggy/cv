@@ -81,7 +81,7 @@
     "from": "Feb 2018",
     "to": "May 2018",
     "location": "London, UK",
-    "summary": "Intensive 4-month coding bootcamp, learning-through-doing the foundations of software development and its best practices. Whilst the course was taught primarily in Ruby and JavaScript (implementing various popular libraries and frameworks, such as Sinatra, Express.js, npm, JQuery, etc.) students developed skills and knowledge in a language-agnostic way.",
+    "summary": "Intensive 4-month coding bootcamp, learning-through-doing the foundations of software development and its best practices. Whilst the course was taught primarily in Ruby and JavaScript (implementing various popular libraries and frameworks, such as Sinatra, Express.js, npm, JQuery, etc.) students developed skills and knowledge in a language-agnostic way. Some of the key principles and skills that I learnt were Test Driven Development, pair programming, SOLID, XP Values, and system diagramming / architecture.",
     "projects": [
       {
         "name": "Codecraft",
@@ -94,7 +94,7 @@
           "CSS",
           "JQuery"
         ],
-        "description": "Codecraft is a strategic survival role playing game developed in pure vanilla JavaScript - with no game engines or frameworks. Codecraft is the Makers Academy final project developed by a team of 5 people: Tom Duffy, Julian Ng, Chris Ly, Charlene Bastians and Alfie Darko.\nThe focus of the project was to learn how to create a well-designed game, as opposed to focusing on learning new technology or coming out with a polished marketable product. In the end, we created a fully working game which has been deployed online via Heroku: https://codecraft-game.herokuapp.com/"
+        "description": "Codecraft is a strategic survival role playing game developed in pure vanilla JavaScript - with no game engines or frameworks. Codecraft was my Makers Academy final project developed by a team of 5 people in just 2 weeks.\nThe focus of the project was to learn how to create a well-designed game, as opposed to focusing on learning new technology or coming out with a polished marketable product. In the end, we created a fully working game which has been deployed online via Heroku: https://codecraft-game.herokuapp.com/.\n\nWe followed a TDD approach throughout to ensure code quality; built the game up from basic principles as we were all new to game logic (involving a lot of maths and physics); and implmented a combination of independent, pair and mob programming. I also held the role of Project Manager and was responsible for:\n* Organising and tracking daily stand-ups and retros to maintain team communication, coordination, and morale.\n* Tracked team progress to ensure the most appropriate/important features were being implemented and to schedule.\n* Monitored progress to ensure we could hit the deadline with a working and satisfactory product."
       }
     ]
   }
