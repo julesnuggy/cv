@@ -53,3 +53,7 @@
 .indented-text {
     padding-left: 30px;
 }
+
+.about-me > .indented-text + .indented-text {
+    margin-top: 1rem;
+}
