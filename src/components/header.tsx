@@ -2,7 +2,7 @@ import React from 'react';
 
 import profile_photo from '../assets/profile_photo.jpg';
 import HeaderDetail from './headerDetail';
-import '../styles/header.css';
+import '../styles/header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header: React.FC = () => {
@@ -11,7 +11,7 @@ const Header: React.FC = () => {
       <div>
         <img className="profile-photo" src={profile_photo} alt="Julian Ng"/>
       </div>
-      <div className="header_details">
+      <div className="header-details">
         <HeaderDetail itemText="Julian Ng (He/Him)">
           <FontAwesomeIcon icon="user" className="icon" />
         </HeaderDetail>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUser, faMapMarkedAlt, faLaptopCode, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import { faTimesCircle, faPlusSquare } from '@fortawesome/free-regular-svg-icons';

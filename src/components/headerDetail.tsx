@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import '../styles/header.css';
+import '../styles/header.scss';
 
 type HeaderDetailProps = {
   itemText: string;

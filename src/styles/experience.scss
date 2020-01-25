@@ -1,3 +1,5 @@
+@import './constants';
+
 .experience {
     display: flex;
     flex-direction: column;
@@ -5,6 +7,10 @@
     margin: 20px 50px 0;
     border-top: solid 2px darkgoldenrod;
     padding-top: 20px;
+
+  @include tabletUp {
+    margin: 20px 50px 0;
+  }
 }
 
 .experience-title {

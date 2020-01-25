@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ProjectData } from '../data/experienceData';
-import '../styles/project.css';
+import '../styles/project.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type ProjectProps = {
