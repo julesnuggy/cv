@@ -1,0 +1,52 @@
+@import './colourConstants';
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px 30px;
+
+  @media (min-width: 831px) {
+    margin: 0 50px 50px;
+  }
+}
+
+.code-block {
+  background-color: #eff0f1;
+  margin: 30px 10px 0;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  line-height: 1.5;
+
+  &.dark-theme {
+    background-color: $codeBlack;
+    color: $codeBlue;
+  }
+
+  @media (min-width: 831px) {
+    margin: 30px 40px 0;
+  }
+}
+
+.tag {
+  color: $codeYellow;
+  &+ .tag {
+    margin-top: 1rem;
+  }
+}
+
+
+.indented-text {
+  padding-left: 30px;
+}
+
+
+.about-me {
+  margin: 20px 20px;
+
+  @media (min-width: 831px) {
+    margin: 20px 90px;
+  }
+}

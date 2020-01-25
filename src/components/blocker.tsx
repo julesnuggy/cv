@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/blocker.css';
+import '../styles/blocker.scss';
 
 const Blocker: React.FC = () => (
   <div className="blocker" />

@@ -5,8 +5,8 @@ import ReactMarkdown from 'react-markdown';
 import Project from './project';
 import ProjectPopup from './projectPopup';
 import { ExperienceData } from '../data/experienceData';
-import '../styles/experience.css';
-import '../App.css';
+import '../styles/experience.scss';
+import '../App.scss';
 
 type EmployerCardProps = {
   data: ExperienceData;

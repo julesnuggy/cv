@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../App.css';
+import '../App.scss';
 
 const AboutMe = () => (
   <div className="about-me code-block dark-theme">

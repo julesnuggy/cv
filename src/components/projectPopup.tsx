@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import { ProjectData } from '../data/experienceData';
-import '../styles/project.css';
-import '../App.css';
+import '../styles/project.scss';
+import '../App.scss';
 import Blocker from './blocker';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -23,7 +23,7 @@ const handleEscapePress = (event: KeyboardEvent, onEscapePress: () => void) => {
 };
 
 const CoreInformation = ({data}: DataProps) => (
-  <div className="core-information">
+  <>
     <div className="tag">{'<BasicInfo>'}</div>
     <div className="indented-text">
       <div>{data.name}</div>
@@ -31,17 +31,17 @@ const CoreInformation = ({data}: DataProps) => (
       <div>{data.from} - {data.to}</div>
     </div>
     <div className="tag">{'</BasicInfo>'}</div>
-  </div>
+  </>
 );
 
 const TechStack = ({data}: DataProps) => (
-  <div className="tech-stack-container">
-    <div className="tag">{'<TechStack>'}</div>
-    <div className="tech-stack-list">
-      {data.techStack.map((t, idx) => <li className="tech-stack-item" key={idx}>{t}</li>)}
-    </div>
-    <div className="tag">{'</TechStack>'}</div>
-  </div>
+    <>
+      <div className="tag">{'<TechStack>'}</div>
+      <div className="tech-stack-list">
+        {data.techStack.map((t, idx) => <li className="tech-stack-item" key={idx}>{t}</li>)}
+      </div>
+      <div className="tag">{'</TechStack>'}</div>
+    </>
 );
 
 const Description = ({data}: DataProps) => (
