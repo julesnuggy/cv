@@ -1,10 +1,51 @@
-import React from 'react';
+import React, { useEffect, useState, ReactNode } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import '../App.scss';
 
-const AboutMe = () => (
-  <div className="about-me code-block dark-theme">
-    <div className="tag">{'<AboutMe>'}</div>
+type aboutMeProps = {
+  screenSize: number;
+}
+
+const AboutMe = ({screenSize}: aboutMeProps) => {
+  const [isTruncated, setIsTruncated] = useState(false);
+
+  const truncateContents = (element: Element) => {
+    setIsTruncated(true);
+    element.classList.add('truncated');
+  };
+
+  const expandContents = (element: Element) => {
+    setIsTruncated(false);
+    element.classList.remove('truncated');
+  };
+
+  useEffect(() => {
+    const indentedText = document.getElementsByClassName('indented-text')[0];
+    if (screenSize <= 480) {
+      truncateContents(indentedText);
+    } else {
+      expandContents(indentedText);
+    }
+  },[]);
+
+  const truncateExpandContents = () => {
+    const indentedText = document.getElementsByClassName('indented-text')[0];
+    indentedText.classList.contains('truncated') ?
+      expandContents(indentedText) :
+      truncateContents(indentedText);
+  };
+
+  return (
+  <div className="about-me code-block dark-theme" onClick={truncateExpandContents}>
+    <div className="tag">{'<AboutMe>'}
+      <span style={{float: 'right'}}>
+        {isTruncated ?
+          <FontAwesomeIcon icon={['far', 'plus-square']} className="expand-truncate-icon"/> :
+          <FontAwesomeIcon icon={['far', 'minus-square']} className="expand-truncate-icon"/>
+        }
+      </span>
+    </div>
     <div className="indented-text">
       I love being a software developer because I enjoy problem solving, working in a trusting and collaborative
       environment, and bringing ideas into reality through elegant code. I began my professional career
@@ -33,6 +74,6 @@ const AboutMe = () => (
     </div>
     <div className="tag">{'</Traits>'}</div>
   </div>
-);
+)};
 
 export default AboutMe;
