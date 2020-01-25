@@ -1,9 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import '../App.scss';
 
-const AboutMe = () => (
-  <div className="about-me code-block dark-theme">
+type aboutMeProps = {
+  screenSize: number;
+}
+
+const truncateExpandContents = () => {
+  const text = document.getElementsByClassName('indented-text')[0];
+  text.classList.contains('truncated') ?
+    text.classList.remove('truncated') :
+    text.classList.add('truncated');
+};
+
+const AboutMe = ({screenSize}: aboutMeProps) => {
+  useEffect(() => {
+    const text = document.getElementsByClassName('indented-text')[0];
+    if (screenSize <= 480) {
+      text.classList.add('truncated');
+    } else {
+      text.classList.remove('truncated');
+    }
+  });
+
+  return (
+  <div className="about-me code-block dark-theme" onClick={truncateExpandContents}>
     <div className="tag">{'<AboutMe>'}</div>
     <div className="indented-text">
       I love being a software developer because I enjoy problem solving, working in a trusting and collaborative
@@ -33,6 +54,6 @@ const AboutMe = () => (
     </div>
     <div className="tag">{'</Traits>'}</div>
   </div>
-);
+)};
 
 export default AboutMe;
