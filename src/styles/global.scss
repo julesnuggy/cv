@@ -50,6 +50,10 @@
   @include tabletUp {
     margin: 20px 90px;
   }
+
+  & .expand-truncate-icon {
+    float: right;
+  }
 }
 
 .truncated {

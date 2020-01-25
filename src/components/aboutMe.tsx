@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, ReactNode } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import '../App.scss';
 
@@ -6,26 +7,45 @@ type aboutMeProps = {
   screenSize: number;
 }
 
-const truncateExpandContents = () => {
-  const text = document.getElementsByClassName('indented-text')[0];
-  text.classList.contains('truncated') ?
-    text.classList.remove('truncated') :
-    text.classList.add('truncated');
-};
-
 const AboutMe = ({screenSize}: aboutMeProps) => {
+  const [isTruncated, setIsTruncated] = useState(false);
+
+  const truncateContents = (element: Element) => {
+    setIsTruncated(true);
+    element.classList.add('truncated');
+  };
+
+  const expandContents = (element: Element) => {
+    setIsTruncated(false);
+    element.classList.remove('truncated');
+  };
+
   useEffect(() => {
-    const text = document.getElementsByClassName('indented-text')[0];
+    const indentedText = document.getElementsByClassName('indented-text')[0];
     if (screenSize <= 480) {
-      text.classList.add('truncated');
+      truncateContents(indentedText);
     } else {
-      text.classList.remove('truncated');
+      expandContents(indentedText);
     }
-  });
+  },[]);
+
+  const truncateExpandContents = () => {
+    const indentedText = document.getElementsByClassName('indented-text')[0];
+    indentedText.classList.contains('truncated') ?
+      expandContents(indentedText) :
+      truncateContents(indentedText);
+  };
 
   return (
   <div className="about-me code-block dark-theme" onClick={truncateExpandContents}>
-    <div className="tag">{'<AboutMe>'}</div>
+    <div className="tag">{'<AboutMe>'}
+      <span style={{float: 'right'}}>
+        {isTruncated ?
+          <FontAwesomeIcon icon={['far', 'plus-square']} className="expand-truncate-icon"/> :
+          <FontAwesomeIcon icon={['far', 'minus-square']} className="expand-truncate-icon"/>
+        }
+      </span>
+    </div>
     <div className="indented-text">
       I love being a software developer because I enjoy problem solving, working in a trusting and collaborative
       environment, and bringing ideas into reality through elegant code. I began my professional career
