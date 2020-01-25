@@ -1,4 +1,4 @@
-@import './colourConstants';
+@import 'constants';
 
 .experience-container {
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
   margin: 0 20px 30px;
 
-  @media (min-width: 831px) {
+  @include tabletUp {
     margin: 0 50px 50px;
   }
 }
@@ -25,7 +25,7 @@
     color: $codeBlue;
   }
 
-  @media (min-width: 831px) {
+  @include tabletUp {
     margin: 30px 40px 0;
   }
 }
@@ -46,7 +46,7 @@
 .about-me {
   margin: 20px 20px;
 
-  @media (min-width: 831px) {
+  @include tabletUp {
     margin: 20px 90px;
   }
 }

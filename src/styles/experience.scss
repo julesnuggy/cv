@@ -1,3 +1,5 @@
+@import './constants';
+
 .experience {
     display: flex;
     flex-direction: column;
@@ -6,7 +8,7 @@
     border-top: solid 2px darkgoldenrod;
     padding-top: 20px;
 
-  @media (min-width: 831px) {
+  @include tabletUp {
     margin: 20px 50px 0;
   }
 }

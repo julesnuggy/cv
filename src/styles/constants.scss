@@ -1,0 +1,32 @@
+$codeYellow: #E8BF6A;
+$codeBlack: #2B2B2B;
+$codeBlue: #5394EC;
+$linkedInBlue: #0077b5;
+
+$mobile-width: 480px;
+@mixin mobileUp {
+  @media (min-width: #{$mobile-width}) {
+    @content
+  }
+}
+
+$tablet-width: 769px;
+@mixin tabletUp {
+  @media (min-width: #{$tablet-width}) {
+    @content
+  }
+}
+
+$desktop-width: 1025px;
+@mixin desktopUp {
+  @media (min-width: #{$desktop-width}) {
+    @content
+  }
+}
+
+$xl-desktop-width: 1600px;
+@mixin xlDesktopUp {
+  @media (min-width: #{$xl-desktop-width}) {
+    @content
+  }
+}
