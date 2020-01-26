@@ -2,8 +2,12 @@ import React from 'react';
 
 import '../styles/blocker.scss';
 
-const Blocker: React.FC = () => (
-  <div className="blocker" />
+type BlockerProps = {
+  closePopup: () => void;
+}
+
+const Blocker = ({closePopup}: BlockerProps) => (
+  <div className="blocker" onClick={closePopup} />
 );
 
 export default Blocker;

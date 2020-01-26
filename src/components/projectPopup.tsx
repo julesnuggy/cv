@@ -63,7 +63,7 @@ const ProjectPopup = ({data, closePopup}: ProjectProps) => {
 
   return (
   <>
-    <Blocker/>
+    <Blocker closePopup={closePopup} />
     <div className="project-popup code-block dark-theme">
       <div className="project-details">
         <div className="project-popup-close" onClick={closePopup}>
