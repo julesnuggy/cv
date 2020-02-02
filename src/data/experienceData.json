@@ -49,7 +49,7 @@
           "ASP.NET",
           "MySQL"
         ],
-        "description": "The Air Charter Service (ACS) provides first-class private jet chartering; however, some of their systems were in need of updating to improve usability and reliability. This included their internal apps for sales reporting, quote-generation and aircraft bookings, and also the creation of a customer-facing charter query website.\n\nMy work included:\n* Implementing flight date selection warning messages.\n* Updating email template languages based on backend settings.\n* Standardising commonly used features/elements\n* Resolving tech debt by removing/replacing old code, unused libraries, and poorly structured code.\n* Implementing a file upload validation feature."
+        "description": "The Air Charter Service (ACS) is a global company providing customer-led private air chartering services. To facilitate this tailored service - of matching customer needs and wants to the right aircraft and airline - they use their internal Integrated Brokerage Operating System (IBOS). It provides access to all enquiries, client histories, airline data and aircraft specifications. It is a company-wide database with multiple functions (such as aircraft/airline search, bookings, quote-generation, and invoicing) and management information (such sales reporting).\n\nOn this project, my team responsible for upgrading IBOS by fixing pre-existing bugs, improving inefficient code, and upgrading it with new features. We also led the creation of a customer-facing charter query website.\n\nSpecifically, my work included:\n* Implementing flight query validation on the website front- and back-ends.\n* Updating email template languages based on backend settings.\n* Standardising commonly used features and elements\n* Resolving tech debt by removing/replacing old code, unused libraries, and poorly structured code.\n* Implementing a file upload validation feature."
       },
       {
         "name": "Air Charter Service",
@@ -72,7 +72,7 @@
           "C#",
           "MySQL"
         ],
-        "description": "Worked closely with the NHS Improvement team to deliver their 'Model Hospital' internal website. This provided NHS administrators, managers and executives with tools and visualisations to assess and compare the quality of their services and facilities against other hospitals' regional and nationwide standards. My work included:\n* Adding accessibility features for the partially sighted and hard of hearing.\n* Adding Google Analytics to track user behaviour.\n* Implementing a pop-up user poll to gather feedback on the site"
+        "description": "Worked closely with the NHS Improvement team to deliver their 'Model Hospital' internal website. This provides NHS administrators, managers and executives with tools and visualisations to assess and compare the quality of their services and facilities against other hospitals' standards in other regions and country-wide. My work included:\n* Adding accessibility features for the partially sighted and hard of hearing.\n* Adding Google Analytics to track user behaviour.\n* Implementing a pop-up user poll to gather feedback on the site"
       }
     ]
   },

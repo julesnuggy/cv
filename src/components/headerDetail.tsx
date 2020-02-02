@@ -13,7 +13,7 @@ const HeaderDetail = ({itemText, link, children}: HeaderDetailProps) => {
       <div className="icon-container">
         {children}
       </div>
-      {link ? <a href={link} target="_blank">{itemText}</a> : <div>{itemText}</div>}
+      {link ? <a href={link} target="_blank" rel="noopener noreferrer">{itemText}</a> : <div>{itemText}</div>}
     </div>
   );
 };

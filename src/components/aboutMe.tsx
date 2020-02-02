@@ -1,4 +1,4 @@
-import React, { useEffect, useState, ReactNode } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import '../App.scss';
@@ -27,7 +27,7 @@ const AboutMe = ({screenSize}: aboutMeProps) => {
     } else {
       expandContents(indentedText);
     }
-  },[]);
+  },[screenSize]);
 
   const truncateExpandContents = () => {
     const indentedText = document.getElementsByClassName('indented-text')[0];
