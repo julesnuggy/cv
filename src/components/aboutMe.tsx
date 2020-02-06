@@ -57,22 +57,38 @@ const AboutMe = ({screenSize}: aboutMeProps) => {
       4 months, and started my first job as a software developer just 1 month after graduating.
     </div>
     <div className="tag">{'</AboutMe>'}</div>
-    <div className="tag">{'<CoreValues>'}</div>
-    <div className="indented-text">
-      <li>Communication</li>
-      <li>Open Mindedness</li>
-      <li>Equality & Diversity</li>
-      <li>Courage to Experiment</li>
+    <div className="tag-container">
+      <div className="tag-wrapper">
+        <div className="tag">{'<CoreValues>'}</div>
+        <div className="indented-text">
+          <li>Communication</li>
+          <li>Open Mindedness</li>
+          <li>Equality & Diversity</li>
+          <li>Courage to Experiment</li>
+        </div>
+        <div className="tag">{'</CoreValues>'}</div>
+      </div>
+      <div className="tag-wrapper">
+        <div className="tag">{'<PersonalityTraits>'}</div>
+        <div className="indented-text">
+          <li>Flexible & Adaptable</li>
+          <li>Focused & Determined</li>
+          <li>Problem Solver</li>
+          <li>Proactive</li>
+        </div>
+        <div className="tag">{'</PersonalityTraits>'}</div>
+      </div>
+      <div className="tag-wrapper">
+        <div className="tag">{'<CodingPrinciples>'}</div>
+        <div className="indented-text">
+          <li>Commit Often, Perfect Later</li>
+          <li>Robustness Through Tests</li>
+          <li>Code Reviews Help Everyone</li>
+          <li>Pairing Powers Productivity</li>
+        </div>
+        <div className="tag">{'</CodingPrinciples>'}</div>
+      </div>
     </div>
-    <div className="tag">{'</CoreValues>'}</div>
-    <div className="tag">{'<Traits>'}</div>
-    <div className="indented-text">
-      <li>Flexible & Adaptable</li>
-      <li>Focused & Determined</li>
-      <li>Problem Solver</li>
-      <li>Proactive</li>
-    </div>
-    <div className="tag">{'</Traits>'}</div>
   </div>
 )};
 

@@ -30,16 +30,36 @@
   }
 }
 
-.tag {
-  color: $codeYellow;
-  &+ .tag {
-    margin-top: 1rem;
+.tag-container {
+
+  @include mobileUp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  & .tag-wrapper {
+    flex-direction: column;
+
+    & > .tag + .tag {
+      margin-top: 1rem;
+    }
   }
 }
 
+.tag {
+  color: $codeYellow;
+}
 
 .indented-text {
   padding-left: 30px;
+
+  & li {
+    list-style-type: none;
+
+    @include mobileUp {
+      list-style-type: initial;
+    }
+  }
 }
 
 
