@@ -78,7 +78,7 @@
       },
       {
         "name": "NHS Improvement",
-        "role": "Front-end Developer",
+        "role": "Front-End Developer",
         "from": 2018,
         "to": 2018,
         "techStack": [
@@ -87,6 +87,22 @@
           "MySQL"
         ],
         "description": "Worked closely with the NHS Improvement team to deliver their 'Model Hospital' internal website. This provides NHS administrators, managers and executives with tools and visualisations to assess and compare the quality of their services and facilities against other hospitals' standards in other regions and country-wide. My work included:\n* Adding accessibility features for the partially sighted and hard of hearing.\n* Adding Google Analytics to track user behaviour.\n* Implementing a pop-up user poll to gather feedback on the site"
+      },
+      {
+        "name": "Other Projects",
+        "role": "Various",
+        "from": 2018,
+        "to": 2020,
+        "techStack": [
+          "React",
+          "JavaScript",
+          "Typescript",
+          "Ruby",
+          "Docker",
+          "MySQL",
+          "AWS"
+        ],
+        "description": "Other projects that I have worked on include:\n* Climate Change Tool (Full-Stack Developer): Working closely with a large global consultancy firm to productise a tool which assesses the risks that climate change could pose to their customers' investments and provides recommended actions.\n* Southern Water Prototype (Front-End Developer): Developing a prototype web app for a customer to deliver to Southern Water stakeholders as a key part of their value proposition.\n* Channel 5 (Full-Stack Developer): Creation of a new service to manage cookies and GDPR consent for Channel 5's web users. Bug fixing of their content management system.\n* Softwire 'Toast' (Front-End Developer): Taking a pre-existing, in-house, Windows-only program (for publicly sending praise to colleagues) and developing a web app to extend access to more users."
       }
     ]
   },
