@@ -15,7 +15,7 @@ const Header: React.FC = () => {
         <HeaderDetail itemText="Julian Ng (He/Him)">
           <FontAwesomeIcon icon="user" className="icon" />
         </HeaderDetail>
-        <HeaderDetail itemText="Full Stack Developer">
+        <HeaderDetail itemText="Full-Stack Developer">
           <FontAwesomeIcon icon="laptop-code" className="icon" />
         </HeaderDetail>
         <HeaderDetail itemText="London, UK">
