@@ -7,6 +7,20 @@
     "summary": "Mid-level full-stack software developer in a medium-sized agency & consultancy. I have worked across a broad range of projects for customers in FinTech, health & fitness, public sector, telecommunications, aviation, and utilities. Each project implemented a unique tech stack, requiring a strong understanding of core coding principles and a flexible mindset to quickly get started, ensuring team effectiveness and customer satisfaction.",
     "projects": [
       {
+        "name": "Stageclip",
+        "role": "Technical Lead",
+        "from": 2020,
+        "to": "present",
+        "techStack": [
+          "React (Typescript)",
+          "Redux",
+          "Azure",
+          "Docker",
+          "PostgreSQL"
+        ],
+        "description": "Technical Lead for delivering an upgrade to one of Stageclip's core video creation and processing services by transitioning to using Adobe After Effects. This will:\n* Enable the customer to improve the quality of their core product (professionally customised videos);\n* Create a new UI for the content team to use the new service, improving the process and experience of creating and managing content.\n\nIn this role, I am responsible for:\n* Ensuring other developers have the technical knowledge, capability and support to complete their tasks;\n* Gathering requirements and refining the technical specification;\n* Providing regular updates to the Stageclip CTO, informing them of progress, risks and actions;\n* Working closely with the project manager, customer manager, and Stageclip in-house engineering team to ensure timely and effective delivery;\n* Exploring opportunities for new work;\n* Overseeing code reviews;\n* Developing the frontend UI."
+      },
+      {
         "name": "Starling Bank",
         "role": "Full-Stack Developer",
         "from": 2019,
@@ -34,7 +48,7 @@
           "PHP",
           "Docker",
           "PostgreSQL",
-          "MySql"
+          "MySQL"
         ],
         "description": "Worked across a range of products to accelerate David Lloyd's digital transformation roadmap. Their plan was split across workstreams to increase new membership, improve retention, increase sales & subscriptions (e.g. to classes and courses) and streamline their internal processes to improve efficiency.\n\nMy role included work to:\n* Upgrade their public facing website to increase membership sign-ups by providing a modern design and customisable content via a custom-made Content Management System;\n* Upgrade their internal booking system to automate manual processes and improving the code base by extracting an old PHP monolith into Java microservices;\n* Create a new membership registration app for in-club sales teams to improve the registration process and experience for both staff and prospective members."
       },
