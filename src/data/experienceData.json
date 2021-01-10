@@ -10,7 +10,7 @@
         "name": "Starling Bank",
         "role": "Full-Stack Developer",
         "from": 2019,
-        "to": "present",
+        "to": 2020,
         "techStack": [
           "React (JavaScript)",
           "Redux",
@@ -19,7 +19,7 @@
           "Docker",
           "PostgreSQL"
         ],
-        "description": "Working in a team responsible for developing new features for Starling as part of its recent CIF Funding award. Currently developing features for Starling's 'Internet Bank' to provide its business users with a web based 'Tool Kit'. As well as providing an interface to its standard app-based features, this Tool Kit provides additional features to support businesses, such as creating invoices, tracking bills and expenses, and calculating tax.\n\nSpecific work that I have completed includes:\n* End-to-end development of a feature to attach documents (e.g. receipts) to transactions\n* Implementing PDF document previews  in place (without downloading)\n* Retrieving data from APIs to feed into a PDF document generator, with appropriate data 'snapshotting' into a database\n* Applying styles to dynamically display pages and components correctly across various breakpoints"
+        "description": "Worked in a team responsible for delivering several projects to develop new features for Starling as part of its 2019 CIF Funding award. Maintained close and regular communication with the customer, stakeholders and partner companies throughout in this strict and sensitive industry. The projects that I worked on were:\n* Business Toolkit - developing a premium web-based toolkit for businesses to simplify the management of their finances and operations. As well as providing an interface to its standard app-based features, the toolkit provides additional features to support businesses, such as: managing invoices; tracking bills and expenses; and calculating tax.\n* CBILS - developed a customer-facing web app and internal management tools and features to allow small businesses to apply for the “Coronavirus Business Interruption Loan Scheme”. Primary benefits of this work include: (1) allowing customers to quickly self-verify if they qualify for a loan; (2) connecting to third-party APIs to simplify application submission and assessment processes; and (3) freeing up time and resources for the business to focus on high-priority, eligible applications.\n* Account Comparison Tool - developed bespoke tools for customers to view and compare a wide variety of UK business bank accounts. I delivered end-to-end features for both the customer-facing web app and the content management system. This tool helps potential customers to make an informed choice on if and how Starling’s business bank account is best suited for their specific needs by improving the research experience against simple product comparison websites."
       },
       {
         "name": "David Lloyd",
