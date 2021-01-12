@@ -48,13 +48,13 @@ const AboutMe = ({screenSize}: aboutMeProps) => {
     </div>
     <div className="indented-text">
       I love being a software developer because I enjoy problem solving, working in a trusting and collaborative
-      environment, and bringing ideas into reality through elegant code. I began my professional career
-      as a change management consultant but in 2018 I decided I wanted a different career path. I had some very basic
-      experience of coding during my management consultant career - mostly writing procedural code in VBA for Excel to
-      automate long, repetitive and complex data manipulation and analysis tasks. Though crude and not object-oriented
-      (often consisting of functions which were hundreds of lines long...), I found that I most enjoyed these sorts of
-      projects. After much deliberation, I put that career aside and applied to Makers Academy to learn to code in just
-      4 months, and started my first job as a software developer just 1 month after graduating.
+      environment, and bringing ideas into reality through elegant code. I began my professional career as a change
+      management consultant but in 2018 I decided I wanted a different career path. I successfully applied to Makers
+      Academy and learnt to code in just 4 months, and started my first job as a software developer just 1 month after
+      graduating. My experience on a wide variety of projects have expanded and bolstered my knowledge of programming
+      best practices, architectures, design patterns, principles, and more. I bring many skills from my consultancy
+      background, including: customer engagement, project management, workshop facilitation, business & data analytics,
+      and ideation.
     </div>
     <div className="tag">{'</AboutMe>'}</div>
     <div className="tag-container">
@@ -63,7 +63,7 @@ const AboutMe = ({screenSize}: aboutMeProps) => {
         <div className="indented-text">
           <li>Communication</li>
           <li>Open Mindedness</li>
-          <li>Equality & Diversity</li>
+          <li>Equity & Diversity</li>
           <li>Courage to Experiment</li>
         </div>
         <div className="tag">{'</CoreValues>'}</div>
