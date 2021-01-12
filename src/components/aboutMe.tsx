@@ -48,13 +48,13 @@ const AboutMe = ({screenSize}: aboutMeProps) => {
     </div>
     <div className="indented-text">
       I love being a software developer because I enjoy problem solving, working in a trusting and collaborative
-      environment, and bringing ideas into reality through elegant code. I began my professional career as a change
-      management consultant but in 2018 I decided I wanted a different career path. I successfully applied to Makers
-      Academy and learnt to code in just 4 months, and started my first job as a software developer just 1 month after
-      graduating. My experience on a wide variety of projects have expanded and bolstered my knowledge of programming
-      best practices, architectures, design patterns, principles, and more. I bring many skills from my consultancy
-      background, including: customer engagement, project management, workshop facilitation, business & data analytics,
-      and ideation.
+      environment, and bringing ideas into reality through elegant code. In 2018, I changed my career as a change
+      management consultant to become a software developer by joining Makers Academy. There, I learnt to code in just 4
+      months, and started my first job only 1 month after graduating.
+      My experience on a wide variety of projects has expanded and bolstered my knowledge of programming best practices,
+      architectures, design patterns, and principles. I bring many skills from my consultancy background, including:
+      customer engagement, project management, workshop facilitation, business & data analytics, and ideation.
+
     </div>
     <div className="tag">{'</AboutMe>'}</div>
     <div className="tag-container">

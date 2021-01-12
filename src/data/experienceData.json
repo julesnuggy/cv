@@ -18,7 +18,7 @@
           "Docker",
           "PostgreSQL"
         ],
-        "description": "Technical Lead for delivering an upgrade to Stageclip's core video creation and processing service, integrating with Adobe After Effects. This will enable them to improve the quality of their core product, whilst not affecting their parallel migration to a new user platform being developed separately. In this role, I am responsible for:\n* Implementing an Agile approach and concepts to manage work and productivity - kanban, sprints, regular cross-team communication, acceptance criteria, user stories;\n* Ensuring my team members have the knowledge and support to complete their tasks;\n* Gathering requirements, refining the technical specification, and writing tickets;\n* Managing the expectations of the Stageclip CTO through regular updates on project progress, risks and actions;\n* Working closely with managers and the Stageclip’s engineering partner to ensure timely and effective delivery;\n* Exploring and developing opportunities for new work;\n* Code reviews, mentoring and providing team feedback."
+        "description": "Technical Lead for delivering an upgrade to Stageclip's core video creation and processing service, integrating with Adobe After Effects. This will enable them to improve the quality of their core product, whilst not affecting their parallel migration to a new user platform being developed separately. In this role, I am responsible for:\n* Implementing an Agile approach and concepts to manage work and productivity - kanban, sprints, regular cross-team communication, acceptance criteria, user stories;\n* Ensuring my team members have the knowledge and support to complete their tasks;\n* Gathering requirements, refining the technical specification, and writing tickets;\n* Managing the expectations of the Stageclip CTO through regular updates on project progress, risks and actions;\n* Working closely with managers and Stageclip’s engineering partner to ensure timely and effective delivery;\n* Exploring and developing opportunities for new work;\n* Code reviews, mentoring and providing team feedback."
       },
       {
         "name": "Starling Bank",
@@ -86,7 +86,7 @@
           "C#",
           "MySQL"
         ],
-        "description": "Worked closely with the NHS Improvement team to deliver their 'Model Hospital' internal website. This provides NHS administrators, managers and executives with tools and visualisations to assess and compare the quality of their services and facilities against other hospitals' standards in other regions and country-wide. My work included:\n* Adding accessibility features for the partially sighted and hard of hearing.\n* Adding Google Analytics to track user behaviour.\n* Implementing a pop-up user poll to gather feedback on the site"
+        "description": "Worked closely with the NHS Improvement team to augment their 'Model Hospital' internal website. This provides NHS administrators, managers and executives with tools and visualisations to assess and compare the quality of their services and facilities against other hospitals' standards in other regions and country-wide. Through this, they can identify specific areas and actions to improve patient care and staff effectiveness. My work included:\n* Adding accessibility features for the partially sighted and hard of hearing.\n* Adding Google Analytics to track user behaviour.\n* Implementing a pop-up user poll to gather feedback on the site."
       },
       {
         "name": "Other Projects",
