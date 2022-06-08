@@ -1,8 +1,16 @@
 [
   {
+    "employer": "Pollen",
+    "from": "Sep 2021",
+    "to": "May 2022",
+    "location": "London, UK",
+    "summary": "Pollen is an events and experience \"scale-up\" tech company which builds, curates and delivers unique and tailorable experiences. Backend software engineer for the Experience Operations engineering team. I worked in a close-knit team consisting of backend & frontend engineers, designer, product manager, and team manager to develop and deliver features to support the business. These apps are used by Pollen staff on-site during events to manage access control, which encapsulates: \n* Empowering pre-event and on-site staff to view and manage expected attendees in each event area and experience. \n* Ensuring event attendees are only able to get into the areas and experiences that they have purchased. \n* Supporting the business with changes to bookings (e.g. replacing lost wristbands). \n\nI regularly engaged with engineers and stakeholders from other teams to ensure that intended changes to the codebase are communicated and non-breaking of other features. \nThe techstack I principally used was Python, Django, GraphQL, and PostgreSQL, but I also extended out to develop features and tools outside of the core codebase with [Retool](https://retool.com/) (JavaScript), and [MongoDB Atlas & Realm](https://www.mongodb.com/atlas) (cloud data platform and database).",
+    "projects": []
+  },
+  {
     "employer": "Softwire",
     "from": "Jun 2018",
-    "to": "present",
+    "to": "Sep 2021",
     "location": "London, UK",
     "summary": "Mid-level full-stack software developer in a medium-sized agency & consultancy. I have worked across a broad range of projects for customers in FinTech, health & fitness, public sector, telecommunications, aviation, and utilities. Each project implemented a unique tech stack, requiring a strong understanding of core coding principles and a flexible mindset to quickly get started, ensuring team effectiveness and customer satisfaction.",
     "projects": [
