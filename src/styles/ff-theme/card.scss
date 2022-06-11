@@ -1,0 +1,41 @@
+@import '../constants';
+
+@font-face {
+  font-family:'FinalFontasy';
+  src:url('/assets/fonts/final_fantasy_36_font.eot?') format('eot'),
+      url('/assets/fonts/final_fantasy_36_font.woff') format('woff'),
+      url('/assets/fonts/final_fantasy_36_font.ttf') format('truetype'),
+      url('/assets/fonts/final_fantasy_36_font.svg#Final-Fantasy-3/6-Font') format('svg');
+  font-weight:normal;
+  font-style:normal;}
+
+.ff-card  {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: linear-gradient(0deg, rgba(0,0,80,1) 0%, rgba(17,17,202,1) 50%, rgba(173,173,255,1) 100%);
+
+  //Border Settings
+  border-radius: 10px;
+  border: solid 3px #7e7e7e; //border inner shadow
+  border-bottom-color: #6b6b6b;
+  border-right-color: #6b6b6b;
+  outline: solid 3px #adabab; //border outer shadow
+  outline-offset: 8px;
+  box-shadow: 0 0 0 10px #f1f1f1; //border fill
+
+  //Text Settings
+  color: white;
+  font-family: FinalFontasy, serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-shadow: 3px 3px 2px #2b2b2b;
+
+  @include tabletUp {
+    margin: 20px 50px 0;
+  }
+}
+
+.ff-card-item {
+  border-radius: 5px;
+}

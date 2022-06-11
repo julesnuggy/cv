@@ -12,8 +12,9 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import './App.scss';
 import AboutMe from './components/aboutMe';
-import Header from './components/header';
+import Card from './components/ff-theme/card';
 import Experience from './components/experience';
+import Header from './components/header';
 import data from './data/experienceData.json';
 
 library.add(faUser, faMapMarkedAlt, faLaptopCode, faAddressCard, faTimesCircle, faPlusSquare, faMinusSquare, fab);
@@ -35,7 +36,7 @@ const App: React.FC = () => {
         <Header />
         <Routes>
           <Route path='/cv' element={<AboutMeSection screenSize={screenSize} />} />
-          <Route path='/ff-theme' element={<div>FF Theme</div>} />
+          <Route path='/ff-theme' element={<Card />} />
         </Routes>
         </div>
     </Router>
