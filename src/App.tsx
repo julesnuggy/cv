@@ -51,7 +51,6 @@ const App: React.FC = () => {
     <Router>
         <div className={appBodyClass}>
         <ThemeSelector theme={theme} setTheme={setTheme} />
-        <Header />
         <Routes>
           <Route path='/cv' element={<ClassicLayout screenSize={screenSize} />} />
           <Route path='/ff-theme' element={<FFLayout />} />
@@ -68,6 +67,7 @@ type props = {
 
 const ClassicLayout = ({screenSize}: props) => (
   <>
+    <Header />
     <AboutMe screenSize={screenSize} />
     <div className="experience-container">
       {data.map((d) => <Experience data={d} key={d.employer} />)}
