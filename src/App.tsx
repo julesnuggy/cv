@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
-  NavLink,
   Route,
   Routes,
 } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faUser, faMapMarkedAlt, faLaptopCode, faAddressCard } from '@fortawesome/free-solid-svg-icons';
-import { faTimesCircle, faPlusSquare, faMinusSquare } from '@fortawesome/free-regular-svg-icons';
+import {
+  faAddressCard,
+  faCode,
+  faGamepad,
+  faLaptopCode,
+  faMapMarkedAlt,
+  faUser,
+} from '@fortawesome/free-solid-svg-icons';
+import { faMinusSquare, faPlusSquare, faTimesCircle } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import './App.scss';
@@ -16,8 +22,20 @@ import Card from './components/ff-theme/card';
 import Experience from './components/experience';
 import Header from './components/header';
 import data from './data/experienceData.json';
+import ThemeSelector from './components/themeSelector';
 
-library.add(faUser, faMapMarkedAlt, faLaptopCode, faAddressCard, faTimesCircle, faPlusSquare, faMinusSquare, fab);
+library.add(
+  faAddressCard,
+  faCode,
+  faGamepad,
+  faLaptopCode,
+  faMapMarkedAlt,
+  faMinusSquare,
+  faPlusSquare,
+  faTimesCircle,
+  faUser,
+  fab,
+);
 
 const App: React.FC = () => {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
@@ -31,10 +49,7 @@ const App: React.FC = () => {
   return (
     <Router>
         <div className={appBodyClass}>
-        <div>
-          <NavLink to='/cv' onClick={() => setIsClassicTheme(true)}>Default</NavLink>
-          <NavLink to='/ff-theme' onClick={() => setIsClassicTheme(false)}>FF Theme</NavLink>
-        </div>
+        <ThemeSelector setIsClassicTheme={setIsClassicTheme} />
         <Header />
         <Routes>
           <Route path='/cv' element={<ClassicLayout screenSize={screenSize} />} />
