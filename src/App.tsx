@@ -18,11 +18,11 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import './App.scss';
 import AboutMe from './components/aboutMe';
-import Card from './components/ff-theme/card';
 import Experience from './components/experience';
 import Header from './components/header';
 import data from './data/experienceData.json';
 import ThemeSelector from './components/themeSelector';
+import Status from './components/ff-theme/status';
 
 library.add(
   faAddressCard,
@@ -54,7 +54,7 @@ const App: React.FC = () => {
         <Header />
         <Routes>
           <Route path='/cv' element={<ClassicLayout screenSize={screenSize} />} />
-          <Route path='/ff-theme' element={<Card />} />
+          <Route path='/ff-theme' element={<FFLayout />} />
         </Routes>
         </div>
     </Router>
@@ -72,6 +72,12 @@ const ClassicLayout = ({screenSize}: props) => (
     <div className="experience-container">
       {data.map((d) => <Experience data={d} key={d.employer} />)}
     </div>
+  </>
+)
+
+const FFLayout = () => (
+  <>
+    <Status />
   </>
 )
 
