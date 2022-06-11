@@ -1,26 +1,59 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, {useEffect, useState} from 'react'
 import { NavLink } from 'react-router-dom';
+import { IconName } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-type props = {
-  setIsClassicTheme: (val: boolean) => void
+import '../styles/themeSelector.scss'
+
+type ThemeSelectorProps = {
+  theme: string;
+  setTheme: (theme: string) => void;
 }
 
-const ThemeSelector = ({ setIsClassicTheme }: props) => {
+const ThemeSelector = ({ theme, setTheme }: ThemeSelectorProps) => {
   return (
-    <div>
+    <div className='container'>
       Theme:
-      <button onClick={() => setIsClassicTheme(true)}>
-        <NavLink to='/cv'>
-          <FontAwesomeIcon icon='code' className='icon' size='lg' />
-        </NavLink>
-      </button>
-      <button onClick={() => setIsClassicTheme(false)}>
-        <NavLink to='/ff-theme'>
-          <FontAwesomeIcon icon='gamepad' className='icon' size='lg' />
-        </NavLink>
-      </button>
+      <ThemeButton
+        activeTheme={theme}
+        onClick={() => setTheme('coding')}
+        icon='code'
+        theme='coding'
+        destination='/cv'
+      />
+      <ThemeButton
+        activeTheme={theme}
+        onClick={() => setTheme('ff-theme')}
+        icon='gamepad'
+        theme='ff-theme'
+        destination='/ff-theme'
+      />
     </div>
+  )
+}
+
+type ThemeButtonProps = {
+  activeTheme: string;
+  onClick: () => void;
+  icon: IconName;
+  theme: string;
+  destination: string;
+}
+
+const ThemeButton = ({ activeTheme, onClick, icon, theme, destination }: ThemeButtonProps) => {
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    setIsActive(theme === activeTheme);
+  }, [theme, setIsActive, activeTheme])
+  const buttonClasses = isActive ? 'themeButton selected' : 'themeButton'
+
+  return (
+    <button className={buttonClasses} onClick={onClick}>
+      <NavLink to={destination}>
+        <FontAwesomeIcon icon={icon} className='icon' size='lg' />
+      </NavLink>
+    </button>
   )
 }
 

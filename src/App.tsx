@@ -39,8 +39,9 @@ library.add(
 
 const App: React.FC = () => {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
-  const [isClassicTheme, setIsClassicTheme] = useState(true)
-  const appBodyClass = isClassicTheme ? 'app-body' : 'app-body-ff'
+  const [theme, setTheme] = useState('coding')
+
+  const appBodyClass = theme === 'coding' ? 'app-body' : 'app-body-ff'
 
   useEffect(() => {
     window.addEventListener("resize", () => setScreenSize(window.innerWidth));
@@ -49,7 +50,7 @@ const App: React.FC = () => {
   return (
     <Router>
         <div className={appBodyClass}>
-        <ThemeSelector setIsClassicTheme={setIsClassicTheme} />
+        <ThemeSelector theme={theme} setTheme={setTheme} />
         <Header />
         <Routes>
           <Route path='/cv' element={<ClassicLayout screenSize={screenSize} />} />
