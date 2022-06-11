@@ -21,6 +21,8 @@ library.add(faUser, faMapMarkedAlt, faLaptopCode, faAddressCard, faTimesCircle, 
 
 const App: React.FC = () => {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
+  const [isClassicTheme, setIsClassicTheme] = useState(true)
+  const appBodyClass = isClassicTheme ? 'app-body' : 'app-body-ff'
 
   useEffect(() => {
     window.addEventListener("resize", () => setScreenSize(window.innerWidth));
@@ -28,14 +30,14 @@ const App: React.FC = () => {
 
   return (
     <Router>
-        <div className="app-body">
+        <div className={appBodyClass}>
         <div>
-          <NavLink to='/cv'>Default</NavLink>
-          <NavLink to='/ff-theme'>FF Theme</NavLink>
+          <NavLink to='/cv' onClick={() => setIsClassicTheme(true)}>Default</NavLink>
+          <NavLink to='/ff-theme' onClick={() => setIsClassicTheme(false)}>FF Theme</NavLink>
         </div>
         <Header />
         <Routes>
-          <Route path='/cv' element={<AboutMeSection screenSize={screenSize} />} />
+          <Route path='/cv' element={<ClassicLayout screenSize={screenSize} />} />
           <Route path='/ff-theme' element={<Card />} />
         </Routes>
         </div>
@@ -48,7 +50,7 @@ type props = {
 }
 
 
-const AboutMeSection = ({screenSize}: props) => (
+const ClassicLayout = ({screenSize}: props) => (
   <>
     <AboutMe screenSize={screenSize} />
     <div className="experience-container">

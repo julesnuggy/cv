@@ -1,7 +1,6 @@
 @import './styles/global';
 
-.app-body {
-    background-color: floralwhite;
+.app-common {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,4 +19,14 @@
   @include xlDesktopUp {
     padding: 0 150px;
   }
+}
+
+.app-body {
+  @extend .app-common;
+  background-color: floralwhite;
+}
+
+.app-body-ff {
+  @extend .app-common;
+  background-color: black;
 }
