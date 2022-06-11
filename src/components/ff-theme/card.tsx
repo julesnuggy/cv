@@ -1,16 +1,18 @@
-import React from 'react'
+import React, {ReactNode} from 'react'
 
 import '../../styles/ff-theme/card.scss';
 
-const Card = () => {
+type Props = {
+  isTitle?: boolean;
+  children?: ReactNode;
+}
+
+const Card = ({ isTitle = false, children }: Props) => {
   return (
-    <div className='ff-card'>
-      <div className='ff-card-item'>FF Theme</div>
-      <div className='ff-card-item'>FF Theme</div>
-      <div className='ff-card-item'>FF Theme</div>
-      <div className='ff-card-item'>FF Theme</div>
-      <div className='ff-card-item'>FF Theme</div>
-      <div className='ff-card-item'>FF Theme</div>
+    <div className={`ff-card ${isTitle && 'title'}`}>
+      <div className='ff-card-item'>
+        {children}
+      </div>
     </div>
   )
 }
