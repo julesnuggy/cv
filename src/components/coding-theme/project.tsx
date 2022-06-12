@@ -16,8 +16,11 @@ const Project = ({data, index, onClick}: ProjectProps) => (
       <div className="core-information">
         <div>{data.name}</div>
         <div>{data.role}</div>
-        <div>{data.from} - {data.to}</div>
-        <FontAwesomeIcon icon={['far', 'plus-square']} className="project-popup-open"/>
+        <div className="project-date">{data.from} - {data.to}
+          <span>
+            <FontAwesomeIcon icon={['far', 'plus-square']} className="project-popup-open"/>
+          </span>
+        </div>
       </div>
     </div>
   </div>
