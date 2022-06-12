@@ -45,6 +45,30 @@
   }
 }
 
-.stats-title {
+.stat-title {
+  grid-area: title;
   color: $ffTeal
+}
+
+.stat-current {
+  grid-area: value;
+  text-align: right;
+}
+
+.stat-divider {
+  grid-area: divider;
+  text-align: center;
+}
+
+.stat-max {
+  grid-area: max;
+  text-align: right;
+}
+
+.stat-value-container {
+  display: grid;
+  grid-template-columns: 40px 57px 15px 57px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title value divider max";
 }
