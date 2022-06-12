@@ -30,12 +30,12 @@ type StatContainerProps = {
 
 const StatContainer = ({ title, current, max }: StatContainerProps) => (
   <p>
-    <div className="stat-value-container">
+    <span className="stat-value-container">
       <span className="stat-title">{title}</span>
       <span className="stat-current">{current}</span>
       {max && <span className="stat-divider">/</span>}
       {max && <span className="stat-max">{max}</span>}
-    </div>
+    </span>
   </p>
 )
 
