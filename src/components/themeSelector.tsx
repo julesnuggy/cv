@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { IconName } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -13,7 +13,7 @@ type ThemeSelectorProps = {
 
 const ThemeSelector = ({ theme, setTheme }: ThemeSelectorProps) => {
   return (
-    <div className='container'>
+    <div className='themeSelector'>
       Theme:
       <ThemeButton
         activeTheme={theme}
@@ -43,17 +43,21 @@ type ThemeButtonProps = {
 
 const ThemeButton = ({ activeTheme, onClick, icon, theme, destination }: ThemeButtonProps) => {
   const [isActive, setIsActive] = useState(false);
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    onClick()
+    navigate(destination)
+  }
 
   useEffect(() => {
     setIsActive(theme === activeTheme);
   }, [theme, setIsActive, activeTheme])
-  const buttonClasses = isActive ? 'themeButton selected' : 'themeButton'
+  const buttonClasses = isActive ? 'themeButton active' : 'themeButton'
 
   return (
-    <button className={buttonClasses} onClick={onClick}>
-      <NavLink to={destination}>
-        <FontAwesomeIcon icon={icon} className='icon' size='lg' />
-      </NavLink>
+    <button className={buttonClasses} onClick={handleClick}>
+      <FontAwesomeIcon icon={icon} className='icon' size='lg' />
     </button>
   )
 }

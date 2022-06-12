@@ -1,4 +1,4 @@
-.container {
+.themeSelector {
   margin: 10px;
   font-size: 16px;
   font-weight: bold;
@@ -11,9 +11,11 @@
   border: none;
   width: 40px;
   height: 25px;
-  margin: 0 5px;}
+  margin: 0 5px;
+  cursor: pointer;
+}
 
-.selected {
+.active {
   border: solid 1px darkgoldenrod;
   border-radius: 5px;
   box-shadow: 2px 2px 5px darkgoldenrod;
