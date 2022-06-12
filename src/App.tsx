@@ -17,6 +17,7 @@ import { faMinusSquare, faPlusSquare, faTimesCircle } from '@fortawesome/free-re
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import './App.scss';
+import { HOME_URL } from './components/constants';
 import AboutMe from './components/aboutMe';
 import Experience from './components/experience';
 import Header from './components/header';
@@ -37,9 +38,11 @@ library.add(
   fab,
 );
 
+
 const App: React.FC = () => {
+  const isHome = window.location.pathname === HOME_URL;
   const [screenSize, setScreenSize] = useState(window.innerWidth);
-  const [theme, setTheme] = useState('coding')
+  const [theme, setTheme] = useState( isHome ? 'coding' : 'ff-theme')
 
   const appBodyClass = theme === 'coding' ? 'app-body' : 'app-body-ff'
 
@@ -52,8 +55,8 @@ const App: React.FC = () => {
         <div className={appBodyClass}>
         <ThemeSelector theme={theme} setTheme={setTheme} />
         <Routes>
-          <Route path='/cv' element={<ClassicLayout screenSize={screenSize} />} />
-          <Route path='/ff-theme' element={<FFLayout />} />
+          <Route path={HOME_URL} element={<ClassicLayout screenSize={screenSize} />} />
+          <Route path={`${HOME_URL}/ff-theme`} element={<FFLayout />} />
         </Routes>
         </div>
     </Router>
@@ -65,20 +68,24 @@ type props = {
 }
 
 
-const ClassicLayout = ({screenSize}: props) => (
-  <>
-    <Header />
-    <AboutMe screenSize={screenSize} />
-    <div className="experience-container">
-      {data.map((d) => <Experience data={d} key={d.employer} />)}
-    </div>
-  </>
-)
+const ClassicLayout = ({screenSize}: props) => {
+  return (
+    <>
+      <Header/>
+      <AboutMe screenSize={screenSize}/>
+      <div className="experience-container">
+        {data.map((d) => <Experience data={d} key={d.employer}/>)}
+      </div>
+    </>
+  )
+}
 
-const FFLayout = () => (
-  <>
-    <Status />
-  </>
-)
+const FFLayout = () => {
+  return (
+    <>
+      <Status/>
+    </>
+  )
+}
 
 export default App;

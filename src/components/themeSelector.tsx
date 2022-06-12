@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { IconName } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import {HOME_URL} from './constants';
 import '../styles/themeSelector.scss'
 
 type ThemeSelectorProps = {
@@ -19,14 +20,14 @@ const ThemeSelector = ({ theme, setTheme }: ThemeSelectorProps) => {
         onClick={() => setTheme('coding')}
         icon='code'
         theme='coding'
-        destination='/cv'
+        destination={HOME_URL}
       />
       <ThemeButton
         activeTheme={theme}
         onClick={() => setTheme('ff-theme')}
         icon='gamepad'
         theme='ff-theme'
-        destination='/ff-theme'
+        destination={`${HOME_URL}/ff-theme`}
       />
     </div>
   )
