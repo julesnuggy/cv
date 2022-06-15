@@ -1,0 +1,68 @@
+@import '../constants';
+
+.basic-title {
+  grid-area: title;
+  margin-bottom: 15px;
+}
+
+.basic-subtitle {
+  grid-area: subtitle;
+  color: $ffTeal;
+}
+
+.basic-avatar {
+  grid-area: avatar;
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+}
+.basic-stats {
+  grid-area: stats;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin: 0
+  }
+}
+
+.basic-container {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title subtitle"
+    "avatar stats";
+
+  p {
+    margin: 0
+  }
+}
+
+.basic-stat-title {
+  grid-area: title;
+  color: $ffTeal;
+}
+
+.basic-stat-current {
+  grid-area: value;
+  text-align: right;
+}
+
+.basic-stat-divider {
+  grid-area: divider;
+  text-align: center;
+}
+
+.basic-stat-max {
+  grid-area: max;
+  text-align: right;
+}
+
+.basic-stat-container {
+  display: grid;
+  grid-template-columns: 40px 57px 15px 57px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title value divider max";
+}
