@@ -20,6 +20,7 @@ import './App.scss';
 import { HOME_URL } from './components/constants';
 import AboutMe from './components/aboutMe';
 import Experience from './components/coding-theme/experience';
+import History from './components/ff-theme/history';
 import Header from './components/coding-theme/header';
 import data from './data/experienceData.json';
 import ThemeSelector from './components/themeSelector';
@@ -83,7 +84,8 @@ const ClassicLayout = ({screenSize}: props) => {
 const FFLayout = () => {
   return (
     <>
-      <Status/>
+      <Status />
+      <History />
     </>
   )
 }
