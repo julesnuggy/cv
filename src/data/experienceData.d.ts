@@ -1,7 +1,7 @@
 export type ExperienceData = {
   employer: string;
   from: string;
-  to: number | string;
+  to: string;
   location: string;
   summary: string;
   projects: ProjectData[];
