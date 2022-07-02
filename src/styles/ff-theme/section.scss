@@ -1,15 +1,21 @@
 @import '../constants';
 
-.title-container {
-  display: block;
-  position: relative;
-  width: fit-content;
-  top: -23px;
-  left: -23px;
+.section-container {
+  .title-container {
+    display: block;
+    position: relative;
+    width: fit-content;
+    top: -23px;
+    left: -23px;
 
-  .ff-card {
-    margin: 0;
-    padding: 8px 16px;
-    color: $ffTeal;
+    .ff-card {
+      margin: 0;
+      padding: 8px 16px;
+      color: $ffTeal;
+    }
   }
+}
+
+.section-container + .section-container {
+  margin-top: 12px;
 }

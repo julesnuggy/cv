@@ -10,14 +10,16 @@ type Props = {
 
 const Section = ({ title, children }: Props) => {
   return (
-    <Card>
-      <div className='title-container'>
-        <Card>
-            {title}
-        </Card>
-      </div>
-      {children}
-    </Card>
+    <div className='section-container'>
+      <Card>
+        <div className='title-container'>
+          <Card>
+              {title}
+          </Card>
+        </div>
+        {children}
+      </Card>
+    </div>
   )
 }
 
