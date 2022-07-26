@@ -25,6 +25,7 @@ import Header from './components/coding-theme/header';
 import data from './data/experienceData.json';
 import ThemeSelector from './components/themeSelector';
 import Status from './components/ff-theme/status';
+import Menu from './components/ff-theme/menu';
 
 library.add(
   faAddressCard,
@@ -84,6 +85,7 @@ const ClassicLayout = ({screenSize}: props) => {
 const FFLayout = () => {
   return (
     <>
+      <Menu items={['Status', 'Abilities', 'Lore']} />
       <Status />
       <History />
     </>
