@@ -9,16 +9,38 @@ type TitleValueData = {
   value: string;
 }
 
-type SectionDetailedProps = {
-  section: string;
-  avatar_src: any;
-  summary_items: TitleValueData[];
-  detailed_data: TitleValueData[];
+type DetailedDataProps = {
+  title: string;
+  description: string;
+  techStack?: string[];
 }
 
-const SectionDetailed = ({ section, avatar_src, summary_items, detailed_data }: SectionDetailedProps) => {
+type SectionDetailedProps = {
+  title: string;
+  avatar_src: any;
+  summary_items: TitleValueData[];
+  detailed_data: DetailedDataProps[];
+}
+
+type TechStackProps = {
+  techStack?: string[]
+}
+const TechStack = ({ techStack }: TechStackProps) => {
+  if (!techStack) {
+    return null;
+  }
+
   return (
-    <Section title={section}>
+    <div>
+      <div>Tech Stack:</div>
+      {techStack.map((t, idx) => <li className="tech-stack-item" key={idx}>{t}</li>)}
+    </div>
+  )
+}
+
+const SectionDetailed = ({ title, avatar_src, summary_items, detailed_data }: SectionDetailedProps) => {
+  return (
+    <Section title={title}>
       <div className="detailed-container">
         <div className="detailed-summary">
           <img className="summary-avatar" src={avatar_src} alt="DetailedImageAlt"/>
@@ -35,8 +57,10 @@ const SectionDetailed = ({ section, avatar_src, summary_items, detailed_data }: 
         <div className="detailed-data">
           {detailed_data.map(data => (
             <div className="data-container">
-              <p className="data-title">{data.title}</p>
-              <ReactMarkdown className="data-value" source={data.value} />
+              <Section title={data.title}>
+                <ReactMarkdown className="data-value" source={data.description} />
+                <TechStack techStack={data.techStack} />
+              </Section>
             </div>
           ))}
         </div>

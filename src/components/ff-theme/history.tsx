@@ -11,16 +11,20 @@ type HistoryItemProps = {
 
 const HistoryItem = ({ data }: HistoryItemProps ) => (
   <SectionDetailed
-    section={data.employer}
+    title={data.employer}
     avatar_src={profile_photo}
     summary_items={[
       {title: 'Role', value: 'Software Engineer'},
       {title: 'From', value: data.from},
-      {title: 'To', value: data.to}
+      {title: 'To', value: data.to},
     ]}
     detailed_data={[
-      {title: 'Summary', value: data.summary},
-      ...data.projects.map(project => ({title: project.name, value: project.description})),
+      {title: 'Summary', description: data.summary},
+      ...data.projects.map(project => ({
+        title: project.name,
+        description: project.description,
+        techStack: project.techStack,
+      })),
     ]} />
 )
 
