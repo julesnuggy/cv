@@ -1,6 +1,6 @@
 @import '../constants';
 
-.detailed-container {
+.ff-experience-container {
   display: grid;
   grid-template-areas:
     "summary"
@@ -9,7 +9,7 @@
 
 // SUMMARY
 
-.detailed-summary {
+.experience-summary {
   grid-area: summary;
   display: grid;
   grid-template-columns: 120px auto;
@@ -51,17 +51,17 @@
 
 // DATA
 
-.detailed-data {
+.experience-data-container {
   grid-area: data;
 }
 
-.data-container {
+.experience-data {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto;
   grid-template-areas:
     "data-title"
-    "data-value";
+    "data-description";
   margin: 20px 0;
 }
 
@@ -71,7 +71,10 @@
   margin: 0 0 5px;
 }
 
-.data-value {
-  grid-area: data-value;
-  margin: 0;
+.data-description {
+  grid-area: data-description;
+
+  p {
+    margin: 0;
+  }
 }

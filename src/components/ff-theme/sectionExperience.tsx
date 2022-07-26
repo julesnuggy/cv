@@ -2,7 +2,7 @@ import React from 'react'
 import ReactMarkdown from 'react-markdown';
 
 import Section from './section';
-import '../../styles/ff-theme/sectionDetailed.scss';
+import '../../styles/ff-theme/sectionExperience.scss';
 
 type TitleValueData = {
   title: string;
@@ -33,7 +33,7 @@ const TechStack = ({ techStack }: TechStackProps) => {
   return (
     <div>
       <div>Tech Stack:</div>
-      {techStack.map((t, idx) => <li className="tech-stack-item" key={idx}>{t}</li>)}
+      {techStack.map((t, idx) => <li key={idx}>{t}</li>)}
     </div>
   )
 }
@@ -41,8 +41,8 @@ const TechStack = ({ techStack }: TechStackProps) => {
 const SectionExperience = ({ title, avatar_src, summary_items, experience_data }: SectionExperienceProps) => {
   return (
     <Section title={title}>
-      <div className="detailed-container">
-        <div className="detailed-summary">
+      <div className="ff-experience-container">
+        <div className="experience-summary">
           <img className="summary-avatar" src={avatar_src} alt="DetailedImageAlt"/>
           <div className="summary-items">
             {summary_items.map(item => (
@@ -54,11 +54,11 @@ const SectionExperience = ({ title, avatar_src, summary_items, experience_data }
           </div>
         </div>
 
-        <div className="detailed-data">
+        <div className="experience-data-container">
           {experience_data.map(data => (
-            <div className="data-container">
+            <div className="experience-data">
               <Section title={data.title}>
-                <ReactMarkdown className="data-value" source={data.description} />
+                <ReactMarkdown className="data-description" source={data.description} />
                 <TechStack techStack={data.techStack} />
               </Section>
             </div>
