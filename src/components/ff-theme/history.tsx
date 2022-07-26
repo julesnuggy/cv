@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SectionDetailed from './sectionDetailed';
+import SectionExperience from './sectionExperience';
 import profile_photo from '../../assets/profile_photo.jpg';
 import data from '../../data/experienceData.json';
 import { ExperienceData } from '../../data/experienceData';
@@ -10,7 +10,7 @@ type HistoryItemProps = {
 };
 
 const HistoryItem = ({ data }: HistoryItemProps ) => (
-  <SectionDetailed
+  <SectionExperience
     title={data.employer}
     avatar_src={profile_photo}
     summary_items={[
@@ -18,7 +18,7 @@ const HistoryItem = ({ data }: HistoryItemProps ) => (
       {title: 'From', value: data.from},
       {title: 'To', value: data.to},
     ]}
-    detailed_data={[
+    experience_data={[
       {title: 'Summary', description: data.summary},
       ...data.projects.map(project => ({
         title: project.name,

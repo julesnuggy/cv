@@ -9,17 +9,17 @@ type TitleValueData = {
   value: string;
 }
 
-type DetailedDataProps = {
+type ExperienceDataProps = {
   title: string;
   description: string;
   techStack?: string[];
 }
 
-type SectionDetailedProps = {
+type SectionExperienceProps = {
   title: string;
   avatar_src: any;
   summary_items: TitleValueData[];
-  detailed_data: DetailedDataProps[];
+  experience_data: ExperienceDataProps[];
 }
 
 type TechStackProps = {
@@ -38,7 +38,7 @@ const TechStack = ({ techStack }: TechStackProps) => {
   )
 }
 
-const SectionDetailed = ({ title, avatar_src, summary_items, detailed_data }: SectionDetailedProps) => {
+const SectionExperience = ({ title, avatar_src, summary_items, experience_data }: SectionExperienceProps) => {
   return (
     <Section title={title}>
       <div className="detailed-container">
@@ -55,7 +55,7 @@ const SectionDetailed = ({ title, avatar_src, summary_items, detailed_data }: Se
         </div>
 
         <div className="detailed-data">
-          {detailed_data.map(data => (
+          {experience_data.map(data => (
             <div className="data-container">
               <Section title={data.title}>
                 <ReactMarkdown className="data-value" source={data.description} />
@@ -69,4 +69,4 @@ const SectionDetailed = ({ title, avatar_src, summary_items, detailed_data }: Se
   )
 }
 
-export default SectionDetailed;
+export default SectionExperience;
