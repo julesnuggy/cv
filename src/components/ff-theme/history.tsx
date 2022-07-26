@@ -25,13 +25,14 @@ const HistoryItem = ({ data }: HistoryItemProps ) => (
         description: project.description,
         techStack: project.techStack,
       })),
-    ]} />
+    ]}
+  />
 )
 
 const History = () => {
   return (
     <>
-      {data.map(exp => <HistoryItem data={exp}/>)}
+      {data.map((exp, idx) => <HistoryItem data={exp} key={`${exp}-${idx}`} />)}
     </>
   )
 }

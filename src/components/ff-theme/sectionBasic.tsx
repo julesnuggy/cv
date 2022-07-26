@@ -26,8 +26,8 @@ const SectionBasic = ({ section, title, subtitle, avatar_src, stats }: SectionBa
         <img className="basic-avatar" src={avatar_src} alt="BasicImageAlt"/>
 
         <div className="basic-stats">
-          {stats.map(stat => (
-            <BasicStatContainer title={stat.title} current={stat.current} max={stat.max} />
+          {stats.map((stat, idx) => (
+            <BasicStatContainer title={stat.title} current={stat.current} max={stat.max} key={`${stat.title}-${idx}`} />
           ))}
         </div>
       </div>

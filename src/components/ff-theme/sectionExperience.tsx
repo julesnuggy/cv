@@ -45,8 +45,8 @@ const SectionExperience = ({ title, avatar_src, summary_items, experience_data }
         <div className="experience-summary">
           <img className="summary-avatar" src={avatar_src} alt="DetailedImageAlt"/>
           <div className="summary-items">
-            {summary_items.map(item => (
-              <p className="summary-item">
+            {summary_items.map((item, idx) => (
+              <p className="summary-item" key={`${item}-${idx}`}>
                 <span className="item-title">{item.title}</span>
                 <span className="item-value">{item.value}</span>
               </p>
@@ -55,8 +55,8 @@ const SectionExperience = ({ title, avatar_src, summary_items, experience_data }
         </div>
 
         <div className="experience-data-container">
-          {experience_data.map(data => (
-            <div className="experience-data">
+          {experience_data.map((data, idx) => (
+            <div className="experience-data" key={`${data.title}-${idx}`}>
               <Section title={data.title}>
                 <ReactMarkdown className="data-description" source={data.description} />
                 <TechStack techStack={data.techStack} />
