@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactMarkdown from 'react-markdown';
 
 import Section from './section';
 import '../../styles/ff-theme/sectionDetailed.scss';
@@ -35,7 +36,7 @@ const SectionDetailed = ({ section, avatar_src, summary_items, detailed_data }: 
           {detailed_data.map(data => (
             <div className="data-container">
               <p className="data-title">{data.title}</p>
-              <p className="data-value">{data.value}</p>
+              <ReactMarkdown className="data-value" source={data.value} />
             </div>
           ))}
         </div>
