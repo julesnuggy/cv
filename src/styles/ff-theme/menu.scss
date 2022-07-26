@@ -1,7 +1,32 @@
 @import '../constants';
 
 .menu-container {
-  .menu-item {
+  .menu-item-container {
+    display: grid;
+    grid-template-columns: 64px 200px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "pointer item-text";
+  }
+
+  .pointer-container {
+    grid-area: pointer;
+    height: 50px;
+  }
+
+  button {
+    background-color: transparent;
+    outline-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .item-text {
+    grid-area: item-text;
+    font-family: FinalFontasy, serif;
+    font-size: 32px;
+    text-shadow: 3px 3px 2px #2b2b2b;
     color: $ffTeal;
+    text-align: left;
   }
 }
