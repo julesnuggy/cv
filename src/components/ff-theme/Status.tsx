@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SectionBasic from './sectionBasic';
+import SectionBasic from './SectionBasic';
 import profile_photo from '../../assets/profile_photo.jpg';
 
 const Status = () => {

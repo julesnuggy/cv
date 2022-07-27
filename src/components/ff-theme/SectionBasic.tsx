@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Section from './section';
+import Section from './Section';
 import '../../styles/ff-theme/sectionBasic.scss';
 
 type Stat = {

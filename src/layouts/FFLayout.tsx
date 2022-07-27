@@ -1,8 +1,8 @@
 import React from 'react';
 
-import History from '../components/ff-theme/history';
-import Menu from '../components/ff-theme/menu';
-import Status from '../components/ff-theme/status';
+import History from '../components/ff-theme/History';
+import Menu from '../components/ff-theme/Menu';
+import Status from '../components/ff-theme/Status';
 
 const FFLayout = () => {
   return (

@@ -1,5 +1,5 @@
 import React, {ReactNode} from 'react'
-import Card from './card';
+import Card from './Card';
 
 import '../../styles/ff-theme/section.scss'
 

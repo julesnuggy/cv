@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SectionExperience from './sectionExperience';
+import SectionExperience from './SectionExperience';
 import profile_photo from '../../assets/profile_photo.jpg';
 import data from '../../data/experienceData.json';
 import { ExperienceData } from '../../data/experienceData';

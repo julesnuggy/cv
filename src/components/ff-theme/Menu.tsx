@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import Card from './card';
+import Card from './Card';
 
 import pointer_animated from '../../assets/pointer_animated.gif';
 import '../../styles/ff-theme/menu.scss'

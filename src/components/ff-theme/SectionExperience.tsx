@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown';
 
-import Section from './section';
+import Section from './Section';
 import '../../styles/ff-theme/sectionExperience.scss';
 
 type TitleValueData = {
