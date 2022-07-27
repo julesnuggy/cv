@@ -20,12 +20,10 @@ import './App.scss';
 import { HOME_URL } from './components/constants';
 import AboutMe from './components/aboutMe';
 import Experience from './components/coding-theme/experience';
-import History from './components/ff-theme/history';
 import Header from './components/coding-theme/header';
 import data from './data/experienceData.json';
 import ThemeSelector from './components/themeSelector';
-import Status from './components/ff-theme/status';
-import Menu from './components/ff-theme/menu';
+import FFLayout from './layouts/FFLayout';
 
 library.add(
   faAddressCard,
@@ -78,16 +76,6 @@ const ClassicLayout = ({screenSize}: props) => {
       <div className="experience-container">
         {data.map((d) => <Experience data={d} key={d.employer}/>)}
       </div>
-    </>
-  )
-}
-
-const FFLayout = () => {
-  return (
-    <>
-      <Menu items={['Status', 'Abilities', 'Lore']} />
-      <Status />
-      <History />
     </>
   )
 }
