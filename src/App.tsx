@@ -18,7 +18,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import './App.scss';
 import { HOME_URL } from './components/constants';
-import ThemeSelector from './components/themeSelector';
+import ThemeSelector from './components/ThemeSelector';
 import CodingLayout from './layouts/CodingLayout';
 import FFLayout from './layouts/FFLayout';
 
