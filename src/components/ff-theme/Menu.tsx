@@ -4,10 +4,7 @@ import Card from './Card';
 
 import pointer_animated from '../../assets/pointer_animated.gif';
 import '../../styles/ff-theme/menu.scss'
-
-type MenuProps = {
-  items: string[]
-}
+import { MENU_ITEMS } from '../constants';
 
 type MenuItemProps = {
   item: string;
@@ -26,16 +23,15 @@ const MenuItem = ({ item, isFocused, onFocus, }: MenuItemProps) => (
   </div>
 );
 
-
-const Menu = ({ items }: MenuProps) => {
+const Menu = () => {
   const [ focusIndex, setFocusIndex ] = useState(0);
-
   const onFocus = (index: number) => setFocusIndex(index);
+  const menuItems = Object.values(MENU_ITEMS);
 
   return (
     <div className='menu-container'>
       <Card>
-        {items.map((item, idx) => (
+        {menuItems.map((item, idx) => (
           <MenuItem item={item} isFocused={focusIndex === idx} onFocus={() => onFocus(idx)} />
         ))}
       </Card>
