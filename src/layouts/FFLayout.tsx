@@ -28,7 +28,10 @@ const FFLayout = () => {
   return (
     <div className="ff-layout">
       <div className="ff-layout-menu">
-        <Menu onItemSelect={(menuItem: MENU_ITEMS) => setActiveContent(menuItem)} />
+        <Menu
+          onItemSelect={(menuItem: MENU_ITEMS) => setActiveContent(menuItem)}
+          activeContent={activeContent}
+        />
       </div>
       <div className="ff-layout-content">
         <ActiveContent activeContent={activeContent} />

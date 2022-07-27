@@ -28,7 +28,11 @@
     font-family: FinalFontasy, serif;
     font-size: 32px;
     text-shadow: 3px 3px 2px #2b2b2b;
-    color: $ffTeal;
+    color: white;
     text-align: left;
+  }
+
+  .active-item {
+    color: $ffTeal;
   }
 }

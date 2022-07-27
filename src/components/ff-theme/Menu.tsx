@@ -7,28 +7,34 @@ import '../../styles/ff-theme/menu.scss'
 import { MENU_ITEMS } from '../constants';
 
 type MenuProps = {
-  onItemSelect: (menuItem: MENU_ITEMS) => void
+  onItemSelect: (menuItem: MENU_ITEMS) => void;
+  activeContent: MENU_ITEMS;
 }
 
 type MenuItemProps = {
   item: MENU_ITEMS;
   isFocused: boolean;
   onFocus: () => void;
+  activeContent: MENU_ITEMS;
   onClick: (menuItem: MENU_ITEMS) => void;
 }
 
-const MenuItem = ({ item, isFocused, onFocus, onClick }: MenuItemProps) => (
-  <div className='menu-item-container'>
-    <div className='pointer-container'>
-      {isFocused && (<img src={pointer_animated} alt='-->' />)}
-    </div>
-    <button onFocus={onFocus} onPointerOver={onFocus} onClick={() => onClick(item)}>
-      <div className='item-text'>{item}</div>
-    </button>
-  </div>
-);
+const MenuItem = ({ item, isFocused, onFocus, activeContent, onClick }: MenuItemProps) => {
+  const itemTextClass = activeContent === item ? 'item-text active-item' : 'item-text'
 
-const Menu = ({ onItemSelect }: MenuProps) => {
+  return (
+    <div className='menu-item-container'>
+      <div className='pointer-container'>
+        {isFocused && (<img src={pointer_animated} alt='-->' />)}
+      </div>
+      <button onFocus={onFocus} onPointerOver={onFocus} onClick={() => onClick(item)}>
+        <div className={itemTextClass}>{item}</div>
+      </button>
+    </div>
+  );
+}
+
+const Menu = ({ onItemSelect, activeContent }: MenuProps) => {
   const [ focusIndex, setFocusIndex ] = useState(0);
   const onFocus = (index: number) => setFocusIndex(index);
   const menuItems = Object.values(MENU_ITEMS);
@@ -41,6 +47,7 @@ const Menu = ({ onItemSelect }: MenuProps) => {
             item={item}
             isFocused={focusIndex === idx}
             onFocus={() => onFocus(idx)}
+            activeContent={activeContent}
             onClick={onItemSelect}
           />
         ))}
