@@ -1,6 +1,8 @@
 @import '../constants';
 
 .section-container {
+  margin: 30px 0 30px 50px;
+
   .title-container {
     display: block;
     position: relative;
@@ -9,13 +11,8 @@
     left: -23px;
 
     .ff-card {
-      margin: 0;
       padding: 8px 16px;
       color: $ffTeal;
     }
   }
-}
-
-.section-container + .section-container {
-  margin-top: 12px;
 }

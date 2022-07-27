@@ -1,6 +1,8 @@
 @import '../constants';
 
 .menu-container {
+  margin: 30px 0;
+
   .menu-item-container {
     display: grid;
     grid-template-columns: 64px auto;
@@ -28,10 +30,5 @@
     text-shadow: 3px 3px 2px #2b2b2b;
     color: $ffTeal;
     text-align: left;
-  }
-
-  .ff-card {
-    margin-left: 0;
-    margin-right: 0;
   }
 }
