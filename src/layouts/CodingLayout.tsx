@@ -1,15 +1,15 @@
 import React from 'react';
 
-import AboutMe from '../components/aboutMe';
-import Experience from '../components/coding-theme/experience';
-import Header from '../components/coding-theme/header';
+import AboutMe from '../components/coding-theme/AboutMe';
+import Experience from '../components/coding-theme/Experience';
+import Header from '../components/coding-theme/Header';
 import data from '../data/experienceData.json';
 
 type props = {
   screenSize: number
 }
 
-const ClassicLayout = ({screenSize}: props) => {
+const CodingLayout = ({screenSize}: props) => {
   return (
     <>
       <Header/>
@@ -21,4 +21,4 @@ const ClassicLayout = ({screenSize}: props) => {
   )
 }
 
-export default ClassicLayout;
+export default CodingLayout;

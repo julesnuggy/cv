@@ -19,7 +19,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import './App.scss';
 import { HOME_URL } from './components/constants';
 import ThemeSelector from './components/themeSelector';
-import ClassicLayout from './layouts/ClassicLayout';
+import CodingLayout from './layouts/CodingLayout';
 import FFLayout from './layouts/FFLayout';
 
 library.add(
@@ -52,7 +52,7 @@ const App: React.FC = () => {
         <div className={appBodyClass}>
         <ThemeSelector theme={theme} setTheme={setTheme} />
         <Routes>
-          <Route path={HOME_URL} element={<ClassicLayout screenSize={screenSize} />} />
+          <Route path={HOME_URL} element={<CodingLayout screenSize={screenSize} />} />
           <Route path={`${HOME_URL}/ff-theme`} element={<FFLayout />} />
         </Routes>
         </div>

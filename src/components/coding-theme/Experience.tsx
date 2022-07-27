@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import ReactMarkdown from 'react-markdown';
 
-import Project from './project';
-import ProjectPopup from './projectPopup';
+import Project from './Project';
+import ProjectPopup from './ProjectPopup';
 import { ExperienceData } from '../../data/experienceData';
 import '../../styles/coding-theme/experience.scss';
 import '../../App.scss';

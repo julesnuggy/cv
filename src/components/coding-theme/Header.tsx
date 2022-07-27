@@ -1,7 +1,7 @@
 import React from 'react';
 
 import profile_photo from '../../assets/profile_photo.jpg';
-import HeaderDetail from './headerDetail';
+import HeaderDetail from './HeaderDetail';
 import '../../styles/coding-theme/header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

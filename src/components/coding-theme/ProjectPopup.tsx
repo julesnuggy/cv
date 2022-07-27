@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { ProjectData } from '../../data/experienceData';
 import '../../styles/coding-theme/project.scss';
 import '../../App.scss';
-import Blocker from './blocker';
+import Blocker from './Blocker';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type ProjectProps = {
