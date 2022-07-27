@@ -1,0 +1,15 @@
+.ff-layout {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "menu content";
+
+  .ff-layout-menu {
+    grid-area: menu;
+  }
+
+  .ff-layout-content {
+    grid-area: content;
+  }
+}
