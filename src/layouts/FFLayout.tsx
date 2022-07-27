@@ -1,20 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+import { MENU_ITEMS } from '../components/constants';
 import History from '../components/ff-theme/History';
 import Menu from '../components/ff-theme/Menu';
 import Status from '../components/ff-theme/Status';
 
 import '../styles/layouts/FFLayout.scss';
 
+type ActiveContentProps = {
+  activeContent: MENU_ITEMS;
+}
+
+const ActiveContent = ({ activeContent }: ActiveContentProps) => {
+  switch (activeContent) {
+    case MENU_ITEMS.STATUS:
+      return <Status/>;
+    case MENU_ITEMS.ABILITIES:
+      return <History />
+    default:
+      return null;
+  }
+}
+
 const FFLayout = () => {
+  const [ activeContent, setActiveContent ] = useState(MENU_ITEMS.STATUS)
+
   return (
     <div className="ff-layout">
       <div className="ff-layout-menu">
-        <Menu items={['Status', 'Abilities', 'Lore']} />
+        <Menu />
       </div>
       <div className="ff-layout-content">
-        <Status />
-        <History />
+        <ActiveContent activeContent={activeContent} />
       </div>
     </div>
   )
