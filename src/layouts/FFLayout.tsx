@@ -40,7 +40,7 @@ const FFLayout = () => {
 
   const AbilitiesSubMenu = () => activeMainMenu === MAIN_MENU_ITEMS.ABILITIES
     ? <Menu
-        menuItems={recentEmployers}
+        items={recentEmployers}
         onItemSelect={(menuItem: string) => setActiveEmployerMenu(menuItem)}
         activeContent={activeEmployerMenu}
       />
@@ -48,7 +48,7 @@ const FFLayout = () => {
 
   const LoreSubMenu = () => activeMainMenu === MAIN_MENU_ITEMS.LORE
     ? <Menu
-      menuItems={backgroundHistory}
+      items={backgroundHistory}
       onItemSelect={(menuItem: string) => setActiveBackgroundMenu(menuItem)}
       activeContent={activeBackgroundMenu}
     />
@@ -58,7 +58,7 @@ const FFLayout = () => {
     <div className="ff-layout">
       <div className="ff-layout-menu">
         <Menu
-          menuItems={Object.values(MAIN_MENU_ITEMS)}
+          items={Object.values(MAIN_MENU_ITEMS)}
           onItemSelect={(menuItem: MAIN_MENU_ITEMS) => setActiveMainMenu(menuItem)}
           activeContent={activeMainMenu}
         />

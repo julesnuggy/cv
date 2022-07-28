@@ -6,7 +6,7 @@ import pointer_animated from '../../assets/pointer_animated.gif';
 import '../../styles/ff-theme/menu.scss'
 
 type MenuProps = {
-  menuItems: string[];
+  items: string[];
   onItemSelect: (menuItem: any) => void;
   activeContent: string;
 }
@@ -34,8 +34,8 @@ const MenuItem = ({ item, isFocused, onFocus, activeContent, onClick }: MenuItem
   );
 }
 
-const Menu = ({ menuItems, onItemSelect, activeContent }: MenuProps) => {
-  const activeMenuItemIndex = menuItems.indexOf(activeContent);
+const Menu = ({ items, onItemSelect, activeContent }: MenuProps) => {
+  const activeMenuItemIndex = items.indexOf(activeContent);
   const [ focusIndex, setFocusIndex ] = useState(activeMenuItemIndex || 0);
   const setPointerOnActiveContent = () => setFocusIndex(activeMenuItemIndex)
 
@@ -46,7 +46,7 @@ const Menu = ({ menuItems, onItemSelect, activeContent }: MenuProps) => {
       onBlur={setPointerOnActiveContent}
     >
       <Card>
-        {menuItems.map((item, idx) => (
+        {items.map((item, idx) => (
           <MenuItem
             key={item}
             item={item}
