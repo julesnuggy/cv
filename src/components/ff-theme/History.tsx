@@ -18,7 +18,7 @@ const HistoryItem = ({ data }: HistoryItemProps ) => (
     title={data.employer}
     avatar_src={profile_photo}
     summary_items={[
-      {title: 'Role', value: 'Software Engineer'},
+      {title: 'Role', value: data.role},
       {title: 'From', value: data.from},
       {title: 'To', value: data.to},
     ]}

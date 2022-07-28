@@ -1,6 +1,7 @@
 [
   {
     "employer": "Pollen",
+    "role": "Software Engineer (Backend)",
     "from": "Sep 2021",
     "to": "May 2022",
     "location": "London, UK",
@@ -9,6 +10,7 @@
   },
   {
     "employer": "Softwire",
+    "role": "Software Engineer (Fullstack)",
     "from": "Jun 2018",
     "to": "Sep 2021",
     "location": "London, UK",
@@ -116,6 +118,7 @@
   },
   {
     "employer": "Makers Academy",
+    "role": "Software Engineer (in training)",
     "from": "Feb 2018",
     "to": "May 2018",
     "location": "London, UK",
@@ -138,14 +141,16 @@
   },
   {
     "employer": "Management Consultancy",
+    "role": "Senior Management Consultant",
     "from": "Jul 2009",
     "to": "Jan 2018",
     "location": "Various",
-    "summary": "Senior Management Consultant specialising in business change, data analysis and innovation; delivered professional services to clients in the engineering, aerospace, government and transport sectors. Please see my LinkedIn profile (link above) for more detail.",
+    "summary": "In my previous career as a mangement consultant, I specialised in business change, data analysis and innovation; delivered professional services to clients in the engineering, aerospace, government and transport sectors. Please see my LinkedIn profile (link above) for more detail.",
     "projects": []
   },
   {
     "employer": "University",
+    "role": "Student",
     "from": "2005",
     "to": "2009",
     "location": "University of Bristol, UK",
@@ -154,6 +159,7 @@
   },
   {
     "employer": "A-Levels",
+    "role": "Student",
     "from": "2003",
     "to": "2005",
     "location": "Hills Road Sixth Form College, Cambridge, UK",

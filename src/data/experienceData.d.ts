@@ -1,5 +1,6 @@
 export type ExperienceData = {
   employer: string;
+  role: string;
   from: string;
   to: string;
   location: string;
