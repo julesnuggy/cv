@@ -6,7 +6,7 @@ import data from '../../data/experienceData.json';
 import { ExperienceData } from '../../data/experienceData';
 
 type HistoryProps = {
-  activeEmployerMenuItem: string;
+  activeMenuItem: string;
 }
 
 type HistoryItemProps = {
@@ -33,8 +33,8 @@ const HistoryItem = ({ data }: HistoryItemProps ) => (
   />
 )
 
-const History = ( { activeEmployerMenuItem }: HistoryProps) => {
-  const activeEmployerData = data.filter(d => d.employer === activeEmployerMenuItem)[0]
+const History = ( { activeMenuItem }: HistoryProps) => {
+  const activeEmployerData = data.filter(d => d.employer === activeMenuItem)[0]
   return (
     <>
       <HistoryItem data={activeEmployerData} />
