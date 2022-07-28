@@ -4,19 +4,19 @@ import Card from './Card';
 
 import pointer_animated from '../../assets/pointer_animated.gif';
 import '../../styles/ff-theme/menu.scss'
-import { MENU_ITEMS } from '../constants';
 
 type MenuProps = {
-  onItemSelect: (menuItem: MENU_ITEMS) => void;
-  activeContent: MENU_ITEMS;
+  menuItems: string[];
+  onItemSelect: (menuItem: any) => void;
+  activeContent: string;
 }
 
 type MenuItemProps = {
-  item: MENU_ITEMS;
+  item: string;
   isFocused: boolean;
   onFocus: () => void;
-  activeContent: MENU_ITEMS;
-  onClick: (menuItem: MENU_ITEMS) => void;
+  activeContent: string;
+  onClick: (menuItem: any) => void;
 }
 
 const MenuItem = ({ item, isFocused, onFocus, activeContent, onClick }: MenuItemProps) => {
@@ -34,9 +34,8 @@ const MenuItem = ({ item, isFocused, onFocus, activeContent, onClick }: MenuItem
   );
 }
 
-const Menu = ({ onItemSelect, activeContent }: MenuProps) => {
+const Menu = ({ menuItems, onItemSelect, activeContent }: MenuProps) => {
   const [ focusIndex, setFocusIndex ] = useState(0);
-  const menuItems = Object.values(MENU_ITEMS);
   const setPointerOnActiveContent = () => setFocusIndex(menuItems.indexOf(activeContent))
 
   return (
