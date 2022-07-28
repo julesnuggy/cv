@@ -36,17 +36,21 @@ const MenuItem = ({ item, isFocused, onFocus, activeContent, onClick }: MenuItem
 
 const Menu = ({ onItemSelect, activeContent }: MenuProps) => {
   const [ focusIndex, setFocusIndex ] = useState(0);
-  const onFocus = (index: number) => setFocusIndex(index);
   const menuItems = Object.values(MENU_ITEMS);
+  const setPointerOnActiveContent = () => setFocusIndex(menuItems.indexOf(activeContent))
 
   return (
-    <div className='menu-container'>
+    <div
+      className='menu-container'
+      onMouseLeave={setPointerOnActiveContent}
+      onBlur={setPointerOnActiveContent}
+    >
       <Card>
         {menuItems.map((item, idx) => (
           <MenuItem
             item={item}
             isFocused={focusIndex === idx}
-            onFocus={() => onFocus(idx)}
+            onFocus={() => setFocusIndex(idx)}
             activeContent={activeContent}
             onClick={onItemSelect}
           />
