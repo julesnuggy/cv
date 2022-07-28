@@ -21,6 +21,7 @@ const HistoryItem = ({ data }: HistoryItemProps ) => (
       {title: 'Role', value: data.role},
       {title: 'From', value: data.from},
       {title: 'To', value: data.to},
+      {title: 'Location', value: data.location},
     ]}
     experience_data={[
       {title: 'Summary', description: data.summary},
