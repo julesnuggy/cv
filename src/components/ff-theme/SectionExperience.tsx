@@ -40,8 +40,8 @@ const TechStack = ({ techStack }: TechStackProps) => {
 
 const SectionExperience = ({ title, avatar_src, summary_items, experience_data }: SectionExperienceProps) => {
   return (
-    <Section title={title}>
-      <div className="ff-experience-container">
+    <>
+      <Section title={title}>
         <div className="experience-summary">
           <img className="summary-avatar" src={avatar_src} alt="DetailedImageAlt"/>
           <div className="summary-items">
@@ -53,19 +53,16 @@ const SectionExperience = ({ title, avatar_src, summary_items, experience_data }
             ))}
           </div>
         </div>
-
-        <div className="experience-data-container">
-          {experience_data.map((data, idx) => (
-            <div className="experience-data" key={`${data.title}-${idx}`}>
-              <Section title={data.title}>
-                <ReactMarkdown className="data-description" source={data.description} />
-                <TechStack techStack={data.techStack} />
-              </Section>
-            </div>
-          ))}
+      </Section>
+      {experience_data.map((data, idx) => (
+        <div className="experience-data" key={`${data.title}-${idx}`}>
+          <Section title={data.title}>
+            <ReactMarkdown className="data-description" source={data.description} />
+            <TechStack techStack={data.techStack} />
+          </Section>
         </div>
-      </div>
-    </Section>
+      ))}
+    </>
   )
 }
 
