@@ -48,6 +48,7 @@ const Menu = ({ onItemSelect, activeContent }: MenuProps) => {
       <Card>
         {menuItems.map((item, idx) => (
           <MenuItem
+            key={item}
             item={item}
             isFocused={focusIndex === idx}
             onFocus={() => setFocusIndex(idx)}
