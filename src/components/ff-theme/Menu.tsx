@@ -35,8 +35,9 @@ const MenuItem = ({ item, isFocused, onFocus, activeContent, onClick }: MenuItem
 }
 
 const Menu = ({ menuItems, onItemSelect, activeContent }: MenuProps) => {
-  const [ focusIndex, setFocusIndex ] = useState(0);
-  const setPointerOnActiveContent = () => setFocusIndex(menuItems.indexOf(activeContent))
+  const activeMenuItemIndex = menuItems.indexOf(activeContent);
+  const [ focusIndex, setFocusIndex ] = useState(activeMenuItemIndex || 0);
+  const setPointerOnActiveContent = () => setFocusIndex(activeMenuItemIndex)
 
   return (
     <div
