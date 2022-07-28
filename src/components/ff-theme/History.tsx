@@ -5,6 +5,10 @@ import profile_photo from '../../assets/profile_photo.jpg';
 import data from '../../data/experienceData.json';
 import { ExperienceData } from '../../data/experienceData';
 
+type HistoryProps = {
+  activeEmployerMenuItem: string;
+}
+
 type HistoryItemProps = {
   data: ExperienceData;
 };
@@ -29,10 +33,11 @@ const HistoryItem = ({ data }: HistoryItemProps ) => (
   />
 )
 
-const History = () => {
+const History = ( { activeEmployerMenuItem }: HistoryProps) => {
+  const activeEmployerData = data.filter(d => d.employer === activeEmployerMenuItem)[0]
   return (
     <>
-      {data.map((exp, idx) => <HistoryItem data={exp} key={`${exp}-${idx}`} />)}
+      <HistoryItem data={activeEmployerData} />
     </>
   )
 }
