@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
 import { MAIN_MENU_ITEMS } from '../components/constants';
+import Abilities from '../components/ff-theme/Abilities';
 import History from '../components/ff-theme/History';
 import Menu from '../components/ff-theme/Menu';
 import Status from '../components/ff-theme/Status';
-import experience_data from '../data/experienceData.json';
 
+import experience_data from '../data/experienceData.json';
 import '../styles/layouts/FFLayout.scss';
 
 type ActiveContentProps = {
@@ -19,7 +20,7 @@ const ActiveContent = ({ activeMainMenuItem, activeEmployerMenuItem, activeBackg
     case MAIN_MENU_ITEMS.STATUS:
       return <Status/>;
     case MAIN_MENU_ITEMS.ABILITIES:
-      return null;
+      return <Abilities />;
     case MAIN_MENU_ITEMS.QUESTS:
       return <History activeMenuItem={activeEmployerMenuItem} />
     case MAIN_MENU_ITEMS.LORE:
@@ -40,7 +41,7 @@ const FFLayout = () => {
   const backgroundHistory = Object.values(experience_data.slice(3).map(data => data.employer))
   const [ activeBackgroundMenu, setActiveBackgroundMenu ] = useState(backgroundHistory[0])
 
-  const AbilitiesSubMenu = () => activeMainMenu === MAIN_MENU_ITEMS.QUESTS
+  const QuestsSubMenu = () => activeMainMenu === MAIN_MENU_ITEMS.QUESTS
     ? <Menu
         items={recentEmployers}
         onItemSelect={(menuItem: string) => setActiveEmployerMenu(menuItem)}
@@ -64,7 +65,7 @@ const FFLayout = () => {
           onItemSelect={(menuItem: MAIN_MENU_ITEMS) => setActiveMainMenu(menuItem)}
           activeContent={activeMainMenu}
         />
-        <AbilitiesSubMenu />
+        <QuestsSubMenu />
         <LoreSubMenu />
       </div>
       <div className="ff-layout-content">

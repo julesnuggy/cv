@@ -1,0 +1,15 @@
+.ability-container {
+  display: grid;
+  grid-template-columns: 180px 200px;
+  grid-template-rows: auto;
+  grid-template-areas: "name rating";
+  margin: 3px 0;
+}
+
+.ability-name {
+  grid-area: name;
+}
+
+.ability-rating {
+  grid-area: rating;
+}

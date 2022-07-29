@@ -1,0 +1,62 @@
+[
+  {
+    "type": "Language",
+    "name": "JavaScript",
+    "rating": 5
+  },
+  {
+    "type": "Language",
+    "name": "TypeScript",
+    "rating": 5
+  },
+  {
+    "type": "Language",
+    "name": "Python",
+    "rating": 4
+  },
+  {
+    "type": "Language",
+    "name": "GraphQL",
+    "rating": 4
+  },
+  {
+    "type": "Language",
+    "name": "SQL",
+    "rating": 5
+  },
+  {
+    "type": "Framework",
+    "name": "React",
+    "rating": 5
+  },
+  {
+    "type": "Framework",
+    "name": "Django",
+    "rating": 4
+  },
+  {
+    "type": "Framework",
+    "name": "Vue",
+    "rating": 4
+  },
+  {
+    "type": "Database",
+    "name": "Postgres",
+    "rating": 4
+  },
+  {
+    "type": "Database",
+    "name": "SQL Server",
+    "rating": 4
+  },
+  {
+    "type": "Database",
+    "name": "MySQL",
+    "rating": 3
+  },
+  {
+    "type": "Database",
+    "name": "Firebase",
+    "rating": 3
+  }
+]
