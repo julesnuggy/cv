@@ -15,9 +15,10 @@ type SectionBasicProps = {
   subtitle: string;
   avatar_src: any;
   stats: Stat[];
+  free_text?: string;
 }
 
-const SectionBasic = ({ section, title, subtitle, avatar_src, stats }: SectionBasicProps) => {
+const SectionBasic = ({ section, title, subtitle, avatar_src, stats, free_text }: SectionBasicProps) => {
   return (
     <Section title={section}>
       <div className='basic-container'>
@@ -30,6 +31,7 @@ const SectionBasic = ({ section, title, subtitle, avatar_src, stats }: SectionBa
             <BasicStatContainer title={stat.title} current={stat.current} max={stat.max} key={`${stat.title}-${idx}`} />
           ))}
         </div>
+        {free_text && <div className="basic-free-text">{free_text}</div>}
       </div>
     </Section>
   )

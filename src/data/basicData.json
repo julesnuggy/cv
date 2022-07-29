@@ -1,0 +1,39 @@
+{
+  "name": "Julian Ng",
+  "pronouns": "He / Him",
+  "stats": [
+    {
+      "title": "LV",
+      "current": 86
+    },
+    {
+      "title": "HP",
+      "current": 7777,
+      "max": 7777
+    },
+    {
+      "title": "MP",
+      "current": 888,
+      "max": 888
+    }
+  ],
+  "bio": "I love being a software developer because I enjoy problem solving, working in a trusting and collaborative\n      environment, and bringing ideas into reality through elegant code. In 2018, I changed my career as a change\n      management consultant to become a software developer by joining Makers Academy. There, I learnt to code in just 4\n      months, and started my first job only 1 month after graduating.\n      My experience on a wide variety of projects has expanded and bolstered my knowledge of programming best practices,\n      architectures, design patterns, and principles. I bring many skills from my consultancy background, including:\n      customer engagement, project management, workshop facilitation, business & data analytics, and ideation.\n",
+  "coreValues": [
+    "Communication",
+    "Open Mindedness",
+    "Equity & Diversity",
+    "Courage to Experiment"
+  ],
+  "personalityTraits": [
+    "Flexible & Adaptable",
+    "Focused & Determined",
+    "Problem Solver",
+    "Proactive"
+  ],
+  "codingPrinciples": [
+    "Commit Often, Perfect Later",
+    "Robustness Through Tests",
+    "Code Reviews Help Everyone",
+    "Pairing Powers Productivity"
+  ]
+}

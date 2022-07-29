@@ -1,6 +1,7 @@
 import React from 'react'
 
 import SectionBasic from './SectionBasic';
+import basic_data from '../../data/basicData.json';
 import profile_photo from '../../assets/profile_photo.jpg';
 
 const Status = () => {
@@ -8,25 +9,11 @@ const Status = () => {
     <>
       <SectionBasic
         section="Status"
-        title="Julian Ng"
-        subtitle="He / Him"
+        title={basic_data.name}
+        subtitle={basic_data.pronouns}
         avatar_src={profile_photo}
-        stats={[
-          {
-            title: 'LV',
-            current: 86
-          },
-          {
-            title: 'HP',
-            current: 7777,
-            max: 7777
-          },
-          {
-            title: 'MP',
-            current: 888,
-            max: 888,
-          }
-        ]}
+        stats={basic_data.stats}
+        free_text={basic_data.bio}
       />
     </>
   )

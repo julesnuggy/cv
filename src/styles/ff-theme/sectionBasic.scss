@@ -26,13 +26,19 @@
   }
 }
 
+.basic-free-text {
+  grid-area: free-text;
+  text-align: left;
+}
+
 .basic-container {
   display: grid;
-  grid-template-columns: 200px 200px;
+  grid-template-columns: 200px auto;
   grid-template-rows: auto;
   grid-template-areas:
     "title subtitle"
-    "avatar stats";
+    "avatar stats"
+    "avatar free-text";
 
   p {
     margin: 0
