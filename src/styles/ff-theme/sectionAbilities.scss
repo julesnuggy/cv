@@ -13,3 +13,12 @@
 .ability-rating {
   grid-area: rating;
 }
+
+.star-rating-container {
+    display: flex;
+}
+
+.star-rating {
+  height: 32px;
+  width: 32px;
+}
