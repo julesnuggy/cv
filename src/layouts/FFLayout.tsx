@@ -19,6 +19,8 @@ const ActiveContent = ({ activeMainMenuItem, activeEmployerMenuItem, activeBackg
     case MAIN_MENU_ITEMS.STATUS:
       return <Status/>;
     case MAIN_MENU_ITEMS.ABILITIES:
+      return null;
+    case MAIN_MENU_ITEMS.QUESTS:
       return <History activeMenuItem={activeEmployerMenuItem} />
     case MAIN_MENU_ITEMS.LORE:
       return <History activeMenuItem={activeBackgroundMenuItem} />
@@ -38,7 +40,7 @@ const FFLayout = () => {
   const backgroundHistory = Object.values(experience_data.slice(3).map(data => data.employer))
   const [ activeBackgroundMenu, setActiveBackgroundMenu ] = useState(backgroundHistory[0])
 
-  const AbilitiesSubMenu = () => activeMainMenu === MAIN_MENU_ITEMS.ABILITIES
+  const AbilitiesSubMenu = () => activeMainMenu === MAIN_MENU_ITEMS.QUESTS
     ? <Menu
         items={recentEmployers}
         onItemSelect={(menuItem: string) => setActiveEmployerMenu(menuItem)}
