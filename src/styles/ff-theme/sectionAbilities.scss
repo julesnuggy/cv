@@ -1,24 +1,30 @@
-.ability-container {
+.abilities-container {
   display: grid;
-  grid-template-columns: 180px 200px;
-  grid-template-rows: auto;
-  grid-template-areas: "name rating";
-  margin: 3px 0;
-}
+  grid-template-rows: auto auto auto auto auto;
+  grid-auto-flow: column;
 
-.ability-name {
-  grid-area: name;
-}
+  .ability-container {
+    display: grid;
+    grid-template-columns: 180px 200px;
+    grid-template-rows: auto;
+    grid-template-areas: "name rating";
+    margin: 3px 0;
 
-.ability-rating {
-  grid-area: rating;
-}
+    .ability-name {
+      grid-area: name;
+    }
 
-.star-rating-container {
-    display: flex;
-}
+    .ability-rating {
+      grid-area: rating;
 
-.star-rating {
-  height: 32px;
-  width: 32px;
+      .star-rating-container {
+        display: flex;
+      }
+
+      .star-rating {
+        height: 32px;
+        width: 32px;
+      }
+    }
+  }
 }

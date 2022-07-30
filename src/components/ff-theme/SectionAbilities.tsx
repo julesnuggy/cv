@@ -35,16 +35,18 @@ const StarRating = ({ rating }: StarRatingProps) => {
 const SectionAbilities = ({ title, abilities }: AbilitiesProps) => {
   return (
     <Section title={title}>
-      {abilities.map(ability => (
-        <div className="ability-container">
-          <div className="ability-name">
-            {ability.name}
+      <div className="abilities-container">
+        {abilities.map(ability => (
+          <div className="ability-container">
+            <div className="ability-name">
+              {ability.name}
+            </div>
+            <div className="ability-rating">
+              <StarRating rating={ability.rating} />
+            </div>
           </div>
-          <div className="ability-rating">
-            <StarRating rating={ability.rating} />
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </Section>
     )
 }
