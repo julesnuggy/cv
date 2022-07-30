@@ -31,9 +31,11 @@ const TechStack = ({ techStack }: TechStackProps) => {
   }
 
   return (
-    <div>
-      <div>Tech Stack:</div>
-      {techStack.map((t, idx) => <li key={idx}>{t}</li>)}
+    <div className="data-tech-stack">
+      <p>Tech Stack:</p>
+      <ul>
+          {techStack.map((t, idx) => <li key={idx}>{t}</li>)}
+      </ul>
     </div>
   )
 }

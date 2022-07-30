@@ -68,5 +68,23 @@
 
   p {
     margin: 0;
+
+    & + p {
+      margin-top: 16px;
+    }
+  }
+
+  ul {
+    margin: 16px 0;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.data-tech-stack {
+  p, ul {
+    margin: 0;
   }
 }
