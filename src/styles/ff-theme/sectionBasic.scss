@@ -26,11 +26,6 @@
   }
 }
 
-.basic-free-text {
-  grid-area: free-text;
-  text-align: left;
-}
-
 .basic-container {
   display: grid;
   grid-template-columns: 200px auto;
@@ -43,6 +38,16 @@
   p {
     margin: 0
   }
+
+  .basic-free-text {
+    grid-area: free-text;
+    text-align: left;
+
+    p {
+      margin-top: 16px;
+    }
+  }
+
 }
 
 .basic-stat-title {

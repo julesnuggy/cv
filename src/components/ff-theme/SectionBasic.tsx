@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactMarkdown from 'react-markdown';
 
 import Section from './Section';
 import '../../styles/ff-theme/sectionBasic.scss';
@@ -31,7 +32,7 @@ const SectionBasic = ({ section, title, subtitle, avatar_src, stats, free_text }
             <BasicStatContainer title={stat.title} current={stat.current} max={stat.max} key={`${stat.title}-${idx}`} />
           ))}
         </div>
-        {free_text && <div className="basic-free-text">{free_text}</div>}
+        {free_text && <ReactMarkdown className="basic-free-text" source={free_text} />}
       </div>
     </Section>
   )
