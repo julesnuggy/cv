@@ -10,7 +10,7 @@ const Abilities = () => {
   return (
     <>
       <SectionAbilities abilities={languagesData} title="Languages" />
-      <SectionAbilities abilities={frameworksData} title="Frameworks" />
+      <SectionAbilities abilities={frameworksData} title="Frameworks & Libraries" />
       <SectionAbilities abilities={databaseData} title="Databases" />
     </>
   )

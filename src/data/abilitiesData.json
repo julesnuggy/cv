@@ -16,13 +16,28 @@
   },
   {
     "type": "Language",
+    "name": "Java",
+    "rating": 4
+  },
+  {
+    "type": "Language",
     "name": "GraphQL",
     "rating": 4
   },
   {
     "type": "Language",
     "name": "SQL",
-    "rating": 5
+    "rating": 4
+  },
+  {
+    "type": "Language",
+    "name": "Ruby",
+    "rating": 3
+  },
+  {
+    "type": "Language",
+    "name": "C#",
+    "rating": 2
   },
   {
     "type": "Framework",
@@ -31,13 +46,33 @@
   },
   {
     "type": "Framework",
+    "name": "Express",
+    "rating": 4
+  },
+  {
+    "type": "Framework",
     "name": "Django",
     "rating": 4
   },
   {
     "type": "Framework",
+    "name": "Redux",
+    "rating": 3
+  },
+  {
+    "type": "Framework",
     "name": "Vue",
-    "rating": 4
+    "rating": 3
+  },
+  {
+    "type": "Framework",
+    "name": "Spring (Boot)",
+    "rating": 3
+  },
+  {
+    "type": "Framework",
+    "name": "React Native",
+    "rating": 2
   },
   {
     "type": "Database",
