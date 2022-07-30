@@ -1,3 +1,5 @@
+@import './constants';
+
 .themeSelector {
   margin: 10px;
   font-size: 16px;
@@ -8,7 +10,9 @@
 .themeButton {
   background-color: transparent;
   outline-color: transparent;
-  border: none;
+  border: solid 1px $opaqueGrey;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px $opaqueGrey;
   width: 40px;
   height: 25px;
   margin: 0 5px;
