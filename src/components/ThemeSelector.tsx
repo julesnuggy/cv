@@ -4,6 +4,8 @@ import { IconName } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {HOME_URL} from './constants';
+import pointer from '../assets/pointer_animated.gif';
+
 import '../styles/themeSelector.scss'
 
 type ThemeSelectorProps = {
@@ -22,13 +24,19 @@ const ThemeSelector = ({ theme, setTheme }: ThemeSelectorProps) => {
         theme='coding'
         destination={HOME_URL}
       />
-      <ThemeButton
-        activeTheme={theme}
-        onClick={() => setTheme('ff-theme')}
-        icon='gamepad'
-        theme='ff-theme'
-        destination={`${HOME_URL}/ff-theme`}
-      />
+      <div className='ffThemeContainer'>
+        <ThemeButton
+          activeTheme={theme}
+          onClick={() => setTheme('ff-theme')}
+          icon='gamepad'
+          theme='ff-theme'
+          destination={`${HOME_URL}/ff-theme`}
+        />
+        <div className='themePointerContainer'>
+          <img className='themePointer' src={pointer} alt={'<'} />
+          <span>NEW!</span>
+        </div>
+      </div>
     </div>
   )
 }

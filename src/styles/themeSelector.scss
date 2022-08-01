@@ -1,10 +1,27 @@
 @import './constants';
 
 .themeSelector {
+  display: flex;
+  align-items: center;
   margin: 10px;
   font-size: 16px;
   font-weight: bold;
   line-height: 1;
+
+  .ffThemeContainer {
+    display: flex;
+
+    .themePointerContainer {
+      display: flex;
+      align-items: center;
+
+      .themePointer {
+        height: 32px;
+        transform: scaleX(-1);
+        margin-right: 5px;
+      }
+    }
+  }
 }
 
 .themeButton {
@@ -13,9 +30,9 @@
   border: solid 1px $opaqueGrey;
   border-radius: 5px;
   box-shadow: 2px 2px 5px $opaqueGrey;
-  width: 40px;
-  height: 25px;
-  margin: 0 5px;
+  width: 50px;
+  height: 32px;
+  margin: 0 10px;
   cursor: pointer;
 }
 
