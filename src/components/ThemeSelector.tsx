@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { IconName } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { HOME_URL } from './constants';
+import { FF_THEME_URL, HOME_URL } from './constants';
 import pointer from '../assets/pointer_animated.gif';
 
 import '../styles/themeSelector.scss'
@@ -40,7 +40,7 @@ const ThemeSelector = ({ theme, setTheme }: ThemeSelectorProps) => {
           onClick={handleClickFFTheme}
           icon='gamepad'
           theme='ff-theme'
-          destination={`${HOME_URL}/ff-theme`}
+          destination={FF_THEME_URL}
         />
         {isPointerVisible && <div className='themePointerContainer'>
             <img className='themePointer' src={pointer} alt={'<'}/>
