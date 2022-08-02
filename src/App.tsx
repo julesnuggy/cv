@@ -37,7 +37,7 @@ library.add(
 
 
 const App: React.FC = () => {
-  const isHome = window.location.pathname === HOME_URL;
+  const isHome = [HOME_URL, `${HOME_URL}/`].includes(window.location.pathname);
   const [screenSize, setScreenSize] = useState(window.innerWidth);
   const [theme, setTheme] = useState( isHome ? 'coding' : 'ff-theme')
 
