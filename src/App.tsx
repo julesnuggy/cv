@@ -17,7 +17,7 @@ import { faMinusSquare, faPlusSquare, faTimesCircle } from '@fortawesome/free-re
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import './App.scss';
-import { HOME_URL } from './components/constants';
+import { FF_THEME_URL, HOME_URL } from './components/constants';
 import ThemeSelector from './components/ThemeSelector';
 import CodingLayout from './layouts/CodingLayout';
 import FFLayout from './layouts/FFLayout';
@@ -53,7 +53,7 @@ const App: React.FC = () => {
         <ThemeSelector theme={theme} setTheme={setTheme} />
         <Routes>
           <Route path={HOME_URL} element={<CodingLayout screenSize={screenSize} />} />
-          <Route path={`${HOME_URL}/ff-theme`} element={<FFLayout />} />
+          <Route path={FF_THEME_URL} element={<FFLayout />} />
         </Routes>
         </div>
     </Router>
