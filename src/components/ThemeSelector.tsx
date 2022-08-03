@@ -44,7 +44,7 @@ const ThemeSelector = ({ theme, setTheme }: ThemeSelectorProps) => {
         />
         {isPointerVisible && <div className='themePointerContainer'>
             <img className='themePointer' src={pointer} alt={'<'}/>
-            <span>NEW!</span>
+            <span>NEW!</span> <span className="themeSubtitle">(beta)</span>
         </div>}
       </div>
     </div>
