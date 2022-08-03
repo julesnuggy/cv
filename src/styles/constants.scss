@@ -12,9 +12,27 @@ $mobile-width: 480px;
   }
 }
 
+@mixin mobileOnly {
+  @media (max-width: #{$mobile-width}) {
+    @content
+  }
+}
+
 $tablet-width: 769px;
+@mixin mobileLandscape {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
+    @content
+  }
+}
+
 @mixin tabletUp {
   @media (min-width: #{$tablet-width}) {
+    @content
+  }
+}
+
+@mixin tabletDown {
+  @media (max-width: #{$tablet-width}) {
     @content
   }
 }
