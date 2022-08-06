@@ -34,9 +34,9 @@ const Experience = ({data}: EmployerCardProps) => {
         {data.employer} || {data.from} - {data.to} || {data.location}
       </div>
       <ReactMarkdown className="code-block" source={data.summary} />
-      <div className="project-container">
+      <div className="projects-container">
         {data.projects.map((p, idx) =>
-          <div key={`${data.employer}-${p.name}-${idx}`}>
+          <div className="project-container" key={`${data.employer}-${p.name}-${idx}`}>
             <Project data={p} index={idx} onClick={handleProjectClick} />
             <CSSTransition timeout={200} in={expandedProjects.includes(idx)} classNames="project-popup" key={idx}>
               <>
