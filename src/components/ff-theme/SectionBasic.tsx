@@ -12,24 +12,25 @@ type Stat = {
 
 type SectionBasicProps = {
   section: string;
-  title: string;
-  subtitle: string;
   avatar_src: any;
   stats: Stat[];
   free_text?: string;
 }
 
-const SectionBasic = ({ section, title, subtitle, avatar_src, stats, free_text }: SectionBasicProps) => {
+const SectionBasic = ({ section, avatar_src, stats, free_text }: SectionBasicProps) => {
   return (
     <Section title={section}>
       <div className='basic-container'>
-        <div className="basic-title">{title}</div>
-        <p><span className="basic-subtitle">{subtitle}</span></p>
         <img className="basic-avatar" src={avatar_src} alt="BasicImageAlt"/>
 
         <div className="basic-stats">
           {stats.map((stat, idx) => (
-            <BasicStatContainer title={stat.title} current={stat.current} max={stat.max} key={`${stat.title}-${idx}`} />
+            <BasicStatContainer
+              title={stat.title}
+              current={stat.current}
+              max={stat.max}
+              isLong={stat.title === "NA"}
+              key={`${stat.title}-${idx}`} />
           ))}
         </div>
         {free_text && <ReactMarkdown className="basic-free-text" source={free_text} />}
@@ -42,17 +43,20 @@ type BasicStatProps = {
   title: string;
   current: number | string;
   max?: number | string;
+  isLong?: boolean;
 }
 
-const BasicStatContainer = ({ title, current, max }: BasicStatProps) => (
-  <p>
-    <span className="basic-stat-container">
+const BasicStatContainer = ({ title, current, max, isLong }: BasicStatProps) => {
+  const containerClass = isLong ? "basic-stat-container long-stat" : "basic-stat-container"
+
+  return (
+    <p className={containerClass}>
       <span className="basic-stat-title">{title}</span>
       <span className="basic-stat-current">{current}</span>
       {max && <span className="basic-stat-divider">/</span>}
       {max && <span className="basic-stat-max">{max}</span>}
-    </span>
-  </p>
-)
+    </p>
+  )
+}
 
 export default SectionBasic;

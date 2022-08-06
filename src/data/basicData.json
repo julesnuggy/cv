@@ -3,8 +3,17 @@
   "pronouns": "He / Him",
   "stats": [
     {
+      "title": "NA",
+      "current": "Julian Ng"
+    },
+    {
       "title": "LV",
-      "current": 86
+      "current": 50
+    },
+    {
+      "title": "PR",
+      "current": "He",
+      "max": "Him"
     },
     {
       "title": "HP",
