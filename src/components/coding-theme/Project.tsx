@@ -14,13 +14,13 @@ const Project = ({data, index, onClick}: ProjectProps) => (
   <div className="project" onClick={() => onClick(index)}>
     <div className="project-details">
       <div className="core-information">
-        <div>{data.name}</div>
-        <div>{data.role}</div>
-        <div className="project-date">{data.from} - {data.to}
+        <p className="core-title">{data.name}</p>
+        <p>{data.role}</p>
+        <p className="project-date">{data.from} - {data.to}
           <span>
             <FontAwesomeIcon icon={['far', 'plus-square']} className="project-popup-open"/>
           </span>
-        </div>
+        </p>
       </div>
     </div>
   </div>

@@ -2,8 +2,7 @@
 
 .project {
   flex: 1 0 25%;
-  min-width: 200px;
-  margin: 30px;
+  width: 200px;
   border: solid 1px cornflowerblue;
   border-radius: 3px;
 
@@ -21,7 +20,15 @@
 }
 
 .core-information {
-  font-weight: 500;
+  p {
+    margin: 0;
+    font-size: 14px;
+
+    &.core-title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
 }
 
 .tech-stack-list {
