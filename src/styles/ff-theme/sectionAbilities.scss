@@ -1,7 +1,13 @@
+@import '../constants';
+
 .abilities-container {
   display: grid;
   grid-template-rows: auto auto auto auto auto;
   grid-auto-flow: column;
+
+  @include tabletDown {
+    grid-auto-flow: row;
+  }
 
   .ability-container {
     display: grid;
@@ -9,6 +15,10 @@
     grid-template-rows: auto;
     grid-template-areas: "name rating";
     margin: 3px 0;
+
+    @include tabletDown {
+      grid-template-columns: 110px auto;
+    }
 
     .ability-name {
       grid-area: name;
@@ -24,6 +34,11 @@
       .star-rating {
         height: 32px;
         width: 32px;
+
+        @include tabletDown {
+          height: 24px;
+          width: 24px;
+        }
       }
     }
   }

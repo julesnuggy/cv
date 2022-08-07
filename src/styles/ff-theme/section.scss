@@ -11,8 +11,17 @@
     left: -23px;
 
     .ff-card {
+      min-width: unset;
       padding: 8px 16px;
       color: $ffTeal;
+
+      @include tabletDown {
+        margin-bottom: 0;
+      }
     }
+  }
+
+  @include tabletDown {
+    margin: 0 30px;
   }
 }
