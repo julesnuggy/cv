@@ -48,11 +48,16 @@ type BasicStatProps = {
 
 const BasicStatContainer = ({ title, current, max, isLong }: BasicStatProps) => {
   const containerClass = isLong ? "basic-stat-container long-stat" : "basic-stat-container"
+  const currYear = new Date().getFullYear();
+  const currMonth = new Date().getMonth();
+  const tens = (currYear - 2018)*10; //2018 = year of graduation from Makers
+  const units = currMonth - 5; //5 = month of graduation from Makers
+  const getCurrent = title === 'LV' ? (tens + units) : current
 
   return (
     <p className={containerClass}>
       <span className="basic-stat-title">{title}</span>
-      <span className="basic-stat-current">{current}</span>
+      <span className="basic-stat-current">{getCurrent}</span>
       {max && <span className="basic-stat-divider">/</span>}
       {max && <span className="basic-stat-max">{max}</span>}
     </p>
