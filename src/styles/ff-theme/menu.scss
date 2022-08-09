@@ -3,6 +3,12 @@
 .menu-container {
   margin: 30px 0;
 
+  @include tabletUp {
+    .ff-card {
+      min-width: unset;
+    }
+  }
+
   @include tabletDown {
     margin: 30px;
 

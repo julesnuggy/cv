@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Section from './Section';
-import glowing_star from '../../assets/glowing_star.gif';
+import flashing_star from '../../assets/flashing_star.gif';
 import empty_star from '../../assets/star_yellow_border.png';
 
 import '../../styles/ff-theme/sectionAbilities.scss';
@@ -23,7 +23,7 @@ type StarRatingProps = {
 const StarRating = ({ rating }: StarRatingProps) => {
   const starRating = Array(5)
   starRating.fill(<img className="star-rating" src={empty_star} alt="*"/>)
-  starRating.fill(<img className="star-rating" src={glowing_star} alt="*"/>, 0, rating)
+  starRating.fill(<img className="star-rating" src={flashing_star} alt="*"/>, 0, rating)
 
   return (
     <div className="star-rating-container">
