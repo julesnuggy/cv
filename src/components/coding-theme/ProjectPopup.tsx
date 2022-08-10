@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import Blocker from './Blocker';
+import LinkRenderer from '../LinkRenderer';
 import { ProjectData } from '../../data/experienceData';
+
 import '../../styles/coding-theme/project.scss';
 import '../../App.scss';
-import Blocker from './Blocker';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type ProjectProps = {
   data: ProjectData;
@@ -47,7 +49,7 @@ const TechStack = ({data}: DataProps) => (
 const Description = ({data}: DataProps) => (
   <>
     <div className="tag">{'<Description>'}</div>
-    <ReactMarkdown className="description indented-text">
+    <ReactMarkdown className="description indented-text" renderers={{link: LinkRenderer}}>
       {data.description}
     </ReactMarkdown>
     <div className="tag">{'</Description>'}</div>
