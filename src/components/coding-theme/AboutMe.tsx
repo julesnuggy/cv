@@ -58,21 +58,25 @@ const AboutMe = ({screenSize}: aboutMeProps) => {
 
   return (
   <div className="about-me code-block dark-theme" onClick={truncateExpandContents}>
-    <div className="tag">{'<AboutMe>'}
-      <span style={{float: 'right'}}>
-        {isTruncated ?
-          <FontAwesomeIcon icon={['far', 'plus-square']} className="expand-truncate-icon"/> :
-          <FontAwesomeIcon icon={['far', 'minus-square']} className="expand-truncate-icon"/>
-        }
-      </span>
+    <div className="tag">{'<AboutMe>'}</div>
+    <div className="indented-tag">
+      <div className="tag">{'<Bio>'}
+        <span style={{float: 'right'}}>
+          {isTruncated ?
+            <FontAwesomeIcon icon={['far', 'plus-square']} className="expand-truncate-icon"/> :
+            <FontAwesomeIcon icon={['far', 'minus-square']} className="expand-truncate-icon"/>
+          }
+        </span>
+      </div>
+      <ReactMarkdown className="indented-text" source={data.bio} />
+      <div className="tag">{'</Bio>'}</div>
+      <div className="tag-container">
+        <TagList title="CoreValues" data={data.coreValues} />
+        <TagList title="PersonalityTrains" data={data.personalityTraits} />
+        <TagList title="CodingPrinciples" data={data.codingPrinciples} />
+      </div>
     </div>
-    <ReactMarkdown className="indented-text" source={data.bio} />
     <div className="tag">{'</AboutMe>'}</div>
-    <div className="tag-container">
-      <TagList title="CoreValues" data={data.coreValues} />
-      <TagList title="PersonalityTrains" data={data.personalityTraits} />
-      <TagList title="CodingPrinciples" data={data.codingPrinciples} />
-    </div>
   </div>
 )};
 

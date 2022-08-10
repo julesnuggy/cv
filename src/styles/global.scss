@@ -27,18 +27,24 @@
 
   @include tabletUp {
     margin: 30px 40px 0;
+    min-width: 600px;
   }
 }
 
 .tag-container {
 
-  @include mobileUp {
+  @include tabletUp {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+
   & .tag-wrapper {
     flex-direction: column;
+
+    @include tabletUp {
+      min-width: 200px;
+    }
 
     & > .tag + .tag {
       margin-top: 1rem;
@@ -48,11 +54,15 @@
 
 .tag {
   color: $codeYellow;
+
+  + .indented-tag {
+    padding-left: 20px;
+  }
 }
 
 .indented-text {
-  padding-left: 30px;
-
+  padding-left: 20px;
+  text-wrap: normal;
   p {
     margin: 0;
 
@@ -63,7 +73,7 @@
 
   ul {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 20px;
 
     li {
       list-style-type: none;
