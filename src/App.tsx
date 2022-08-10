@@ -17,7 +17,7 @@ import { faMinusSquare, faPlusSquare, faTimesCircle } from '@fortawesome/free-re
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import './App.scss';
-import { CODING_THEME_URL, FF_THEME_URL } from './components/constants';
+import { CODING_THEME_URL, FF_THEME_URL, THEME } from './components/constants';
 import ThemeSelector from './components/ThemeSelector';
 import CodingLayout from './layouts/CodingLayout';
 import FFLayout from './layouts/FFLayout';
@@ -37,9 +37,9 @@ library.add(
 
 const App: React.FC = () => {
   const navigate = useNavigate();
-  const [theme, setTheme] = useState( 'coding')
+  const [theme, setTheme] = useState(THEME.CODING)
   const [screenSize, setScreenSize] = useState(window.innerWidth);
-  const appBodyClass = theme === 'coding' ? 'app-body' : 'app-body-ff'
+  const appBodyClass = theme === THEME.CODING ? 'app-body' : 'app-body-ff'
 
   useEffect(() => {
     window.addEventListener("resize", () => setScreenSize(window.innerWidth));
@@ -48,11 +48,11 @@ const App: React.FC = () => {
   useEffect(() => {
     if (window.location.hash === `#${FF_THEME_URL}`) {
       navigate(FF_THEME_URL);
-      setTheme('ff-theme');
+      setTheme(THEME.FF);
     }
     else {
       navigate(CODING_THEME_URL);
-      setTheme('coding');
+      setTheme(THEME.CODING);
     }
   }, [navigate, setTheme])
 

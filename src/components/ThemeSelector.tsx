@@ -3,24 +3,24 @@ import { useNavigate } from 'react-router-dom';
 import { IconName } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { CODING_THEME_URL, FF_THEME_URL } from './constants';
+import { CODING_THEME_URL, FF_THEME_URL, THEME } from './constants';
 import pointer from '../assets/pointer_animated.gif';
 
 import '../styles/themeSelector.scss'
 
 type ThemeSelectorProps = {
   theme: string;
-  setTheme: (theme: string) => void;
+  setTheme: (theme: THEME) => void;
 }
 
 const ThemeSelector = ({ theme, setTheme }: ThemeSelectorProps) => {
   const [isPointerVisible, setIsPointerVisible] = useState(true)
   const handleClickCodingTheme = () => {
-    setTheme('coding');
+    setTheme(THEME.CODING);
     setIsPointerVisible(true);
   }
   const handleClickFFTheme = () => {
-    setTheme('ff-theme');
+    setTheme(THEME.FF);
     setIsPointerVisible(false);
   }
 
