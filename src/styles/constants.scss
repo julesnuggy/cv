@@ -37,6 +37,12 @@ $tablet-width: 769px;
   }
 }
 
+@mixin tabletOnly {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+    @content
+  }
+}
+
 $desktop-width: 1025px;
 @mixin desktopUp {
   @media (min-width: #{$desktop-width}) {
