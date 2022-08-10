@@ -3,17 +3,17 @@
 .header {
   display: flex;
   flex-direction: row;
-  padding: 0 30px;
+  padding: 0 5vw;
 }
 
 .profile-photo {
-  margin: 30px 20px 30px 20px;
+  margin: 10px 30px 10px 0;
   width: 100px;
   height: 100px;
   border-radius: 50%;
 
   @include tabletUp {
-    margin: 30px 50px;
+    margin: 30px 50px 30px 0;
     width: 180px;
     height: 180px;
   }
