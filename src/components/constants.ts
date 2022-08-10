@@ -1,6 +1,6 @@
 export const BASE_URL = '/'
-export const CODING_THEME_URL = '/coding'
-export const FF_THEME_URL = `/ff-theme`
+export const CODING_THEME_URL = '/theme/coding'
+export const FF_THEME_URL = `/theme/ff`
 
 export enum THEME {
   CODING = 'coding',
