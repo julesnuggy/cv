@@ -7,7 +7,7 @@
   margin: 0 20px 30px;
 
   @include tabletUp {
-    margin: 0 90px 50px;
+    margin: 0 5vw 50px;
     min-width: 640px;
   }
 }
@@ -92,7 +92,7 @@
   padding: 20px;
 
   @include tabletUp {
-    margin: 20px 90px;
+    margin: 20px 5vw;
   }
 
   & .expand-truncate-icon {
