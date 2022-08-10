@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { IconName } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { FF_THEME_URL, HOME_URL } from './constants';
+import { CODING_THEME_URL, FF_THEME_URL } from './constants';
 import pointer from '../assets/pointer_animated.gif';
 
 import '../styles/themeSelector.scss'
@@ -14,7 +14,7 @@ type ThemeSelectorProps = {
 }
 
 const ThemeSelector = ({ theme, setTheme }: ThemeSelectorProps) => {
-  const [isPointerVisible, setIsPointerVisible] = useState(theme === 'coding')
+  const [isPointerVisible, setIsPointerVisible] = useState(true)
   const handleClickCodingTheme = () => {
     setTheme('coding');
     setIsPointerVisible(true);
@@ -24,6 +24,11 @@ const ThemeSelector = ({ theme, setTheme }: ThemeSelectorProps) => {
     setIsPointerVisible(false);
   }
 
+  useEffect(() => {
+    theme === 'coding' ? setIsPointerVisible(true) : setIsPointerVisible(false)
+  }, [theme, setIsPointerVisible])
+
+
   return (
     <div className='themeSelector'>
       Theme:
@@ -32,7 +37,7 @@ const ThemeSelector = ({ theme, setTheme }: ThemeSelectorProps) => {
         onClick={handleClickCodingTheme}
         icon='code'
         theme='coding'
-        destination={HOME_URL}
+        destination={CODING_THEME_URL}
       />
       <div className='ffThemeContainer'>
         <ThemeButton

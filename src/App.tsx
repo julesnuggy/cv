@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import {
-  BrowserRouter as Router,
   Route,
   Routes,
+  useNavigate,
 } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
@@ -17,7 +17,7 @@ import { faMinusSquare, faPlusSquare, faTimesCircle } from '@fortawesome/free-re
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import './App.scss';
-import { FF_THEME_URL, HOME_URL } from './components/constants';
+import { CODING_THEME_URL, FF_THEME_URL } from './components/constants';
 import ThemeSelector from './components/ThemeSelector';
 import CodingLayout from './layouts/CodingLayout';
 import FFLayout from './layouts/FFLayout';
@@ -35,28 +35,35 @@ library.add(
   fab,
 );
 
-
 const App: React.FC = () => {
-  const isHome = [HOME_URL, `${HOME_URL}/`].includes(window.location.pathname);
+  const navigate = useNavigate();
+  const [theme, setTheme] = useState( 'coding')
   const [screenSize, setScreenSize] = useState(window.innerWidth);
-  const [theme, setTheme] = useState( isHome ? 'coding' : 'ff-theme')
-
   const appBodyClass = theme === 'coding' ? 'app-body' : 'app-body-ff'
 
   useEffect(() => {
     window.addEventListener("resize", () => setScreenSize(window.innerWidth));
   });
 
+  useEffect(() => {
+    if (window.location.hash === `#${FF_THEME_URL}`) {
+      navigate(FF_THEME_URL);
+      setTheme('ff-theme');
+    }
+    else {
+      navigate(CODING_THEME_URL);
+      setTheme('coding');
+    }
+  }, [navigate, setTheme])
+
   return (
-    <Router>
-        <div className={appBodyClass}>
-        <ThemeSelector theme={theme} setTheme={setTheme} />
-        <Routes>
-          <Route path={HOME_URL} element={<CodingLayout screenSize={screenSize} />} />
-          <Route path={FF_THEME_URL} element={<FFLayout />} />
-        </Routes>
-        </div>
-    </Router>
+    <div className={appBodyClass}>
+      <ThemeSelector theme={theme} setTheme={setTheme} />
+      <Routes>
+        <Route path={CODING_THEME_URL} element={<CodingLayout screenSize={screenSize} />} />
+        <Route path={FF_THEME_URL} element={<FFLayout />} />
+      </Routes>
+    </div>
   );
 };
 
