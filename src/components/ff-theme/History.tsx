@@ -1,7 +1,6 @@
 import React from 'react'
 
 import SectionExperience from './SectionExperience';
-import profile_photo from '../../assets/profile_photo.jpg';
 import data from '../../data/experienceData.json';
 import { ExperienceData } from '../../data/experienceData';
 
@@ -16,7 +15,6 @@ type HistoryItemProps = {
 const HistoryItem = ({ data }: HistoryItemProps ) => (
   <SectionExperience
     title={data.employer}
-    avatar_src={profile_photo}
     summary_items={[
       {title: 'Role', value: data.role},
       {title: 'From', value: data.from},
