@@ -2,8 +2,10 @@ import React from 'react'
 import ReactMarkdown from 'react-markdown';
 
 import Section from './Section';
-import '../../styles/ff-theme/sectionExperience.scss';
+import LinkRenderer from '../LinkRenderer';
 import { EXPERIENCE_AVATARS } from '../constants';
+
+import '../../styles/ff-theme/sectionExperience.scss';
 
 type TitleValueData = {
   title: string;
@@ -60,7 +62,7 @@ const SectionExperience = ({ title, summary_items, experience_data }: SectionExp
       {experience_data.map((data, idx) => (
         <div className="experience-data" key={`${data.title}-${idx}`}>
           <Section title={data.title}>
-            <ReactMarkdown className="data-description" source={data.description} />
+            <ReactMarkdown className="data-description" source={data.description} renderers={{link: LinkRenderer}}/>
             <TechStack techStack={data.techStack} />
           </Section>
         </div>

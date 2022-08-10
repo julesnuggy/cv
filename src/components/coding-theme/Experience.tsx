@@ -4,7 +4,9 @@ import ReactMarkdown from 'react-markdown';
 
 import Project from './Project';
 import ProjectPopup from './ProjectPopup';
+import LinkRenderer from '../LinkRenderer';
 import { ExperienceData } from '../../data/experienceData';
+
 import '../../styles/coding-theme/experience.scss';
 import '../../App.scss';
 
@@ -64,7 +66,7 @@ const Experience = ({data}: ExperienceProps) => {
       <div className="experience-title">
         {data.employer} || {data.from} - {data.to} || {data.location}
       </div>
-      <ReactMarkdown className="code-block" source={data.summary} />
+      <ReactMarkdown className="code-block" source={data.summary} renderers={{link: LinkRenderer}} />
       <ExperienceProjects
         data={data}
         expandedProjects={expandedProjects}
