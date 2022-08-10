@@ -9,7 +9,7 @@ import pointer from '../assets/pointer_animated.gif';
 import '../styles/themeSelector.scss'
 
 type ThemeSelectorProps = {
-  theme: string;
+  theme: THEME;
   setTheme: (theme: THEME) => void;
 }
 
@@ -25,7 +25,7 @@ const ThemeSelector = ({ theme, setTheme }: ThemeSelectorProps) => {
   }
 
   useEffect(() => {
-    theme === 'coding' ? setIsPointerVisible(true) : setIsPointerVisible(false)
+    theme === THEME.CODING ? setIsPointerVisible(true) : setIsPointerVisible(false)
   }, [theme, setIsPointerVisible])
 
 
@@ -36,7 +36,7 @@ const ThemeSelector = ({ theme, setTheme }: ThemeSelectorProps) => {
         activeTheme={theme}
         onClick={handleClickCodingTheme}
         icon='code'
-        theme='coding'
+        theme={THEME.CODING}
         destination={CODING_THEME_URL}
       />
       <div className='ffThemeContainer'>
@@ -44,7 +44,7 @@ const ThemeSelector = ({ theme, setTheme }: ThemeSelectorProps) => {
           activeTheme={theme}
           onClick={handleClickFFTheme}
           icon='gamepad'
-          theme='ff-theme'
+          theme={THEME.FF}
           destination={FF_THEME_URL}
         />
         {isPointerVisible && <div className='themePointerContainer'>
@@ -58,10 +58,10 @@ const ThemeSelector = ({ theme, setTheme }: ThemeSelectorProps) => {
 }
 
 type ThemeButtonProps = {
-  activeTheme: string;
+  activeTheme: THEME;
   onClick: () => void;
   icon: IconName;
-  theme: string;
+  theme: THEME;
   destination: string;
 }
 
