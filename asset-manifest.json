@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cv/static/css/main.7648e5b0.chunk.css",
-    "main.js": "/cv/static/js/main.b465f9da.chunk.js",
-    "main.js.map": "/cv/static/js/main.b465f9da.chunk.js.map",
+    "main.js": "/cv/static/js/main.cd98b413.chunk.js",
+    "main.js.map": "/cv/static/js/main.cd98b413.chunk.js.map",
     "runtime-main.js": "/cv/static/js/runtime-main.fbe6a0f5.js",
     "runtime-main.js.map": "/cv/static/js/runtime-main.fbe6a0f5.js.map",
     "static/js/2.6eb24a08.chunk.js": "/cv/static/js/2.6eb24a08.chunk.js",
@@ -11,6 +11,7 @@
     "static/css/main.7648e5b0.chunk.css.map": "/cv/static/css/main.7648e5b0.chunk.css.map",
     "static/js/2.6eb24a08.chunk.js.LICENSE.txt": "/cv/static/js/2.6eb24a08.chunk.js.LICENSE.txt",
     "static/media/a_levels.f9150eb9.png": "/cv/static/media/a_levels.f9150eb9.png",
+    "static/media/career_break.3ead854a.png": "/cv/static/media/career_break.3ead854a.png",
     "static/media/card.scss": "/cv/static/media/final_fantasy_36_font.fee0c018.eot",
     "static/media/flashing_star.8188b0db.gif": "/cv/static/media/flashing_star.8188b0db.gif",
     "static/media/management_consultancy.5f4823f2.png": "/cv/static/media/management_consultancy.5f4823f2.png",
@@ -23,6 +24,6 @@
     "static/js/runtime-main.fbe6a0f5.js",
     "static/js/2.6eb24a08.chunk.js",
     "static/css/main.7648e5b0.chunk.css",
-    "static/js/main.b465f9da.chunk.js"
+    "static/js/main.cd98b413.chunk.js"
   ]
 }
