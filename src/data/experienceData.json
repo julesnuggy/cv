@@ -1,5 +1,14 @@
 [
   {
+    "employer": "Career Break",
+    "role": "Self-Care",
+    "from": "Jun 2022",
+    "to": "Present",
+    "location": "UK",
+    "summary": "Taking time to discover what matters to me, both in my personal life ambitions and my professional career. During this time, I am:\n* delivering pro bono full-stack software development for a healthcare start-up\n* volunteering at a homeless shelter as a chef\n* developing potential start-up business propositions\n* learning new skills, such as CAD modelling for 3D printing, and React Native engineering for personal projects",
+    "projects": []
+  },
+  {
     "employer": "Pollen",
     "role": "Software Engineer (Backend)",
     "from": "Sep 2021",
@@ -17,10 +26,24 @@
     "summary": "Mid-level full-stack software developer in a medium-sized agency & consultancy. I have worked across a broad range of projects for customers in FinTech, health & fitness, public sector, telecommunications, aviation, and utilities. Each project implemented a unique tech stack, requiring a strong understanding of core coding principles and a flexible mindset to quickly get started, ensuring team effectiveness and customer satisfaction.",
     "projects": [
       {
+        "name": "Royal College of Pathologists (RCP)",
+        "role": "Full-Stack Developer",
+        "from": 2021,
+        "to": 2021,
+        "techStack": [
+          "Javascript",
+          "Vue.js",
+          "Express",
+          "PostgreSQL",
+          "AWS"
+        ],
+        "description": "Worked in a close-knit development team to accelerate the growth of the RCP's internal learning portal from Beta to v1.0. This involved working very closely with the customer team and stakeholders as there were several workstreams with overlapping effects and dependencies. The outcomes of my work enabled:\n* The use of Whole Slide Imaging technology (the digitisation an entire microscopic glass slides to super high definition images for examination and review); \n* Students and staff to easily create and share critical knowledge as interesting cases, blog articles, and references to external sources;\n* Staff to develop and manage learning modules to facilitate and streamline professional development."
+      },
+      {
         "name": "Stageclip",
         "role": "Technical Lead",
         "from": 2020,
-        "to": "present",
+        "to": 2021,
         "techStack": [
           "React (Typescript)",
           "Redux",
@@ -125,7 +148,7 @@
     "summary": "Intensive 4-month coding bootcamp, learning-through-doing the foundations of software development and its best practices. Whilst the course was taught primarily in Ruby and JavaScript (implementing various popular libraries and frameworks, such as Sinatra, Express.js, npm, JQuery, etc.) students developed skills and knowledge in a language-agnostic way. Some of the key principles and skills that I learnt were Test Driven Development, pair programming, SOLID, XP Values, and system diagramming / architecture.",
     "projects": [
       {
-        "name": "Codecraft",
+        "name": "Final Project",
         "role": "Full-Stack Developer",
         "from": 2018,
         "to": 2018,

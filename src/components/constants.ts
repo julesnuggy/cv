@@ -4,6 +4,7 @@ import makers from '../assets/logos/avatars/makers_academy.png';
 import consultancy from '../assets/logos/avatars/management_consultancy.png';
 import university from '../assets/logos/avatars/university.jpeg';
 import a_levels from '../assets/logos/avatars/a_levels.png'
+import career_break from '../assets/logos/avatars/career_break.png'
 
 export const BASE_URL = '/'
 export const CODING_THEME_URL = '/theme/coding'
@@ -26,6 +27,7 @@ interface ExperienceAvatarsType {
 }
 
 export const EXPERIENCE_AVATARS: ExperienceAvatarsType = {
+  'Career Break': career_break,
   Pollen: pollen,
   Softwire: softwire,
   'Makers Academy': makers,
