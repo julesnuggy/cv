@@ -56,7 +56,7 @@
 .tag {
   color: $codeYellow;
 
-  + .indented-tag {
+  ~ .indented-tag {
     padding-left: 20px;
   }
 }
