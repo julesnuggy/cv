@@ -33,16 +33,22 @@
     "Equity & Diversity",
     "Courage to Experiment"
   ],
-  "personalityTraits": [
-    "Flexible & Adaptable",
-    "Focused & Determined",
-    "Problem Solver",
-    "Proactive"
-  ],
   "codingPrinciples": [
     "Commit history tells a story",
     "Tests, tests, tests",
     "Clear and digestible PRs",
     "Code reviews help everyone"
+  ],
+  "agilePractices": [
+    "Cross-functional collaboration",
+    "Scrum/Kanban",
+    "TDD/DDD",
+    "CI/CD"
+  ],
+  "favouriteTech": [
+    "Typescript/Python/Java",
+    "Jest/Pytest/JUnit",
+    "React/Redux",
+    "ESLint/Prettier"
   ]
 }

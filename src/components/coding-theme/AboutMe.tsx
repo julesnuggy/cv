@@ -72,8 +72,9 @@ const AboutMe = ({screenSize}: aboutMeProps) => {
       <div className="tag">{'</Bio>'}</div>
       <div className="tag-container">
         <TagList title="CoreValues" data={data.coreValues} />
-        <TagList title="PersonalityTrains" data={data.personalityTraits} />
         <TagList title="CodingPrinciples" data={data.codingPrinciples} />
+        <TagList title="AgilePractices" data={data.agilePractices} />
+        <TagList title="FavouriteTech" data={data.favouriteTech} />
       </div>
     </div>
     <div className="tag">{'</AboutMe>'}</div>
