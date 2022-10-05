@@ -10,18 +10,25 @@ type Stat = {
   max?: string | number;
 }
 
-type SectionBasicProps = {
-  section: string;
-  avatar_src: any;
-  stats: Stat[];
-  free_text?: string;
+type ListData = {
+  [key: string]: string[]
 }
 
-const SectionBasic = ({ section, avatar_src, stats, free_text }: SectionBasicProps) => {
+type SectionBasicProps = {
+  section: string;
+  avatarSrc: any;
+  stats: Stat[];
+  bio: string;
+  listData: ListData;
+}
+
+const SectionBasic = ({ section, avatarSrc, stats, bio, listData }: SectionBasicProps) => {
+  const dataKeys = Object.keys(listData)
+
   return (
     <Section title={section}>
       <div className='basic-container'>
-        <img className="basic-avatar" src={avatar_src} alt="BasicImageAlt"/>
+        <img className="basic-avatar" src={avatarSrc} alt="BasicImageAlt"/>
 
         <div className="basic-stats">
           {stats.map((stat, idx) => (
@@ -33,7 +40,19 @@ const SectionBasic = ({ section, avatar_src, stats, free_text }: SectionBasicPro
               key={`${stat.title}-${idx}`} />
           ))}
         </div>
-        {free_text && <ReactMarkdown className="basic-free-text" source={free_text} />}
+        <ReactMarkdown className="basic-free-text" source={bio} />
+        <div className="basic-list-data">
+          {dataKeys.map(key => (
+            <>
+              <p>{key.toUpperCase()}</p>
+              <ul>
+                {listData[key].map(item => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </>
+            ))}
+        </div>
       </div>
     </Section>
   )

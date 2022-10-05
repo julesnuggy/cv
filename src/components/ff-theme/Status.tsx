@@ -5,15 +5,21 @@ import basic_data from '../../data/basicData.json';
 import profile_photo from '../../assets/profile_photo.jpg';
 
 const Status = () => {
+  const listData = {
+    ['Core Values']: basic_data.coreValues,
+    ['Coding Principles']: basic_data.codingPrinciples,
+    ['Agile Practices']: basic_data.agilePractices,
+    ['Favourite Tech']: basic_data.favouriteTech
+  }
+
   return (
     <>
       <SectionBasic
         section="Status"
-        title={basic_data.name}
-        subtitle={basic_data.pronouns}
-        avatar_src={profile_photo}
+        avatarSrc={profile_photo}
         stats={basic_data.stats}
-        free_text={basic_data.bio}
+        bio={basic_data.bio}
+        listData={listData}
       />
     </>
   )
