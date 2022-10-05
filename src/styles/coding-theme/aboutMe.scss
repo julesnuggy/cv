@@ -1,0 +1,57 @@
+@import '../constants';
+
+.about-me {
+  margin: 20px;
+  padding: 20px;
+
+  @include tabletUp {
+    margin: 20px 5vw;
+  }
+
+  .sizeButton {
+    float: right;
+    background-color: transparent;
+    border: none;
+    color: $codeYellow;
+    cursor: pointer;
+  }
+
+  .tag-container {
+    display: flex;
+    flex-direction: column;
+
+    .tag-wrapper.truncated {
+      .indented-text ul li {
+        list-style-position: inside;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        &:first-child::after {
+          content: "...";
+          letter-spacing: -5px;
+          font-size: 15px;
+        }
+        &:not(:first-child) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .indented-tag {
+    .indented-text {
+      &.truncated {
+        p {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+
+          &:not(:first-child) {
+            display:none;
+          }
+        }
+      }
+    }
+  }
+}

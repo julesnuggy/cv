@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 
 import data from '../../data/basicData.json';
 
-import '../../App.scss';
+import '../../styles/coding-theme/aboutMe.scss';
 
 type aboutMeProps = {
   screenSize: number;
@@ -55,15 +55,15 @@ const AboutMe = ({screenSize}: aboutMeProps) => {
   };
 
   return (
-  <div className="about-me code-block dark-theme" onClick={truncateExpandContents}>
+  <div className="about-me code-block dark-theme">
     <div className="tag">
       {'<AboutMe>'}
-      <span style={{float: 'right'}}>
+      <button className="sizeButton" onClick={truncateExpandContents}>
           {isTruncated ?
-            <FontAwesomeIcon icon={['far', 'plus-square']} className="expand-truncate-icon"/> :
-            <FontAwesomeIcon icon={['far', 'minus-square']} className="expand-truncate-icon"/>
+            <FontAwesomeIcon size="lg" icon={['far', 'plus-square']} className="expand-truncate-icon"/> :
+            <FontAwesomeIcon size="lg" icon={['far', 'minus-square']} className="expand-truncate-icon"/>
           }
-        </span>
+        </button>
     </div>
     <div className="indented-tag">
       <div className="tag">{'<Bio>'}</div>
