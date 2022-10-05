@@ -33,22 +33,24 @@
 }
 
 .tag-container {
+  display: flex;
+  flex-direction: column;
 
-  @include tabletUp {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  .tag-wrapper.truncated {
+    .indented-text ul li {
+      list-style-position: inside;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
 
-  & .tag-wrapper {
-    flex-direction: column;
-
-    @include tabletUp {
-      min-width: 200px;
-    }
-
-    & > .tag + .tag {
-      margin-top: 1rem;
+      &:first-child::after {
+        content: "...";
+        letter-spacing: -5px;
+        font-size: 15px;
+      }
+      &:not(:first-child) {
+        display: none;
+      }
     }
   }
 }
@@ -75,14 +77,6 @@
   ul {
     margin: 0;
     padding: 0 0 0 20px;
-
-    li {
-      list-style-type: none;
-
-      @include mobileUp {
-        list-style-type: initial;
-      }
-    }
   }
 }
 

@@ -30,44 +30,43 @@ const TagList = ({ title, data }: TagListProps) => (
 const AboutMe = ({screenSize}: aboutMeProps) => {
   const [isTruncated, setIsTruncated] = useState(false);
 
-  const truncateContents = (element: Element) => {
-    setIsTruncated(true);
-    element.classList.add('truncated');
-  };
-
-  const expandContents = (element: Element) => {
-    setIsTruncated(false);
-    element.classList.remove('truncated');
-  };
+  const getAboutMeSections = () => {
+    const indentedText = document.getElementsByClassName('indented-text')[0];
+    const tagWrapper = Array.from(document.getElementsByClassName('tag-wrapper'));
+    return tagWrapper.concat(indentedText);
+  }
 
   useEffect(() => {
-    const indentedText = document.getElementsByClassName('indented-text')[0];
-    if (screenSize <= 480) {
-      truncateContents(indentedText);
+    const elements = getAboutMeSections()
+
+    if (screenSize <= 769) { // $tablet-width
+      setIsTruncated(true);
+      elements.map(element => element.classList.add('truncated'))
     } else {
-      expandContents(indentedText);
+      setIsTruncated(false);
+      elements.map(element => element.classList.remove('truncated'))
     }
   },[screenSize]);
 
   const truncateExpandContents = () => {
-    const indentedText = document.getElementsByClassName('indented-text')[0];
-    indentedText.classList.contains('truncated') ?
-      expandContents(indentedText) :
-      truncateContents(indentedText);
+    const elements = getAboutMeSections()
+    setIsTruncated(!isTruncated);
+    elements.map(element => element.classList.toggle('truncated'))
   };
 
   return (
   <div className="about-me code-block dark-theme" onClick={truncateExpandContents}>
-    <div className="tag">{'<AboutMe>'}</div>
-    <div className="indented-tag">
-      <div className="tag">{'<Bio>'}
-        <span style={{float: 'right'}}>
+    <div className="tag">
+      {'<AboutMe>'}
+      <span style={{float: 'right'}}>
           {isTruncated ?
             <FontAwesomeIcon icon={['far', 'plus-square']} className="expand-truncate-icon"/> :
             <FontAwesomeIcon icon={['far', 'minus-square']} className="expand-truncate-icon"/>
           }
         </span>
-      </div>
+    </div>
+    <div className="indented-tag">
+      <div className="tag">{'<Bio>'}</div>
       <ReactMarkdown className="indented-text" source={data.bio} />
       <div className="tag">{'</Bio>'}</div>
       <div className="tag-container">
