@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown';
 
+import Card from './Card';
 import Section from './Section';
 import '../../styles/ff-theme/sectionBasic.scss';
 
@@ -43,15 +44,15 @@ const SectionBasic = ({ section, avatarSrc, stats, bio, listData }: SectionBasic
         <ReactMarkdown className="basic-free-text" source={bio} />
         <div className="basic-list-data">
           {dataKeys.map(key => (
-            <>
-              <p>{key.toUpperCase()}</p>
-              <ul>
+            <div className="list-data-container">
+              <Card>{key.toUpperCase()}</Card>
+              <ul className="list-data-items">
                 {listData[key].map(item => (
                   <li>{item}</li>
                 ))}
               </ul>
-            </>
-            ))}
+            </div>
+          ))}
         </div>
       </div>
     </Section>
