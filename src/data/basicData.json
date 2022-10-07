@@ -37,18 +37,18 @@
     "Commit history tells a story",
     "Tests, tests, tests",
     "Clear and digestible PRs",
-    "Code reviews help everyone"
+    "Readable code > leet code"
   ],
-  "agilePractices": [
-    "Cross-functional collaboration",
-    "Scrum/Kanban",
-    "TDD/DDD",
-    "CI/CD"
+  "methodsModels": [
+    "Scrum / Kanban",
+    "MVC / Microservices",
+    "OOP / TDD / DDD",
+    "CI / CD"
   ],
   "favouriteTech": [
-    "Typescript/Python/Java",
-    "Jest/Pytest/JUnit",
-    "React/Redux",
-    "ESLint/Prettier"
+    "Typescript / Python / Java",
+    "Jest / Pytest / JUnit",
+    "React / Redux",
+    "ESLint / Prettier"
   ]
 }

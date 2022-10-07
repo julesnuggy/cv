@@ -6,10 +6,10 @@ import profile_photo from '../../assets/profile_photo.jpg';
 
 const Status = () => {
   const listData = {
-    ['Core Values']: basic_data.coreValues,
-    ['Coding Principles']: basic_data.codingPrinciples,
-    ['Agile Practices']: basic_data.agilePractices,
-    ['Favourite Tech']: basic_data.favouriteTech
+    'Core Values': basic_data.coreValues,
+    'Coding Principles': basic_data.codingPrinciples,
+    'Methods & Models': basic_data.methodsModels,
+    'Favourite Tech': basic_data.favouriteTech
   }
 
   return (
