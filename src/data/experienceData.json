@@ -1,9 +1,18 @@
 [
   {
+    "employer": "Boolean UK",
+    "role": "Software Developer Teacher",
+    "from": "Oct 2022",
+    "to": "Present",
+    "location": "Remote (UK)",
+    "summary": "Boolean is a fully-remote, online coding bootcamp, training students to become employable Full-Stack developers in just 6 months. Students are given the knowledge and skills to build web applications with responsive designs (HTML, CSS, JavaScript, NodeJS, React) and integrated with data stores (Express and PostgreSQL). As a teacher, I am responsible for:\n* **Delivering course material to classes in an engaging and friendly manner via Zoom** - my approach focuses around live code demos, diagramming, and student practice time.\n* **Building students’ initiative and problem solving mindsets** - I do this by providing guidance instead of direct answers (where possible) when debugging issues in repos.\n * **Balancing the needs of students with different abilities** - I adapt my teaching and communication styles to ensure no student/group is unfairly disadvantaged or favoured.\n* **Developing course content** - to maintain relevance; enhance existing material; adapt from student feedback and lessons-learnt; and address external dependency issues. \n* **Documentation** - daily class logs, teacher guides, student handbooks, etc.",
+    "projects": []
+  },
+  {
     "employer": "Career Break",
     "role": "Self-Care",
     "from": "Jun 2022",
-    "to": "Present",
+    "to": "Oct 2022",
     "location": "UK",
     "summary": "Taking time off to pursue personal life ambitions, develop technical skills, and explore new opportunities & experiences. During this time, I have been:\n* Delivering pro bono full-stack software development for a healthcare start-up;\n* Volunteering at a homeless shelter;\n* Developing potential start-up business propositions;\n* Learning CAD modelling for 3D printing and React Native mobile app development on personal projects.",
     "projects": []
