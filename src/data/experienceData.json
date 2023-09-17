@@ -14,7 +14,7 @@
     "from": "Sep 2022",
     "to": "Present",
     "location": "Remote (UK)",
-    "summary": "One of three co-founders at a start-up that has developed and delivered a bespoke web app to optimise the scheduling of healthcare appointments for patients with chronic and comorbid conditions.\nCurrently, deployed across 5 GP sites in the UK, serving a total of 70,000 patients and used by 50+ patient coordinators.",
+    "summary": "One of three co-founders at a start-up that has developed and delivered a bespoke web app to optimise the scheduling of healthcare appointments for patients with chronic and comorbid conditions.\nCurrently, deployed across 5 GP sites in the UK, serving a total of 70,000 patients and used by 50+ patient coordinators.\n\nSome of my key contributions include:\n* Converting the frontend app from JavaScript to TypeScript;\n* Creating frontend components and backend logic for CRUD requests of multiple data types;\n* Building a custom user authentication system;\n* Setting up the Postgres database;\n* Implementing unit and end-to-end tests for critical backend features.",
     "projects": []
   },
   {
