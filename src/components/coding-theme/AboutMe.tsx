@@ -15,12 +15,34 @@ type TagListProps = {
   data: string[];
 }
 
+type NameDescriptionData = {
+  name: string,
+  description: string,
+}
+
+type DataListProps = {
+  title: string;
+  data: NameDescriptionData[];
+}
+
 const TagList = ({ title, data }: TagListProps) => (
   <div className="tag-wrapper">
     <div className="tag">{`<${title}>`}</div>
     <div className="indented-text">
       <ul>
         {data.map(value => (<li key={value}>{value}</li>))}
+      </ul>
+    </div>
+    <div className="tag">{`</${title}>`}</div>
+  </div>
+)
+
+const DataList = ({ title, data }: DataListProps) => (
+  <div className="tag-wrapper">
+    <div className="tag">{`<${title}>`}</div>
+    <div className="indented-text">
+      <ul>
+        {data.map(value => (<li key={value.name}><b>{value.name}</b> - {value.description}</li>))}
       </ul>
     </div>
     <div className="tag">{`</${title}>`}</div>
@@ -70,8 +92,7 @@ const AboutMe = ({screenSize}: aboutMeProps) => {
       <ReactMarkdown className="indented-text" source={data.bio} />
       <div className="tag">{'</Bio>'}</div>
       <div className="tag-container">
-        <TagList title="CoreValues" data={data.coreValues} />
-        <TagList title="CodingPrinciples" data={data.codingPrinciples} />
+        <DataList title="KeyStrengths" data={data.keyStrengths} />
         <TagList title="MethodsModels" data={data.methodsModels} />
         <TagList title="FavouriteTech" data={data.favouriteTech} />
       </div>
