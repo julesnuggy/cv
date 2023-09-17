@@ -41,6 +41,11 @@
   },
   {
     "type": "Framework",
+    "name": "Node.js",
+    "rating": 5
+  },
+  {
+    "type": "Framework",
     "name": "React",
     "rating": 5
   },
