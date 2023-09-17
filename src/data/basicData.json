@@ -27,17 +27,11 @@
     }
   ],
   "bio": "*Versatile Developer ~ Friendly Team Member ~ Patient Teacher ~ Empathetic Mentor*\n\nFull-stack developer with 5+ years of experience in both service-based and product-based software companies. Some key projects/achievements include:\n* Built new features for Starling Bank to grow and enhance their services to customers.\n* Extracted David Lloyd’s legacy monolith systems into fast & modular microservices.\n* Created a tool at Boolean to give students a view of exercise completion rates.\n* Mentored several co-workers who sought support for professional and life matters.",
-  "coreValues": [
-    "Communication",
-    "Open Mindedness",
-    "Equity & Diversity",
-    "Courage to Experiment"
-  ],
-  "codingPrinciples": [
-    "Commit history tells a story",
-    "Tests, tests, tests",
-    "Clear and digestible PRs",
-    "Readable code > leet code"
+  "keyStrengths": [
+    { "name": "Growth Mindset", "description": "Avid and quick learner of new languages, frameworks, tools and methodologies to get the job done right, and for my own development" },
+    { "name":"User Centric", "description": "Able to engage with stakeholders and analyse data to understand business needs and deliver the best possible user experience" },
+    { "name":"Fullstack Preference", "description": "Ideally, involved in the full picture to be able to deliver an efficient and symbiotic product/service" },
+    { "name":"Empathetic Mentor", "description": "Guiding and advising peers and juniors through professional and personal journeys" }
   ],
   "methodsModels": [
     "Scrum / Kanban",
