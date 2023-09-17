@@ -48,7 +48,7 @@ const SectionExperience = ({ title, summary_items, experience_data }: SectionExp
     <>
       <Section title={title}>
         <div className="experience-summary">
-          <img className="summary-avatar" src={EXPERIENCE_AVATARS[title]} alt="DetailedImageAlt"/>
+          <img className="summary-avatar" src={EXPERIENCE_AVATARS[title]} alt="logo"/>
           <div className="summary-items">
             {summary_items.map((item, idx) => (
               <p className="summary-item" key={`${item}-${idx}`}>

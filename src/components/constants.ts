@@ -1,10 +1,12 @@
+import a_levels from '../assets/logos/avatars/a_levels.png'
+import boolean_uk from '../assets/logos/avatars/boolean_uk.jpg'
+import career_break from '../assets/logos/avatars/career_break.png'
+import consultancy from '../assets/logos/avatars/management_consultancy.png';
+import makers from '../assets/logos/avatars/makers_academy.png';
+import noris_technologies from '../assets/logos/avatars/noris_technologies.jpg';
 import pollen from '../assets/logos/avatars/pollen.jpg';
 import softwire from '../assets/logos/avatars/softwire.png';
-import makers from '../assets/logos/avatars/makers_academy.png';
-import consultancy from '../assets/logos/avatars/management_consultancy.png';
 import university from '../assets/logos/avatars/university.jpeg';
-import a_levels from '../assets/logos/avatars/a_levels.png'
-import career_break from '../assets/logos/avatars/career_break.png'
 
 export const BASE_URL = '/'
 export const CODING_THEME_URL = '/theme/coding'
@@ -27,6 +29,8 @@ interface ExperienceAvatarsType {
 }
 
 export const EXPERIENCE_AVATARS: ExperienceAvatarsType = {
+  'Boolean UK': boolean_uk,
+  'Noris Technologies': noris_technologies,
   'Career Break': career_break,
   Pollen: pollen,
   Softwire: softwire,

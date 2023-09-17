@@ -34,11 +34,11 @@ const FFLayout = () => {
   const [ activeMainMenu, setActiveMainMenu ] = useState(MAIN_MENU_ITEMS.STATUS)
 
   // Only want to display software employers in Abilities section
-  const recentEmployers = Object.values(experience_data.slice(0, 3).map(data => data.employer))
+  const recentEmployers = Object.values(experience_data.slice(0, 2).map(data => data.employer))
   const [ activeEmployerMenu, setActiveEmployerMenu ] = useState(recentEmployers[0])
 
   // Only want to display background data in Lore section
-  const backgroundHistory = Object.values(experience_data.slice(3).map(data => data.employer))
+  const backgroundHistory = Object.values(experience_data.slice(2).map(data => data.employer))
   const [ activeBackgroundMenu, setActiveBackgroundMenu ] = useState(backgroundHistory[0])
 
   const QuestsSubMenu = () => activeMainMenu === MAIN_MENU_ITEMS.QUESTS
