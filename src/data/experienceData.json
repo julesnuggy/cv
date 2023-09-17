@@ -9,10 +9,19 @@
     "projects": []
   },
   {
+    "employer": "Noris Technologies",
+    "role": "Co-Founder (Software Engineering Co-Director)",
+    "from": "Sep 2022",
+    "to": "Present",
+    "location": "Remote (UK)",
+    "summary": "One of three co-founders at a start-up that has developed and delivered a bespoke web app to optimise the scheduling of healthcare appointments for patients with chronic and comorbid conditions.\nCurrently, deployed across 5 GP sites in the UK, serving a total of 70,000 patients and used by 50+ patient coordinators.",
+    "projects": []
+  },
+  {
     "employer": "Career Break",
     "role": "Self-Care",
     "from": "Jun 2022",
-    "to": "Oct 2022",
+    "to": "Sep 2022",
     "location": "UK",
     "summary": "Took time off to pursue personal life ambitions, develop technical skills, and explore new opportunities & experiences. During this time, I:\n* Delivered pro bono full-stack software development for a product-based healthcare start-up;\n* Volunteered at a homeless shelter;\n* Developed potential start-up business propositions;\n* Learned React Native mobile app development for a personal project.",
     "projects": []
