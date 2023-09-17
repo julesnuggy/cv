@@ -12,7 +12,7 @@ type Stat = {
 }
 
 type ListData = {
-  [key: string]: string[]
+  [key: string]: any[]
 }
 
 type SectionBasicProps = {
@@ -47,9 +47,13 @@ const SectionBasic = ({ section, avatarSrc, stats, bio, listData }: SectionBasic
             <div className="list-data-container">
               <Card>{key.toUpperCase()}</Card>
               <ul className="list-data-items">
-                {listData[key].map(item => (
-                  <li>{item}</li>
-                ))}
+                {listData[key].map(item => {
+                  if(typeof item === 'string') {
+                    return <li key={item}>{item}</li>
+                  } else {
+                    return <li key={item.name}><b>{item.name}</b> - {item.description}</li>
+                  }
+                })}
               </ul>
             </div>
           ))}
